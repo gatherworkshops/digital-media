@@ -1,0 +1,47 @@
+---
+layout: home
+title: Courses
+tagline: An introduction to digital media.
+
+courses:
+
+    - name: jquery-plugins
+      title: Dynamic Designs with jQuery
+      length: 3 hours
+      description: Learn how to add a slideshow and a pop-up image gallery to your website using jQuery plugins. 
+
+
+    - name: building-the-web
+      title: Building the Web
+      length: 6 hours
+      description: Create programmable circuits using the SparkFun Inventors kit and the NodeRed drag-and-drop programming interface.
+
+      
+---
+
+<div class="container page-header">
+    <h1>{{ site.name }}</h1>
+    <p>{{ page.tagline }}</p>
+</div>
+
+<div class="container">
+
+        {% for course in page.courses %}
+
+            {% assign index_modulo = forloop.index | modulo:3 %}
+
+            {% if index_modulo == 1 %}
+                <div class="row chapter-links">
+            {% endif %}
+
+                    {% include course-tile.html %}
+
+            {% if index_modulo == 0 or forloop.last %}
+                </div>
+            {% endif %}
+
+        {% endfor %}
+
+    </div>
+</div>
+
