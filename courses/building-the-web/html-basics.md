@@ -173,7 +173,9 @@ slides:
 
         Add an `img` tag to the very bottom of your code:
 
+        ```html
             <img src="#" height="100">
+        ```
 
         **`src` stands for "source"**<br>
         Replace the `#` with a link to an image online.
@@ -190,7 +192,9 @@ slides:
 
         Replace the `#` as the `src` value, using paste:
 
+        ```html
             <img src="http://place.com/photo.jpg" height="100">
+        ```
 
         Find and add at least 2 more images.
 
