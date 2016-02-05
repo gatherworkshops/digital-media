@@ -19,29 +19,23 @@ courses:
       
 ---
 
-<div class="container page-header">
-    <h1>{{ site.name }}</h1>
-    <p>{{ page.tagline }}</p>
-</div>
-
 <div class="container">
 
-        {% for course in page.courses %}
+    {% for course in page.courses %}
 
-            {% assign index_modulo = forloop.index | modulo:3 %}
+        {% assign index_modulo = forloop.index | modulo:3 %}
 
-            {% if index_modulo == 1 %}
-                <div class="row chapter-links">
-            {% endif %}
+        {% if index_modulo == 1 %}
+            <div class="row chapter-links">
+        {% endif %}
 
-                    {% include course-tile.html %}
+                {% include course-tile.html %}
 
-            {% if index_modulo == 0 or forloop.last %}
-                </div>
-            {% endif %}
+        {% if index_modulo == 0 or forloop.last %}
+            </div>
+        {% endif %}
 
-        {% endfor %}
+    {% endfor %}
 
-    </div>
 </div>
 

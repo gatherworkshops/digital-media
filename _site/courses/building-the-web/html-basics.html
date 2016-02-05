@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Coding Content</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/digital-media/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/digital-media/theme/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/digital-media/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
+        <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/digital-media/favicon.ico">
+
+    </head>
+
+    <body class="chapter">
+<nav id="page-navigation">
+
+
+
+
+    <!-- branding - always visible. links to home page -->
+    <a class="navbar-brand" href="/digital-media/">
+        <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
+        Digital Media | Coding Content 
+    </a>
+
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+        
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+
+
+</nav>
+
+
+
+
+<div class="slideshow">
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/digital-media/media/images/theme/theme-tile.svg" 
+		data-background-color="#9b3a00"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/digital-media/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="coding-content">Coding Content</h1>
+
+<p><em>Putting content on your page with HTML</em></p>
+
+
+<aside class="notes">
+
+Let's begin with some HTML and CSS snippets.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="html-with-alpacas">HTML With Alpacas</h2>
+
+<p>Open this link in a new tab: <a href="http://codepen.io/gatherworkshops/pen/KDvtC?editors=100" target="_blank">Alpacas Code</a></p>
+
+<p>Keep it open! We are going to be using HTML<br />
+to make it look way better.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="codepen-editor">CodePen Editor</h2>
+
+<p><img src="assets/images/codepen-html.png" alt="Screenshot of CodePen UI" /></p>
+
+<p>CodePen shows us our code on the left,<br />
+and the output on the right:</p>
+
+
+<aside class="notes">
+
+The grey text at the top is a comment. It is not visible in the output.
+
+The white text is code. It is visible in the output.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="alpaca-text-example">Alpaca Text Example</h2>
+
+<p>We will use code to make our output look like this:</p>
+
+<p><span class="codepen-embed title">Alpaca Example</span><br />
+&lt;iframe class="codepen-embed" height="500" scrolling="yes" frameborder="0" src='http://s.codepen.io/gatherworkshops/fullembedgrid/gbyXgo'&gt;&lt;/iframe&gt;</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="headings">Headings</h2>
+
+<p>Add <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code> tags to make the <code>Alpacas</code> heading big and bold.</p>
+
+<pre><code class="language-html">&lt;h1&gt;Alpacas&lt;/h1&gt;
+</code></pre>
+
+<p><code>&lt;h1&gt;</code> says “start the heading here”<br />
+<code>&lt;/h1&gt;</code> says “end the heading here”</p>
+
+
+<aside class="notes">
+
+Let's start with some really common HTML elements.
+
+The first line is how we make large heading text, using the `h1` element. That's a "one" after the "h" by the way!
+
+See how the start and end of the element are written the same, except for the  extra "slash" at the end? That's a really common format in HTML.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="subheadings">Subheadings</h2>
+
+<p>Now use <code>&lt;h2&gt;</code> tags to make <code>Alpaca Hair</code> and <code>Habitat</code> big.</p>
+
+<pre><code class="language-html">    &lt;h2&gt;Alpaca Hair&lt;/h2&gt;
+</code></pre>
+
+<p><code>h1</code> is the biggest heading<br />
+<code>h2</code> is the second biggest heading<br />
+<code>h3</code> is the third biggest heading</p>
+
+<p><code>h6</code> is the smallest heading</p>
+
+
+<aside class="notes">
+
+Just like we used `h1` for the most important title on the page, we can use `h2` for headings which are second most important.
+
+The start and end of the element are still written the same, with the extra "slash" in the closing tag.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="paragraphs">Paragraphs</h2>
+
+<p>Now use <code>&lt;p&gt;</code> tags to split up your paragraphs.</p>
+
+<pre><code>&lt;p&gt;
+An alpaca is a domesticated species of 
+South American camelid. It resembles a 
+small llama in appearance.
+&lt;/p&gt;
+</code></pre>
+
+<p>Put a <code>&lt;p&gt;</code> <em>before</em> each paragraph,<br /> <br />
+and a <code>&lt;/p&gt;</code> <em>after</em> each paragraph.</p>
+
+
+<aside class="notes">
+
+Paragraphs of text use the `p` element.
+
+A paragraph of text will automatically have some space before and after it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="links">Links</h2>
+
+<p>Find the word <code>Wikipedia</code> in your code.</p>
+
+<p>Turn it into a link using <code>a</code> tags, like this:</p>
+
+<pre><code>&lt;a&gt;Wikipedia&lt;/a&gt;
+</code></pre>
+
+<p>Then add the <code>href</code> attribute to the opening tag.</p>
+
+<pre><code>&lt;a href="#"&gt;Wikipedia&lt;/a&gt;
+</code></pre>
+
+<p>This turns the link blue, but we need another step to make it clickable.</p>
+
+
+<aside class="notes">
+
+Links help us connect our website to the rest of the World Wide Web.
+
+The `a` element stands for "anchor" but you can think of it as meaning "action" if that's easier to remember. Clicking a link takes you to another web page.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="link-attribute">Link Attribute</h2>
+
+<p>We tell the link where to go when it’s clicked using <code>href</code>.</p>
+
+<p>Find your opening <code>&lt;a&gt;</code> tag. Add in the <code>href</code> and link.</p>
+
+<pre><code>&lt;a href="http://en.wikipedia.org/wiki/Alpaca"&gt;Wikipedia&lt;/a&gt;
+</code></pre>
+
+<p>The only part we added was: </p>
+
+<pre><code>href="http://en.wikipedia.org/wiki/Alpaca"
+</code></pre>
+
+
+<aside class="notes">
+
+The attribute `href` stands for "hyperlink reference" which is just a fancy way of saying "website address".
+
+The `href` attribute is what we use to tell a link where it should link to.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="image-tags">Image Tags</h2>
+
+<p>Add an <code>img</code> tag to the very bottom of your code:</p>
+
+<pre><code>&lt;img src="#" height="100"&gt;
+</code></pre>
+
+<p><strong><code>src</code> stands for “source”</strong><br /><br />
+Replace the <code>#</code> with a link to an image online.</p>
+
+<p><strong><code>height</code> is the height of the image</strong><br /><br />
+This is optional, it is the height in pixels.  </p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="image-source">Image Source</h2>
+
+<p>Find an image online, and copy the link to it.</p>
+
+<p>Replace the <code>#</code> as the <code>src</code> value, using paste:</p>
+
+<pre><code>&lt;img src="http://place.com/photo.jpg" height="100"&gt;
+</code></pre>
+
+<p>Find and add at least 2 more images.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="final-result">Final Result</h2>
+
+<p>Your own output window should now look like this:</p>
+
+<div style="height:570px" data-height="570" data-theme-id="0" data-slug-hash="gbyXgo" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/gbyXgo/">gbyXgo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</div>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+<aside class="notes">
+
+If your own page doesn't look like the example, check that all your tags are correct!
+
+Remember most tags come in pairs:
+
+    <h1> </h1>
+
+    <h2> </h2>
+
+    <p> </p>
+
+    <a href="#"> </a>
+
+But images only need one tag:<br>
+  
+    <img src="#">
+
+</aside>
+
+</section>
+
+
+
+
+
+		</div>
+
+	</div><!-- .reveal -->
+
+
+
+
+	<div class="sidenotes">
+		<div class="content">
+			<!-- display notes here using js -->
+			<p>Loading...</p>
+		</div>
+	</div>
+
+</div><!-- .slideshow -->
+		
+		
+			
+		<div class="page-content">
+
+
+
+
+		</div>
+
+
+
+		<script src="/digital-media/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/digital-media/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/digital-media/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/digital-media/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>
