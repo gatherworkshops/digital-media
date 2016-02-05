@@ -30,8 +30,8 @@
   font-family: 'LunchBox';
   font-weight: bold;
   font-style: normal;
-  src: url("/programming/theme/assets/fonts/2ACF7E_0_0.eot");
-  src: url("/programming/theme/assets/fonts/2ACF7E_0_0.eot?#iefix") format("embedded-opentype"), url("/programming/theme/assets/fonts/2ACF7E_0_0.woff") format("woff"), url("/programming/theme/assets/fonts/2ACF7E_0_0.ttf") format("truetype"), url("/programming/theme/assets/fonts/2ACF7E_0_0.svg#wf") format("svg"); }
+  src: url("/digital-media/theme/assets/fonts/2ACF7E_0_0.eot");
+  src: url("/digital-media/theme/assets/fonts/2ACF7E_0_0.eot?#iefix") format("embedded-opentype"), url("/digital-media/theme/assets/fonts/2ACF7E_0_0.woff") format("woff"), url("/digital-media/theme/assets/fonts/2ACF7E_0_0.ttf") format("truetype"), url("/digital-media/theme/assets/fonts/2ACF7E_0_0.svg#wf") format("svg"); }
 .container > .navbar-header,
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
@@ -191,7 +191,7 @@ ul {
   background-size: 200px, auto;
   background-position: 0px 0px;
   background-repeat: repeat;
-  background-image: url(/programming/media/images/theme/theme-tile.svg), linear-gradient(to bottom, #2c4611 0px, #609825 100%);
+  background-image: url(/digital-media/media/images/theme/theme-tile.svg), linear-gradient(to bottom, #2c4611 0px, #609825 100%);
   width: 100%;
   text-align: center;
   font-size: 2.4rem;
@@ -296,7 +296,7 @@ body.chapter {
   background-size: 1200px, auto;
   background-position: 0px 0px;
   background-repeat: repeat;
-  background-image: url(/programming/media/images/theme/theme-tile.svg), linear-gradient(to bottom, #466f1b 0px, #7ac12f 100%); }
+  background-image: url(/digital-media/media/images/theme/theme-tile.svg), linear-gradient(to bottom, #466f1b 0px, #7ac12f 100%); }
   .feedback h2 {
     font-size: 6rem;
     margin: 0;

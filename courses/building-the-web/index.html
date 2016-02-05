@@ -1,0 +1,51 @@
+---
+layout: course
+title: Building the Web
+course: building-the-web
+
+heading: Building the Web
+tagline: Design and code a one-page website
+
+chapters:
+
+    - name: introduction
+      subtitle: Intro
+      title: Introduction
+
+    - name: html-basics
+      subtitle: Chapter One
+      title: Coding Content
+
+    - name: css-basics
+      subtitle: Chapter Two
+      title: Styley Design
+
+    - name: building-layouts
+      subtitle: Chapter Three
+      title: Building Layouts
+
+    - name: gallery
+      subtitle: Chapter Four
+      title: Photo Album
+
+    - name: videos
+      subtitle: Chapter Five
+      title: YouTube Videos
+
+    - name: menu-bar
+      subtitle: Chapter Six
+      title: Menu Bar
+
+---
+
+<div class="row">
+
+    {% for chapter in page.chapters %}
+
+        {% include chapter-tile.html %}
+
+    {% endfor %}
+
+</div>
+
+
