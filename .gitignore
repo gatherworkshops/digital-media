@@ -1,0 +1,7 @@
+.jekyll-metadata
+
+.sass-cache
+
+*.sublime-project
+
+*.sublime-workspace
