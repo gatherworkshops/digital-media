@@ -56,14 +56,19 @@ slides:
 
         ## Headings
 
-        Find "Otters" on the first line and make it a heading.
+        Add heading tags before and after "Otters" on the first line.
 
         ```html
         <h1>Otters</h1>
         ```
+        {:.big-code}
 
         `<h1>` says "start the heading here"
         `</h1>` says "end the heading here"
+
+        Your "Otters" heading should now be big and bold.
+        {:.checkpoint}
+
 
       notes: |
 
@@ -84,6 +89,7 @@ slides:
         ```html
         <h2>Diet</h2>
         ```
+        {:.big-code}
 
         `h1` is the biggest heading
         `h2` is the second biggest heading
@@ -128,11 +134,16 @@ slides:
 
     - content: |
 
-        Add a new subheading at the bottom called images
+        ## Create a new subheading
+
+        At the bottom of your code, add a new subheading called "Images"
 
         ```html
         <h2>Images</h2>
         ```
+        {:.big-code}
+
+        We will add a series of images below this heading.
 
 
     - content: |
@@ -144,6 +155,7 @@ slides:
         ```html
         <img src="#" height="100">
         ```
+        {:.big-code}
 
         **`src` stands for "source"**
         Replace the `#` with a link to an image online.
@@ -163,6 +175,7 @@ slides:
         ```html
         <img src="http://place.com/photo.jpg" height="100">
         ```
+        {:.big-code}
 
         Find and add at least 2 more images.
 
@@ -175,6 +188,7 @@ slides:
         <script async src="//assets.codepen.io/assets/embed/ei.js"></script> 
 
         Your own output should now look something like this.
+        {:.checkpoint}
 
 
       notes: |
