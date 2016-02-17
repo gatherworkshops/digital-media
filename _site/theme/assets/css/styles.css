@@ -253,16 +253,19 @@ ul {
 body.course-page ol.chapter-list {
   list-style-type: none; }
   body.course-page ol.chapter-list li {
-    margin: 15px 0; }
+    margin: 20px 0; }
     body.course-page ol.chapter-list li a {
       display: flex;
       align-items: stretch;
       background: rgba(255, 255, 255, 0.7);
       border: 1px solid white;
       border-radius: 3px;
-      overflow: hidden; }
+      overflow: hidden;
+      text-decoration: none; }
     body.course-page ol.chapter-list li a:hover {
       background: rgba(255, 255, 255, 0.9); }
+    body.course-page ol.chapter-list li h2.title {
+      margin: 0; }
     body.course-page ol.chapter-list li .chapter-info {
       padding: 10px; }
 
