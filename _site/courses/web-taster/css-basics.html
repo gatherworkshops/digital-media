@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Introduction</title>
+        <title>Styling Content</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- google translate - language identifier -->
@@ -45,7 +45,7 @@
     <!-- branding - always visible. links to home page -->
     <a class="navbar-brand" href="/digital-media/">
         <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
-        Digital Media | Introduction 
+        Digital Media | Styling Content 
     </a>
 
 
@@ -96,17 +96,13 @@
 
 <p><img src="/digital-media/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
 
-<h1 id="web-development-taster">Web Development Taster</h1>
-<p><em>Building Websites with HTML &amp; CSS</em></p>
-
-<p> </p>
-
-<p>tiny.cc/webtaster </p>
+<h1 id="styley-design">Styley Design</h1>
+<p><em>Making things pretty with CSS</em></p>
 
 
 <aside class="notes">
 
-Welcome to the Gather Workshops Web Development taster workshop.
+:)
 
 </aside>
 
@@ -123,14 +119,308 @@ Welcome to the Gather Workshops Web Development taster workshop.
 	>
 		
 
-<h2 id="why-code">Why Code?</h2>
+<h2 id="naming-things">Naming Things</h2>
 
-<ul>
-  <li>Valuable skill in every industry</li>
-  <li>Not about being a programmer</li>
-  <li>Opportunity for growth</li>
-  <li>Structured thinking</li>
-  <li>Academic tech pathway</li>
+<p>Find the <code>h1</code> and add the class <code>pageHeading</code></p>
+
+<pre class="big-code"><code class="language-html">&lt;h1 class="pageHeading"&gt;Otters&lt;/h1&gt;
+</code></pre>
+
+<p>We can now design the heading using its class name</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="design-by-code">Design by Code</h2>
+
+<p>SCREENSHOT</p>
+
+<p>Open the CSS panel. </p>
+
+<p>Design code is written in a separate place from the HTML content.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="writing-a-rule">Writing a Rule</h2>
+
+<pre class="big-code"><code class="language-css">.pageHeading {
+  color: red;
+}
+</code></pre>
+
+<p>We create one design rule for each class name we make up.</p>
+
+<p class="checkpoint">Your page heading should now be red.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="font-options">Font Options</h2>
+
+<pre class="big-code" data-line="1-2, 5"><code class="language-css">.pageHeading {
+  color: red;
+  font-family: Comic Sans MS;
+  font-size: 50px;
+}
+</code></pre>
+
+<p>Many lines of design can be added to a single rule.</p>
+
+<p class="checkpoint">Your page heading should now be large and Comic Sans.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="text-design-options">Text Design Options</h2>
+
+<pre data-line="1-4, 7"><code class="language-css">.pageHeading {
+  color: red;
+  font-family: Comic Sans MS;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+}
+</code></pre>
+
+<p>You can also use CSS to align and decorate your text.</p>
+
+<p class="checkpoint">Your heading should be centered with a drop shadow.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="identify-the-tagline">Identify the Tagline</h2>
+
+<pre class="big-code"><code class="language-html">&lt;p class="tagline"&gt;
+They're otterly adorable.
+&lt;/p&gt;
+</code></pre>
+
+<p>Follow the same process to design the tagline under your heading.</p>
+
+<p class="checkpoint">Find the tagline and add a class.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="create-a-matching-design-rule">Create a matching design rule</h2>
+
+<pre class="big-code"><code class="language-css">.tagline {
+  color: purple;
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+</code></pre>
+
+<p>In your CSS panel, create a new rule for the tagline.</p>
+
+<p class="checkpoint">Your tagline should be big, bold, purple and Comic Sans.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="challenge-design-your-subheadings">Challenge: Design your Subheadings</h2>
+
+<p>Make a new design rule called <code>subheading</code> <br />
+and apply it to all three subheadings.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="styling-based-on-element-type">Styling based on Element Type</h2>
+
+<pre class="big-code"><code class="language-css">p {
+  color: darkblue;
+  font-size: 16px;
+  line-height: 150%;
+}
+</code></pre>
+
+<p>We can style all paragraphs at the same time.</p>
+
+<p>Notice there is no dot in front of the rule name<br />
+when styling elements by their tag name!</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="styling-all-images">Styling all Images</h2>
+
+<pre class="big-code"><code class="language-css">img {
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  box-shadow: 5px 5px 5px black;
+}
+</code></pre>
+
+<p>We can use the same approach to design all images at once.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="stuff-we-covered">Stuff We Covered</h2>
+
+<ul class="flex-list">
+  <li><strong>Rule Structure</strong><br />
+A design rule is made up of a target and a bunch of lines of design.</li>
+  <li><strong>Class Styles</strong><br />
+A design rule can be applied to specific elements using a class name</li>
+  <li><strong>Element Styles</strong><br />
+A design rule can be applied to all elements of one kind by the element name</li>
 </ul>
 
 
@@ -151,161 +441,13 @@ Welcome to the Gather Workshops Web Development taster workshop.
 	>
 		
 
-<h2 id="a-web-page-is-made-of-three-main-languages">A web page is made of three main languages</h2>
-
-<p><img src="assets/images/html_css_js.png" alt="Venn diagram of HTML, CSS and JS all overlapping" /></p>
-
-
-<aside class="notes">
-
-Websites are made of many languages, but your most basic web page, what you see in your browser, is made up of three programming languages.
-
-That's three different types of code, each with their own rules.
-
-They all work together to display what you see on the screen.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h3 id="html-is-the-markup-language"><strong>HTML</strong> is the markup language</h3>
-
-<p><img src="assets/images/google_html.png" alt="Screenshot of Google with only HTML enabled" /></p>
-
-
-<aside class="notes">
-
-HTML is used to define the content of a web page: the words, the pictures, the links.
-
-It does not define any sizes, colours or layout.
-
-HTML stand for HyperText Markup Language.
-
-This is a picture of what Google looks like when you see only the HTML - no CSS or Javascript.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h3 id="css-is-the-style-sheet-language"><strong>CSS</strong> is the style sheet language</h3>
-
-<p><img src="assets/images/google_html_css.png" alt="Screenshot of Google with both HTML and CSS enabled" /></p>
-
-
-<aside class="notes">
-
-CSS is used to define the appearance of a web page: the colours, the sizes, the layout.
-
-It can be thought of as the design language.
-
-It tells our web browser how to display the HTML.
-
-CSS stands for Cascading Style Sheets.
-
-This is a picture of what Google looks like when you combine the HTML and CSS.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h3 id="javascript-is-the-programming-language"><strong>JavaScript</strong> is the programming language</h3>
-
-<p><img src="assets/images/google_html_css_js.png" alt="Screenshot of Google with all of HTML, CSS, JS enabled" /></p>
-
-
-<aside class="notes">
-
-JavaScript is used to define any interactivity on a web page: dropdowns, popups, anything that changes after the page is first loaded.
-
-It can be thought of as the interaction language.
-
-JavaScript is often known as JS for short, and is actually quite different from Java, which is another programming laguage with a similar name. Tricky!
-
-This is a picture of what Google looks like when you see all the HTML, CSS and JS working together.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h3 id="workshop-mission">Workshop Mission:</h3>
-
-<h1 id="html--css">HTML &amp; CSS</h1>
-
-
-<aside class="notes">
-
-In this workshop we are just going to be covering HTML and CSS.
-
-We're going to start by playing with some small pieces of code to get the hang of it.
-
-After that we will get right on to building our own individual websites.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
 <p><img src="/digital-media/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
 
-<h2 id="intro-complete">Intro: Complete!</h2>
+<h2 id="styley-design-complete">Styley Design: Complete!</h2>
 
-<p>Great, now it’s time to start coding…</p>
+<p>Great, now a wee bit about layout…</p>
 
-<p><a href="html-basics.html">Take me to the next chapter!</a></p>
+<p><a href="layout-basics.html">Take me to the next chapter!</a></p>
 
 
 <aside class="notes">

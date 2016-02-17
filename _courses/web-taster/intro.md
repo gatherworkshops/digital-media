@@ -1,13 +1,13 @@
 ---
 layout: chapter
-title: Coding Content
+title: Introduction
 slides:
 
   - class: title-slide
 
     content: |
 
-      ![Gather Workshops Logo](/Building-the-Web/slideshow/images/gw_logo_header.png)
+      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
 
       # Web Development Taster
       _Building Websites with HTML & CSS_
@@ -36,7 +36,7 @@ slides:
 
       ## A web page is made of three main languages
 
-      ![Venn diagram of HTML, CSS and JS all overlapping](/Building-the-Web/slideshow/images/html_css_js.png)
+      ![Venn diagram of HTML, CSS and JS all overlapping](assets/images/html_css_js.png)
 
 
     notes: |
@@ -52,7 +52,7 @@ slides:
 
       ### **HTML** is the markup language
 
-      ![Screenshot of Google with only HTML enabled](/Building-the-Web/slideshow/images/google_html.png)
+      ![Screenshot of Google with only HTML enabled](assets/images/google_html.png)
 
 
     notes: |
@@ -70,7 +70,7 @@ slides:
 
       ### **CSS** is the style sheet language
 
-      ![Screenshot of Google with both HTML and CSS enabled](/Building-the-Web/slideshow/images/google_html_css.png)
+      ![Screenshot of Google with both HTML and CSS enabled](assets/images/google_html_css.png)
 
     notes: |
 
@@ -89,7 +89,7 @@ slides:
 
       ### **JavaScript** is the programming language
 
-      ![Screenshot of Google with all of HTML, CSS, JS enabled](/Building-the-Web/slideshow/images/google_html_css_js.png)
+      ![Screenshot of Google with all of HTML, CSS, JS enabled](assets/images/google_html_css_js.png)
 
     notes: |
 
@@ -105,6 +105,7 @@ slides:
   - content: |
 
       ### Workshop Mission:
+
       # HTML & CSS
 
     notes: |
@@ -114,6 +115,22 @@ slides:
       We're going to start by playing with some small pieces of code to get the hang of it.
 
       After that we will get right on to building our own individual websites.
+
+
+  - content: |
+
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
+
+      ## Intro: Complete!
+
+      Great, now it's time to start coding...
+
+      [Take me to the next chapter!](html-basics.html)
+
+
+    notes: |
+
+      Great! Now that we know the basics, let's get started on our own projects.
 
 ---
 
