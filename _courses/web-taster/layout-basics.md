@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Styling Content
+title: Tidy Layouts
 slides:
 
     - class: title-slide
