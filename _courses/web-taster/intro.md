@@ -119,6 +119,15 @@ slides:
 
   - content: |
 
+      ## What We're Making
+
+      <p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="yerRvR" data-default-tab="result" data-user="gatherworkshops" class='codepen'>See the Pen <a href='http://codepen.io/gatherworkshops/pen/yerRvR/'>Otter Page Layout Demo</a> by Gather Workshops (<a href='http://codepen.io/gatherworkshops'>@gatherworkshops</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script> 
+
+      We'll use basic-level HTML and CSS to create this masterpiece!
+
+  - content: |
+
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
       ## Intro: Complete!
