@@ -119,6 +119,33 @@
 	>
 		
 
+<h2 id="otter-page-layout-demo">Otter Page Layout Demo</h2>
+
+<p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="yerRvR" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/yerRvR/">Otter Challenge Layout Demo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>In this chapter we’ll use both HTML and CSS to add some structure.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="everything-is-boxes">Everything is Boxes</h2>
+
 <p>Layouts are made entirely of boxes</p>
 
 
@@ -139,12 +166,19 @@
 	>
 		
 
-<p>Our whole page is already wrapped up in a box with the type ‘html’ which we can style</p>
+<h2 id="the-whole-page-box">The “Whole Page” Box</h2>
 
-<pre><code class="language-css">html {
-  background: url(blah.jpg);
+<p>Our whole page comes wrapped up in a box by default. </p>
+
+<pre class="big-code"><code class="language-css">html {
+  background-color: silver;
 }
 </code></pre>
+
+<p>The element which wraps around your whole <br />
+page is called… <code>html</code>! And we can style it!</p>
+
+<p class="checkpoint">Your background should turn grey.</p>
 
 
 <aside class="notes">
@@ -163,6 +197,69 @@
 	
 	>
 		
+
+<h2 id="background-images">Background Images</h2>
+
+<pre class="big-code" data-line="1-2, 4"><code class="language-css">html {
+  background-color: silver;
+  background-image: url(http://tiny.cc/otter-pic);
+}
+</code></pre>
+
+<p>You can also add an image as a background.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="sizing-a-background-image">Sizing a Background Image</h2>
+
+<pre class="big-code" data-line="1-3, 6"><code class="language-css">html {
+  background-color: silver;
+  background-image: url(http://tiny.cc/otter-pic);
+  background-size: cover;
+  background-attachment: fixed;
+}
+</code></pre>
+
+<p>A single image can be stretched to fit any screen size,<br />
+and can be “fixed” to keep it from scrolling.</p>
+
+<p class="checkpoint">Your image should fill the whole background.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="creating-your-own-boxes">Creating Your Own Boxes</h2>
 
 <p>We can also create our own boxes. </p>
 
@@ -186,6 +283,8 @@
 	>
 		
 
+<h2 id="find-the-start-and-end-points">Find the “Start” and “End” Points</h2>
+
 <p>To add our own box we need to identify the start and end</p>
 
 
@@ -206,15 +305,26 @@
 	>
 		
 
-<p>Then put the start and end in our code</p>
+<h2 id="add-section-tags">Add Section Tags</h2>
 
-<pre><code class="language-html">&lt;section&gt;
+<pre data-line="1-6, 8-10"><code class="language-html">&lt;h1 class="pageHeading"&gt;Otters&lt;/h1&gt;
 
-...
+&lt;p class="tagline"&gt;
+They're otterly adorable.
+&lt;/p&gt;
+
+&lt;section&gt;
+
+... subheadings and paragraphs and images here ...
 
 &lt;/section&gt;
 </code></pre>
 
+<p>Add in ‘section start’ and ‘section end’ tags <br />
+at the correct positions in your HTML code.</p>
+
+<p class="checkpoint">Nothing will change visually, yet…</p>
+
 
 <aside class="notes">
 
@@ -233,11 +343,15 @@
 	>
 		
 
-<p>But it looks like nothing. give it a name.</p>
+<h2 id="name-your-section">Name Your Section</h2>
 
-<pre><code class="language-html">&lt;section class="pageContent"&gt;
+<pre class="big-code"><code class="language-html">&lt;section class="pageContent"&gt;
 </code></pre>
 
+<p>By default, a <code>section</code> box looks like nothing. Sad face.</p>
+
+<p class="checkpoint">Give your section a class name so it can be styled.</p>
+
 
 <aside class="notes">
 
@@ -256,13 +370,18 @@
 	>
 		
 
-<p>Then create a basic style to test</p>
+<h2 id="create-a-new-design-rule">Create a New Design Rule</h2>
 
-<pre><code class="language-css">.pageContent {
+<pre class="big-code"><code class="language-css">.pageContent {
   background-color: white;
 }
 </code></pre>
 
+<p>Check that your section and rule are linked<br />
+by adding a background colour.</p>
+
+<p class="checkpoint">Your page content should now be inside a white box.</p>
+
 
 <aside class="notes">
 
@@ -281,9 +400,9 @@
 	>
 		
 
-<p>And if it works, add more style.</p>
+<h2 id="section-styles">Section Styles</h2>
 
-<pre><code class="language-css">.pageContent {
+<pre class="big-code" data-line="1-2, 6"><code class="language-css">.pageContent {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
@@ -291,6 +410,8 @@
 }
 </code></pre>
 
+<p>And if it works, add more style.</p>
+
 
 <aside class="notes">
 
@@ -309,9 +430,9 @@
 	>
 		
 
-<p>You can even center it on the page</p>
+<h2 id="centering-page-content">Centering Page Content</h2>
 
-<pre><code class="language-css">.pageContent {
+<pre class="big-code" data-line="1-5, 9"><code class="language-css">.pageContent {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
@@ -321,6 +442,71 @@
   margin-right: auto;
 }
 </code></pre>
+
+<p>You can center-align your whole box by giving it <br />
+a fixed width and using automatic margins.</p>
+
+<p class="checkpoint">Your section should sit in the middle of the page.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="vertical-alignment">Vertical Alignment</h2>
+
+<pre class="big-code" data-line="1-8, 10"><code class="language-css">.pageContent {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 500px;
+}
+</code></pre>
+
+<p>Last but not least, we can use vertical margins to <br />
+make more room for our background image to be seen.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="final-result">Final Result</h2>
+
+<p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="yerRvR" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/yerRvR/">Otter Page Layout Demo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p class="checkpoint">Your own output should now look something like this.</p>
 
 
 <aside class="notes">
@@ -345,6 +531,8 @@
 <h2 id="tidy-layouts-complete">Tidy Layouts: Complete!</h2>
 
 <p>And you’re done! Your first web page is complete.</p>
+
+<p><a href="">What did you think? Let us know!</a></p>
 
 
 <aside class="notes">
