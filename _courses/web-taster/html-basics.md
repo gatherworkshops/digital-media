@@ -50,7 +50,7 @@ slides:
         <p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="qbgBOx" data-default-tab="result" data-user="gatherworkshops" class='codepen'>See the Pen <a href='http://codepen.io/gatherworkshops/pen/qbgBOx/'>Otter Challenge Demo</a> by Gather Workshops (<a href='http://codepen.io/gatherworkshops'>@gatherworkshops</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
         <script async src="//assets.codepen.io/assets/embed/ei.js"></script> 
 
-        Using code, we will transform our output look like this.
+        Using code, we will transform our output to look like this.
 
     - content: |
 
@@ -177,7 +177,8 @@ slides:
         ```
         {:.big-code}
 
-        Find and add at least 2 more images.
+        Find and add at least two more images.
+        {:.checkpoint}
 
 
     - content: |
