@@ -10,7 +10,7 @@ slides:
         ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
 
         # Coding Content
-        _Using HTML code_
+        _Using HTML to construct page content_
 
       notes: |
 
@@ -91,11 +91,8 @@ slides:
         ```
         {:.big-code}
 
-        `h1` is the biggest heading
-        `h2` is the second biggest heading
-        `h3` is the third biggest heading
-
-        `h6` is the smallest heading
+        `h1` is the main page heading
+        `h2` is a subheading under an h1
 
 
       notes: |
