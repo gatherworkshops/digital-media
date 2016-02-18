@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Publishing
+title: Slideshow
 slides:
 
   - class: title-slide
@@ -74,10 +74,8 @@ slides:
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
-      ## Intro Stuff: Complete!
+      ## Slideshow: Complete!
 
-      Great, now it's time for the fun stuff...
-
-      [Take me to the next chapter!](publishing.html)
+      Well done! You now know the basics of using jQuery.
 
 ---

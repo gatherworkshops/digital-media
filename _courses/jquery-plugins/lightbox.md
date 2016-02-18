@@ -165,9 +165,9 @@ slides:
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
-      ## jQuery Basics: Complete!
+      ## Lightbox: Complete!
 
-      Great, now it's time to build our own...
+      Great, now for the next bit...
 
       [Take me to the next chapter!](slideshow.html)
 
