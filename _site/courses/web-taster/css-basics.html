@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Styling Content</title>
+        <title>Styley Design</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- google translate - language identifier -->
@@ -45,7 +45,7 @@
     <!-- branding - always visible. links to home page -->
     <a class="navbar-brand" href="/digital-media/">
         <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
-        Digital Media | Styling Content 
+        Digital Media | Styley Design 
     </a>
 
 
@@ -119,6 +119,31 @@
 	>
 		
 
+<h2 id="otter-page-design-demo">Otter Page Design Demo</h2>
+
+<p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="BjEOVj" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/BjEOVj/">Otter Challenge CSS Demo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>In this chapter we’ll use code to apply some really slick design.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
 <h2 id="naming-things">Naming Things</h2>
 
 <p>Find the <code>h1</code> and add the class <code>pageHeading</code></p>
@@ -146,13 +171,11 @@
 	>
 		
 
-<h2 id="design-by-code">Design by Code</h2>
+<h2 id="open-the-css-panel">Open the CSS Panel</h2>
 
-<p>SCREENSHOT</p>
+<p><img src="assets/images/codepen-css.png" alt="Screenshot of CodePen UI" /></p>
 
-<p>Open the CSS panel. </p>
-
-<p>Design code is written in a separate place from the HTML content.</p>
+<p>Design code is written in the CSS panel in CodePen.</p>
 
 
 <aside class="notes">
@@ -175,13 +198,14 @@
 <h2 id="writing-a-rule">Writing a Rule</h2>
 
 <pre class="big-code"><code class="language-css">.pageHeading {
-  color: red;
+  color: steelblue;
 }
 </code></pre>
 
-<p>We create one design rule for each class name we make up.</p>
+<p>We create one design rule for each class name we make up.<br />
+Make sure to check your spelling of “color”!</p>
 
-<p class="checkpoint">Your page heading should now be red.</p>
+<p class="checkpoint">Your page heading should now be a grey-blue colour.</p>
 
 
 <aside class="notes">
@@ -204,15 +228,15 @@
 <h2 id="font-options">Font Options</h2>
 
 <pre class="big-code" data-line="1-2, 5"><code class="language-css">.pageHeading {
-  color: red;
-  font-family: Comic Sans MS;
-  font-size: 50px;
+  color: steelblue;
+  font-family: Trebuchet MS;
+  font-size: 80px;
 }
 </code></pre>
 
 <p>Many lines of design can be added to a single rule.</p>
 
-<p class="checkpoint">Your page heading should now be large and Comic Sans.</p>
+<p class="checkpoint">Your heading should now be large and a plain font.</p>
 
 
 <aside class="notes">
@@ -234,10 +258,10 @@
 
 <h2 id="text-design-options">Text Design Options</h2>
 
-<pre data-line="1-4, 7"><code class="language-css">.pageHeading {
+<pre class="big-code" data-line="1-4, 7"><code class="language-css">.pageHeading {
   color: red;
-  font-family: Comic Sans MS;
-  font-size: 50px;
+  font-family: Trebuchet MS;
+  font-size: 80px;
   text-align: center;
   text-shadow: 3px 3px 3px black;
 }
@@ -274,7 +298,7 @@ They're otterly adorable.
 
 <p>Follow the same process to design the tagline under your heading.</p>
 
-<p class="checkpoint">Find the tagline and add a class.</p>
+<p class="checkpoint">Find the tagline paragraph and add a class name.</p>
 
 
 <aside class="notes">
@@ -327,10 +351,52 @@ They're otterly adorable.
 	>
 		
 
+<h2 id="spacing-around-elements">Spacing Around Elements</h2>
+
+<pre data-line="1-6, 8-11, 17"><code class="language-css">.pageHeading {
+  color: red;
+  font-family: Trebuchet MS;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+  margin-bottom: 0;
+}
+
+.tagline {
+  ...
+  margin-top: 0;
+}
+</code></pre>
+
+<p>Move your tagline closer to your page heading <br />
+by changing the margin on both elements.</p>
+
+<p class="checkpoint">Your tagline should be much closer to your page heading.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
 <h2 id="challenge-design-your-subheadings">Challenge: Design your Subheadings</h2>
 
 <p>Make a new design rule called <code>subheading</code> <br />
 and apply it to all three subheadings.</p>
+
+<p class="checkpoint">Base your subheading design on your page heading style.</p>
 
 
 <aside class="notes">
@@ -354,6 +420,7 @@ and apply it to all three subheadings.</p>
 
 <pre class="big-code"><code class="language-css">p {
   color: darkblue;
+  font-family: Verdana;
   font-size: 16px;
   line-height: 150%;
 }
@@ -385,6 +452,8 @@ when styling elements by their tag name!</p>
 <h2 id="styling-all-images">Styling all Images</h2>
 
 <pre class="big-code"><code class="language-css">img {
+  margin-right: 10px;
+  margin-bottom: 10px;
   border-style: solid;
   border-width: 5px;
   border-color: white;
@@ -393,6 +462,31 @@ when styling elements by their tag name!</p>
 </code></pre>
 
 <p>We can use the same approach to design all images at once.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="final-result">Final Result</h2>
+
+<p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="BjEOVj" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/BjEOVj/">Otter Challenge Demo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p class="checkpoint">Your own output should now look something like this.</p>
 
 
 <aside class="notes">

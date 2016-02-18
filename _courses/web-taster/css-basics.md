@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Styling Content
+title: Styley Design
 slides:
 
     - class: title-slide
@@ -16,6 +16,18 @@ slides:
       notes: |
 
         :)
+
+
+
+
+    - content: |
+
+        ## Otter Page Design Demo
+
+        <p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="BjEOVj" data-default-tab="result" data-user="gatherworkshops" class='codepen'>See the Pen <a href='http://codepen.io/gatherworkshops/pen/BjEOVj/'>Otter Challenge CSS Demo</a> by Gather Workshops (<a href='http://codepen.io/gatherworkshops'>@gatherworkshops</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script> 
+
+        In this chapter we'll use code to apply some really slick design.
 
 
 
@@ -37,14 +49,11 @@ slides:
 
     - content: |
 
-        ## Design by Code
+        ## Open the CSS Panel
 
-        SCREENSHOT
+        ![Screenshot of CodePen UI](assets/images/codepen-css.png)
         
-
-        Open the CSS panel. 
-
-        Design code is written in a separate place from the HTML content.
+        Design code is written in the CSS panel in CodePen.
 
 
 
@@ -54,14 +63,15 @@ slides:
 
         ```css
         .pageHeading {
-          color: red;
+          color: steelblue;
         }
         ```
         {:.big-code}
 
         We create one design rule for each class name we make up.
+        Make sure to check your spelling of "color"!
 
-        Your page heading should now be red.
+        Your page heading should now be a grey-blue colour.
         {:.checkpoint}
 
 
@@ -73,16 +83,16 @@ slides:
 
         ```css
         .pageHeading {
-          color: red;
-          font-family: Comic Sans MS;
-          font-size: 50px;
+          color: steelblue;
+          font-family: Trebuchet MS;
+          font-size: 80px;
         }
         ```
         {:.big-code data-line="1-2, 5" }
 
         Many lines of design can be added to a single rule.
 
-        Your page heading should now be large and Comic Sans.
+        Your heading should now be large and a plain font.
         {:.checkpoint}
 
 
@@ -95,20 +105,18 @@ slides:
         ```css
         .pageHeading {
           color: red;
-          font-family: Comic Sans MS;
-          font-size: 50px;
+          font-family: Trebuchet MS;
+          font-size: 80px;
           text-align: center;
           text-shadow: 3px 3px 3px black;
         }
         ```
-        {: data-line="1-4, 7" }
+        {:.big-code data-line="1-4, 7" }
 
         You can also use CSS to align and decorate your text.
 
         Your heading should be centered with a drop shadow.
         {:.checkpoint}
-
-
 
 
 
@@ -125,7 +133,7 @@ slides:
 
         Follow the same process to design the tagline under your heading.
 
-        Find the tagline and add a class.
+        Find the tagline paragraph and add a class name.
         {:.checkpoint} 
 
 
@@ -153,6 +161,34 @@ slides:
 
 
 
+    - content: |
+
+        ## Spacing Around Elements
+
+        ```css
+        .pageHeading {
+          color: red;
+          font-family: Trebuchet MS;
+          font-size: 80px;
+          text-align: center;
+          text-shadow: 3px 3px 3px black;
+          margin-bottom: 0;
+        }
+
+        .tagline {
+          ...
+          margin-top: 0;
+        }
+        ```
+        {:data-line="1-6, 8-11, 17" }
+
+        Move your tagline closer to your page heading 
+        by changing the margin on both elements.
+
+        Your tagline should be much closer to your page heading.
+        {:.checkpoint}
+
+
 
 
     - content: |
@@ -161,6 +197,9 @@ slides:
 
         Make a new design rule called `subheading` 
         and apply it to all three subheadings.
+
+        Base your subheading design on your page heading style.
+        {:.checkpoint}
 
 
 
@@ -171,6 +210,7 @@ slides:
         ```css
         p {
           color: darkblue;
+          font-family: Verdana;
           font-size: 16px;
           line-height: 150%;
         }
@@ -191,6 +231,8 @@ slides:
 
         ```css
         img {
+          margin-right: 10px;
+          margin-bottom: 10px;
           border-style: solid;
           border-width: 5px;
           border-color: white;
@@ -201,6 +243,17 @@ slides:
 
         We can use the same approach to design all images at once.
 
+
+
+    - content: |
+
+        ## Final Result
+
+        <p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="BjEOVj" data-default-tab="result" data-user="gatherworkshops" class='codepen'>See the Pen <a href='http://codepen.io/gatherworkshops/pen/BjEOVj/'>Otter Challenge Demo</a> by Gather Workshops (<a href='http://codepen.io/gatherworkshops'>@gatherworkshops</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script> 
+
+        Your own output should now look something like this.
+        {:.checkpoint}
 
 
 
