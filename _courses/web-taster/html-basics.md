@@ -136,10 +136,10 @@ slides:
 
         ## Create a new subheading
 
-        At the bottom of your code, add a new subheading called "Images"
+        At the bottom of your code, add a new subheading called "Photos"
 
         ```html
-        <h2>Images</h2>
+        <h2>Photos</h2>
         ```
         {:.big-code}
 
