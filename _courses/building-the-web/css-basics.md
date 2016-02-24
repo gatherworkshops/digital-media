@@ -1,12 +1,12 @@
 ---
 layout: chapter
-title: Coding Content
+title: Styley Design
 slides:
 
   - class: title-slide
     content: |
 
-      ![Gather Workshops Logo](/Building-the-Web/images/gw_logo.png)
+      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
 
       # Styley Design
 
@@ -14,19 +14,22 @@ slides:
 
 
   - content: |
+
+      ![Grumpy Cat](http://gathergather.co.nz/grumpy-cat.png){: width="300"}
+
       ## CSS With Grumpy Cat
 
       Open this link in a new tab: <a href="http://codepen.io/gatherworkshops/pen/yyrQpd?editors=110" target="_blank">Grumpy Cat Code</a>
 
-      Keep it open! We are going to be using CSS<br>
+      Keep it open! We are going to be using CSS
       to make it look way better.
 
   - content: |
       ## CodePen Editor
 
-      CodePen can show us both our HTML and our CSS:
+      ![Screenshot of CodePen UI](assets/images/codepen-css.png)
 
-      ![Screenshot of CodePen UI](/Building-the-Web/slides/workshop/htmlcssbasics/images/codepen-css.png)
+      CodePen can show us both our HTML and our CSS.
 
     notes: |
 
@@ -38,10 +41,11 @@ slides:
   - content: |
       ## Grumpy Cat Example
 
-      Next we will use code to make our output look something like this:
+      <p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="yyrQMr" data-default-tab="result" data-user="gatherworkshops" class='codepen'>See the Pen <a href='http://codepen.io/gatherworkshops/pen/yyrQMr/'>Otter Challenge Demo</a> by Gather Workshops (<a href='http://codepen.io/gatherworkshops'>@gatherworkshops</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-      <span class="codepen-embed title">Grumpy Cat Example</span>
-      <iframe class="codepen-embed" height="500" scrolling="yes" frameborder="0" src='http://s.codepen.io/gatherworkshops/fullembedgrid/yyrQMr'></iframe>
+      Next we will use code to make our output look something like this.
+
 
 
   - content: |
@@ -50,10 +54,13 @@ slides:
       To make our page look pretty, first we create a CSS class with a unique name.
 
       **In your CSS panel:**
-          
-          .profile-pic {
-            width: 200px;
-          }
+      
+      ```css 
+      .profile-pic {
+        width: 200px;
+      }
+      ```
+      {:.big-code}
 
       We just created a `class` called `profile-pic`.
 
@@ -74,11 +81,15 @@ slides:
 
       **Find this line your HTML panel:**
 
-          <img src="http://gathergather.co.nz/grumpy-cat.png">
+      ```html
+      <img src="http://gathergather.co.nz/grumpy-cat.png">
+      ```
 
       **And change it to:**
 
-          <img class="profile-pic" src="http://gathergather.co.nz/grumpy-cat.png">
+      ```html
+      <img class="profile-pic" src="http://gathergather.co.nz/grumpy-cat.png">
+      ```
 
       Cartoon Grumpy Cat should now be much smaller.
 
@@ -96,16 +107,20 @@ slides:
 
       **In your CSS panel, on a new line:**
 
-          .page-title {
-            font-family: "Comic Sans MS";
-            font-size: 50px;
-            text-align: center;
-            text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-          }
+      ```css
+      .page-title {
+        font-family: "Comic Sans MS";
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+      }
+      ```
 
-      **In your HTML, find the h1 and apply the class:**<br>
+      **In your HTML, find the h1 and apply the class:**
 
-          <h1 class="page-title">Grumpy Cat</h1>
+      ```html
+      <h1 class="page-title">Grumpy Cat</h1>
+      ```
 
     notes: |
 
@@ -127,6 +142,35 @@ slides:
       Pages often have one **header**, lots of **sections** and one **footer**.
 
 
+
+  - content: |
+
+      ## Stuff We Covered
+
+      - **Rule Structure**
+        A design rule is made up of a target and a bunch of lines of design.
+      - **Class Styles**
+        A design rule can be applied to specific elements using a class name
+      - **Element Styles**
+        A design rule can be applied to all elements of one kind by the element name
+      {:.flex-list}
+
+
+
+  - content: |
+
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
+
+      ## Styley Design: Complete!
+
+      Great, now let's get started on our own projects...
+
+      [Take me to the next chapter!](building-layouts.html)
+
+
+    notes: |
+
+      Great! Now that we know the basics, let's get started on our own projects.
 
 
 

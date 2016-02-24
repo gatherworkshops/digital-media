@@ -35,7 +35,7 @@ slides:
         ![Screenshot of CodePen UI](assets/images/codepen-html.png)
 
         CodePen shows us our code on the left,
-        and the output on the right:
+        and the output on the right.
 
       notes: |
 
@@ -48,10 +48,10 @@ slides:
 
         ## Alpaca Text Example
 
-        We will use code to make our output look like this:
+        <p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="gbyXgo" data-default-tab="result" data-user="gatherworkshops" class='codepen'>See the Pen <a href='http://codepen.io/gatherworkshops/pen/gbyXgo/'>Otter Challenge Demo</a> by Gather Workshops (<a href='http://codepen.io/gatherworkshops'>@gatherworkshops</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-        <span class="codepen-embed title">Alpaca Example</span>
-        <iframe class="codepen-embed" height="500" scrolling="yes" frameborder="0" src='http://s.codepen.io/gatherworkshops/fullembedgrid/gbyXgo'></iframe>
+        We will use code to make our output look like this.
 
 
     - content: |
@@ -63,6 +63,7 @@ slides:
         ```html
         <h1>Alpacas</h1>
         ```
+        {:.big-code}
 
         `<h1>` says "start the heading here"
         `</h1>` says "end the heading here"
@@ -86,6 +87,7 @@ slides:
         ```html
             <h2>Alpaca Hair</h2>
         ```
+        {:.big-code}
 
         `h1` is the biggest heading
         `h2` is the second biggest heading
@@ -107,13 +109,15 @@ slides:
 
         Now use `<p>` tags to split up your paragraphs.
 
-            <p>
-            An alpaca is a domesticated species of 
-            South American camelid. It resembles a 
-            small llama in appearance.
-            </p>
+        ```html
+        <p>
+        An alpaca is a domesticated species of 
+        South American camelid. It resembles a 
+        small llama in appearance.
+        </p>
+        ```
 
-        Put a `<p>` *before* each paragraph,<br> 
+        Put a `<p>` *before* each paragraph,
         and a `</p>` *after* each paragraph.
 
       notes: |
@@ -131,11 +135,17 @@ slides:
 
         Turn it into a link using `a` tags, like this:
 
-            <a>Wikipedia</a>
+        ```html
+        <a>Wikipedia</a>
+        ```
+        {:.big-code}
 
         Then add the `href` attribute to the opening tag.
 
-            <a href="#">Wikipedia</a>
+        ```html
+        <a href="#">Wikipedia</a>
+        ```
+        {:.big-code}
 
         This turns the link blue, but we need another step to make it clickable.
 
@@ -154,11 +164,14 @@ slides:
 
         Find your opening `<a>` tag. Add in the `href` and link.
 
-            <a href="http://en.wikipedia.org/wiki/Alpaca">Wikipedia</a>
+        ```html
+        <a href="http://en.wikipedia.org/wiki/Alpaca">Wikipedia</a>
+        ```
 
         The only part we added was: 
-
-            href="http://en.wikipedia.org/wiki/Alpaca"
+        ```html
+        href="http://en.wikipedia.org/wiki/Alpaca"
+        ```
 
       notes: |
 
@@ -174,7 +187,7 @@ slides:
         Add an `img` tag to the very bottom of your code:
 
         ```html
-            <img src="#" height="100">
+        <img src="#" height="100">
         ```
 
         **`src` stands for "source"**<br>
@@ -193,7 +206,7 @@ slides:
         Replace the `#` as the `src` value, using paste:
 
         ```html
-            <img src="http://place.com/photo.jpg" height="100">
+        <img src="http://place.com/photo.jpg" height="100">
         ```
 
         Find and add at least 2 more images.
@@ -228,5 +241,32 @@ slides:
             <img src="#">
 
 
+
+    - content: |
+
+        ## Stuff We Covered
+
+        - **Headings**
+          Biggest is h1, smallest is h6, and size is based on heading importance
+        - **Paragraphs**
+          Split our content up into manageable pieces.
+        - **Images**
+          Don't have a closing tag, and use the `src` attribute to define an image.
+        - **Links**
+          Use the `href` attribute to link to another page on the web.
+        {:.flex-list}
+
+
+
+
+    - content: |
+
+        ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
+
+        ## Coding Content: Complete!
+
+        Great, now it's time to do some design...
+
+        [Take me to the next chapter!](css-basics.html)
 
 ---

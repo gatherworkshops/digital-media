@@ -196,7 +196,7 @@ slides:
 
       # Who owns it all?
 
-      _Who owns the Internet?_<br>
+      _Who owns the Internet?_
       _And who owns the Web?_
 
 
@@ -215,14 +215,10 @@ slides:
   - content: |
 
       ## Who owns the Internet?
-
       - Nobody
-      - Lots of people
-
-      <br>
+      - Lots of people  
 
       ## Who owns the World Wide Web?
-
       - Content Creators
       - You!
 
@@ -235,6 +231,7 @@ slides:
       The web is a set of documents, so nobody can claim ownership of the web either.
 
       You still own your own contribution though, right? 
+
 
 
 
@@ -389,11 +386,7 @@ slides:
 
   - content: |
 
-      ### An ISP can charge extra to allow access
-
-      ### to your favourite website
-
-      <br>
+      ### An ISP can charge extra to allow access <br> to your favourite website
 
       e.g. Facebook, YouTube, Google
 
@@ -459,6 +452,18 @@ slides:
       What would you like to share? Have a think about it, because today you get to make a website about anything you like.
 
       Cats? Rugby? Surfing? Unicorns? Movies? Yourself? Anything goes. Have a think.
+
+
+
+  - content: |
+
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
+
+      ## Introduction: Complete!
+
+      Cool, the web is no longer a mystery! Now let's get coding...
+
+      [Take me to the next chapter!](html-basics.html)
   
 
 ---
