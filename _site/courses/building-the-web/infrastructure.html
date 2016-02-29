@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Styley Design</title>
+        <title>The Internet</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- google translate - language identifier -->
@@ -45,7 +45,7 @@
     <!-- branding - always visible. links to home page -->
     <a class="navbar-brand" href="/digital-media/">
         <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
-        Digital Media | Styley Design 
+        Digital Media | The Internet 
     </a>
 
 
@@ -96,7 +96,7 @@
 
 <p><img src="/digital-media/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
 
-<h1 id="styley-design">Styley Design</h1>
+<h1 id="stacked-layouts">Stacked Layouts</h1>
 
 <p><em>Designing your content</em></p>
 
@@ -118,210 +118,19 @@
 	>
 		
 
-<p><img src="http://gathergather.co.nz/grumpy-cat.png" alt="Grumpy Cat" width="300" /></p>
+<h1 id="what-is-the-internet">What is the Internet?</h1>
 
-<h2 id="css-with-grumpy-cat">CSS With Grumpy Cat</h2>
-
-<p>Open this link in a new tab: <a href="http://codepen.io/gatherworkshops/pen/yyrQpd?editors=110" target="_blank">Grumpy Cat Code</a></p>
-
-<p>Keep it open! We are going to be using CSS<br />
-to make it look way better.</p>
+<p>If a 5-year-old asked you “What is the Internet?”<br />
+how would you answer?</p>
 
 
 <aside class="notes">
 
-</aside>
+Before we start coding, let's have a think about what the Internet actually is.
 
-</section>
+How would you explain it to a younger friend or family member?
 
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="codepen-editor">CodePen Editor</h2>
-
-<p><img src="assets/images/codepen-css.png" alt="Screenshot of CodePen UI" /></p>
-
-<p>CodePen can show us both our HTML and our CSS.</p>
-
-
-<aside class="notes">
-
-The grey text at the top is a comment. It is not visible in the output.
-
-The white text is code. It is visible in the output.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="grumpy-cat-example">Grumpy Cat Example</h2>
-
-<p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="yyrQMr" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/yyrQMr/">Otter Challenge Demo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-<p>Next we will use code to make our output look something like this.</p>
-
-
-<aside class="notes">
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="classes">Classes</h2>
-
-<p>To make our page look pretty, first we create a CSS class with a unique name.</p>
-
-<p><strong>In your CSS panel:</strong></p>
-
-<pre class="big-code"><code class="language-css">.profile-pic {
-  width: 200px;
-}
-</code></pre>
-
-<p>We just created a <code>class</code> called <code>profile-pic</code>.</p>
-
-<p>This class can change the width of something on our page to be <code>200px</code>.</p>
-
-
-<aside class="notes">
-
-We use CSS to write code about how objects on our page should look.
-
-This code says that any HTML element with the class `profile-pic` should be displayed as 200 pixels wide.
-
-One little trick - don't forget the dot in front of the class name in CSS!
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="applying-classes">Applying Classes</h2>
-
-<p>Find the first image tag in the HTML panel,<br /> and apply the profile-pic class to it.</p>
-
-<p><strong>Find this line your HTML panel:</strong></p>
-
-<pre><code class="language-html">&lt;img src="http://gathergather.co.nz/grumpy-cat.png"&gt;
-</code></pre>
-
-<p><strong>And change it to:</strong></p>
-
-<pre><code class="language-html">&lt;img class="profile-pic" src="http://gathergather.co.nz/grumpy-cat.png"&gt;
-</code></pre>
-
-<p>Cartoon Grumpy Cat should now be much smaller.</p>
-
-
-<aside class="notes">
-We can apply a CSS class to any HTML element. We can also apply the *same* class to *many* different elements on the page.
-
-The class name you gave your element in the HTML and the class name you use in your CSS need to match exactly. 
-
-There is no dot before the class name in our HTML but we _do_ need that dot in our CSS code.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="font-styles">Font Styles</h2>
-
-<p>There are many font options in CSS. We can create another class to try them out.</p>
-
-<p><strong>In your CSS panel, on a new line:</strong></p>
-
-<pre><code class="language-css">.page-title {
-  font-family: "Comic Sans MS";
-  font-size: 50px;
-  text-align: center;
-  text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-}
-</code></pre>
-
-<p><strong>In your HTML, find the h1 and apply the class:</strong></p>
-
-<pre><code class="language-html">&lt;h1 class="page-title"&gt;Grumpy Cat&lt;/h1&gt;
-</code></pre>
-
-
-<aside class="notes">
-
-:)
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="block-elements">Block Elements</h2>
-
-<p>Block elements are the “building blocks” of our website. </p>
-
-<p>Block elements are used for layout, and can contain other elements.</p>
-
-
-<aside class="notes">
-`header` might contain our h1 and menu bar<br>
-`section` could be an intro, gallery, or general info<br>
-`footer` might contain copyright and contact info
-
-Pages often have one **header**, lots of **sections** and one **footer**.
+Could you exlain in just one sentence?
 
 </aside>
 
@@ -338,19 +147,164 @@ Pages often have one **header**, lots of **sections** and one **footer**.
 	>
 		
 
-<h2 id="stuff-we-covered">Stuff We Covered</h2>
+<h2 id="internet-brainstorm">Internet Brainstorm</h2>
+
+<p>What do we use the Internet for?</p>
+
+<p>How do we access the Internet?</p>
+
+<p>Who pays for the Internet, and who gets paid?</p>
+
+
+<aside class="notes">
+
+Maybe it would be easier to describe the Internet in smaller pieces. Have a go at answering these questions:
+
+- What do we use the Internet for?
+
+- How do we access the Internet?
+
+- Who pays for the Internet, and who gets paid?
+
+See if you can come up with at least one answer for each of the questions above.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h1 id="the-internet-brvsbr-the-world-wide-web">The Internet <br />vs<br /> The World Wide Web</h1>
+
+<p>What’s the difference?</p>
+
+
+<aside class="notes">
+
+So, the next challenge is this: of the words you came up with, which ones relate to the Internet, and which ones relate to the World Wide Web?
+
+We quite often use the phrases _The Web_ and _The Internet_ to mean the same thing, but you may be surprised to learn that they are in fact quite different.
+
+Any idea what the difference might be?
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
 
 <ul class="flex-list">
-  <li><strong>Rule Structure</strong><br />
-A design rule is made up of a target and a bunch of lines of design.</li>
-  <li><strong>Class Styles</strong><br />
-A design rule can be applied to specific elements using a class name</li>
-  <li><strong>Element Styles</strong><br />
-A design rule can be applied to all elements of one kind by the element name</li>
+  <li>
+    <h3 id="the-internet">The Internet</h3>
+    <p>A global system of interconnected computer networks.<br />
+<strong>The Internet is a network</strong><br />
+<strong>of computer networks.</strong></p>
+  </li>
+  <li>
+    <h3 id="world-wide-web">World Wide Web</h3>
+    <p>A system of interlinked documents, accessed via the Internet.<br />
+<strong>The Web is a network</strong> <br />
+<strong>of documents and media.</strong></p>
+  </li>
 </ul>
 
 
 <aside class="notes">
+
+The Internet is what we use to access the World Wide Web.
+
+The World Wide Web is the content that we consume.
+
+When we create a website on the World Wide Web, we are contributing to the set of _interlinked documents_.
+
+When we access the Internet, we are making use of a worldwide network of _interlinked computers_.
+
+Can you identify which of your Internet-related words from earlier apply to the Internet, and which ones really apply to the World Wide Web?
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="loading-a-webpage">Loading a Webpage</h2>
+
+<p><img src="assets/images/diagram-http.png" alt="Diagram of how a web page is served" /></p>
+
+
+<aside class="notes">
+
+So how does our computer load a web page over the Internet?
+
+First of all the client, your computer, sends a URL request like "youtube.com" to your ISP (eg. Orcon, Spark or Vodafone).
+
+Your ISP sends a request to the Domain Name Server, which turns the URL into an IP Address.
+
+Using the IP Address, your ISP can find the actual server where the web page files are stored, and send them back to your computer. 
+
+All these separate parts are owned by different people.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="kinda-like-telephones">Kinda like telephones!</h2>
+
+<p>The Internet can be compared to the telephone system:</p>
+
+<ul>
+  <li>Nobody owns the whole thing</li>
+  <li>Companies do control individual parts</li>
+  <li>Telephone numbers and IP addresses are unique</li>
+  <li>There is no central control room</li>
+</ul>
+
+
+<aside class="notes">
+
+Telephone numbers, IP addresses and street addresses are all unique locations across the whole planet.
+
+If one person's telephone stops working, or one city's phone system stops working, or even a whole country, phones will continue to work.
+
+The Internet is the same. It is _decentralised_ which means that it has no central control room and it can still function as a whole if some parts stop working.
 
 </aside>
 
@@ -369,11 +323,11 @@ A design rule can be applied to all elements of one kind by the element name</li
 
 <p><img src="/digital-media/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
 
-<h2 id="styley-design-complete">Styley Design: Complete!</h2>
+<h2 id="stacked-layouts-complete">Stacked Layouts: Complete!</h2>
 
-<p>Great, now let’s get started on our own projects…</p>
+<p>Great, now let’s explore where we’ll build our own site…</p>
 
-<p><a href="layout-basics.html">Take me to the next chapter!</a></p>
+<p><a href="infrastructure.html">Take me to the next chapter!</a></p>
 
 
 <aside class="notes">

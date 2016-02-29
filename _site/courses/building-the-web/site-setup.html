@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Building Layouts</title>
+        <title>Site Setup</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- google translate - language identifier -->
@@ -45,7 +45,7 @@
     <!-- branding - always visible. links to home page -->
     <a class="navbar-brand" href="/digital-media/">
         <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
-        Digital Media | Building Layouts 
+        Digital Media | Site Setup 
     </a>
 
 
@@ -692,7 +692,7 @@ We still use `background-image` in the same way, but we also add `background-siz
 <iframe height="450" scrolling="no" src="//codepen.io/gatherworkshops/embed/rVzZRp/?height=450&amp;theme-id=16068&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/gatherworkshops/pen/rVzZRp/">rVzZRp</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.
 </iframe>
 
-<p><em>Take a few minutes to make your background</em><br /><br />
+<p><em>Take a few minutes to make your background</em><br />
 <em>look how you want it.</em></p>
 
 
@@ -705,271 +705,6 @@ You might choose to use a design which is plain or busy, dull or colourful, anim
 Have a think about the theme of your site and what sort of background would suit best.
 
 The links on this slide have a variety of different image styles you could use.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="header">Header</h2>
-
-<p><img src="assets/images/layout-header.svg" alt="The header goes at the top of the page. It will be a plain box containing a heading." /></p>
-
-<p><em>Adding a header to your page</em></p>
-
-
-<aside class="notes">
-Our first layout element will be a header.
-
-The header goes at the top of the page and generally contains the name of the website.
-
-It might also contain a "tagline" briefly explaining what the site is for.
-
-Our header will be a plain box containing a simple heading.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="header-content">Header Content</h2>
-
-<p>Add to <code>index.html</code>, between the <code>body</code> tags:</p>
-
-<pre data-line="1-2,6"><code class="language-html">&lt;body&gt;
-  &lt;!-- My HTML Code Goes Here--&gt;
-  &lt;header class="page-header"&gt;
-      &lt;h1&gt;My Awesome Website&lt;/h1&gt;
-  &lt;/header&gt;
-&lt;/body&gt;
-</code></pre>
-
-<p>You should now see a heading on your page.<br />
-The header box will be invisible until you add CSS.</p>
-
-
-<aside class="notes">
-
-The `header` element has no styles already associated with it.
-
-It is pretty much just a see-through box which you can use to contain anything you want.
-
-Using a header allows us to group together all the elements which are part of the header, for easy styling using CSS.
-
-Add the header code to the `body` of your page.
-
-You should change the heading text to suit your site!
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="header-design">Header Design</h2>
-
-<p>Add to your <code>style.css</code>:</p>
-
-<pre><code class="language-css">.page-header {
-    background-color: #222222;
-    color: #FFFFFF;
-    padding: 20px;
-}
-</code></pre>
-
-<p>This code will give your header a dark grey background,<br />
-white text and 20px of spacing around the inside edge.</p>
-
-
-<aside class="notes">
-Our sample styles show how you can add a background colour to your header, change the text colour, and get the stuff inside the header to be pushed away from the edges a bit.
-
-You don't have to have a background colour on your header - if you want to get rid of it, just delete that line completely!
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="header-ideas">Header Ideas</h2>
-
-<iframe height="450" scrolling="no" src="//codepen.io/gatherworkshops/embed/RPLvgb/?height=450&amp;theme-id=16068&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/gatherworkshops/pen/RPLvgb/">Header Examples</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.
-</iframe>
-
-<p>Take a few minutes to make your header<br />
-look how you want it.</p>
-
-
-<aside class="notes">
-There are heaps of different header styles you could use.
-
-Your header could be full width, or centered, or have no background at all.
-
-It could be tall or small, with big text or little text, it's all up to your imagination!
-
-The links on this slide have a variety of different header styles you could try out. Click the links to open up the code examples in Codepen.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="content-section">Content Section</h2>
-
-<p>Add to your <code>index.html</code>, on a new line after your closing <code>&lt;/header&gt;</code> tag:</p>
-
-<pre data-line="1-4"><code class="language-html">&lt;header class="page-header"&gt;
-    &lt;h1&gt;My Awesome Website&lt;/h1&gt;
-&lt;/header&gt;
-
-&lt;section class="page-content"&gt;
-
-    &lt;h2&gt;Hello there, amazing person!&lt;/h2&gt;
-
-    &lt;p&gt;
-    This is a site all about my favourite stuff, 
-    thanks so much for visiting.
-    &lt;/p&gt;
-
-&lt;/section&gt;
-</code></pre>
-
-<p>We will use this <code>page-content</code> section on every page,<br />
-but we will change the content inside it for each page.</p>
-
-
-<aside class="notes">
-A section is just another layout rectangle, like header.
-
-It has no design by itself, it's just an invisible box to hold content.
-
-First we will put in some content, then we will design the section.
-
-Notice that we have given this section a name, or "class".
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="content-section-design">Content Section Design</h2>
-
-<p>Add to your <code>style.css</code>:</p>
-
-<pre><code class="language-css">.page-content {
-    background-color: #222222;
-    padding: 30px;
-    width: 700px;
-    margin: 0 auto;
-    margin-top: 30px;
-
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 130%;
-}
-</code></pre>
-
-<p>This code will give you a starting point to begin<br />
-designing your content section.</p>
-
-
-<aside class="notes">
-
-Our content is on the page, but it is just kind of... floating.
-
-By adding some CSS, we can make our content section visible and start working on how we'd like it to look.
-
-In our HTML, we gave our section the class `page-content`, so we can use that name to apply styling from our CSS code.
-
-The blank line is just to split up the layout stuff from the text design stuff, it doesn't affect the code.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="content-section-ideas">Content Section Ideas</h2>
-
-<iframe height="450" scrolling="no" src="//codepen.io/gatherworkshops/embed/rVzZRp/?height=450&amp;theme-id=16068&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/gatherworkshops/pen/rVzZRp/">rVzZRp</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.
-</iframe>
-
-<p><em>Take a few minutes to make your content section</em><br /><br />
-<em>look how you want it.</em></p>
-
-
-<aside class="notes">
-Take some time to tweak the CSS for your content section.
-
-There are a whole bunch of different design ideas you can play with! Ask a mentor if you've got an idea but you're not sure how to achieve it.
 
 </aside>
 

@@ -1,0 +1,190 @@
+<hr />
+<p>layout: chapter<br />
+title: Menu Bar<br />
+slides:</p>
+
+<ul>
+  <li>
+    <p>class: title-slide<br />
+content: |</p>
+
+    <p><img src="[[BASE_URL]]/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+    <p># Menu Bar<br />
+  <em>Adding buttons to click around your page</em></p>
+
+    <p>notes: |<br />
+  A menu bar will allow visitors to click between the different pages in our website.</p>
+
+    <p>To add a menu bar, we will need some extra HTML and CSS code. </p>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>content:</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>## Menu Bar</p>
+
+    <p><img src="/digital-media/slides/workshop/menubar/images/layout-menubar.svg" alt="The menu bar goes between the header and the content area. It will be a plain box containing some links." /></p>
+
+    <p><em>Adding a menu bar to your page</em></p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>notes:</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The navigation we’ll be creating is a horizontal nav across the top of your screen.</p>
+
+    <p>You can just as easy create a vertical one if you like - you’ll just have to tweak the CSS! ;)</p>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>content:</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>## Navigation HTML</p>
+
+    <p>Add the <code>nav</code> on the line after your closing <code>&lt;/header&gt;</code> tag:</p>
+
+    <p>```html<br />
+  &lt;nav class="main-menu"&gt;</p>
+
+    <p>&lt;/nav&gt;<br />
+  ```</p>
+
+    <p><em>Create the layout container for your menu bar</em></p>
+
+    <p>notes: |<br />
+  Hey, a new type of HTML element! </p>
+
+    <p>The <code>nav</code> element is used for creating navigation. It has matching start and end tags, and between those tags you put a set of links that you want to include in your navigation.</p>
+
+    <p>We’ll get to that on the next slide!</p>
+
+    <p>If you preview your navigation right now, it won’t look like anything - it doesn’t have any styles yet! </p>
+
+    <p>We did set up the class <code>main-menu</code> though, so we’ll be able to style this nav from our CSS.</p>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>content:</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>## Navigation Links</p>
+
+    <p>Add your page links, between the <code>nav</code> tags:</p>
+
+    <pre><code>  &lt;a href="index.html"&gt;Home&lt;/a&gt;
+  &lt;a href="pictures.html"&gt;Pictures&lt;/a&gt;
+  &lt;a href="videos.html"&gt;Videos&lt;/a&gt;
+</code></pre>
+
+    <p><em>Add some links to your menu bar</em></p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>notes:</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Each link is just an <code>a</code> element, like we tried out earlier.</p>
+
+    <p>Remember that links always need their <code>href</code> set to a web address where we want the link to go. </p>
+
+    <p>The <em>Home</em> link will go back to our <code>index.html</code>, so we can fill that in.</p>
+
+    <p>We haven’t created a <code>pictures.html</code> or a <code>videos.html</code> yet, but we can fill in the link and then create the page later.</p>
+
+    <p>If you preview your page now, it won’t look like much but the links should at least be showing up! We’ll give them some style next.</p>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>content:</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>## Navigation Styles</p>
+
+    <p>In your CSS, create a new rule:</p>
+
+    <pre><code>  .main-menu {
+      background: #FF0000;
+  }
+</code></pre>
+
+    <p><em>Add a background to your nav, so you can see it</em></p>
+
+    <p>notes: |<br />
+  Our nav has the class <code>main-menu</code> so we can use this in our CSS to add some design to our nav.</p>
+
+    <p>Keep in mind that we are currently just styling the <code>nav</code> element, which is a container for all our navigation links.</p>
+
+    <p>We’ll get to styling the links soon, and make them look a bit more like buttons.</p>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>content:</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>## Navigation Button Styles</p>
+
+    <p>In your CSS, create two new rules:</p>
+
+    <p>```css<br />
+  .main-menu a {<br />
+      background-color: #00FF00;<br />
+      border-color: #00DD00;<br />
+      font-weight: bold;<br />
+      display: inline-block;<br />
+      padding: 5px 10px;<br />
+  }</p>
+
+    <p>.main-menu a:hover {<br />
+      background-color: #00DD00;<br />
+      color: #FFFFFF;<br />
+  }<br />
+  ```</p>
+
+    <p><em>Style your links to look like buttons</em></p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>notes:</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The first CSS rule says how we want the menu buttons to look.</p>
+
+    <p>The second CSS rules says how we want the buttons to look when we move our mouse pointer over them, when we “hover”.</p>
+
+    <p>You can change these values to make your buttons look however you like.</p>
+  </li>
+</ul>
+

@@ -165,7 +165,7 @@ slides:
 
       Great, now let's get started on our own projects...
 
-      [Take me to the next chapter!](building-layouts.html)
+      [Take me to the next chapter!](layout-basics.html)
 
 
     notes: |

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Styley Design</title>
+        <title>Welcome Section</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- google translate - language identifier -->
@@ -45,7 +45,7 @@
     <!-- branding - always visible. links to home page -->
     <a class="navbar-brand" href="/digital-media/">
         <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
-        Digital Media | Styley Design 
+        Digital Media | Welcome Section 
     </a>
 
 
@@ -96,7 +96,7 @@
 
 <p><img src="/digital-media/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
 
-<h1 id="styley-design">Styley Design</h1>
+<h1 id="stacked-layouts">Stacked Layouts</h1>
 
 <p><em>Designing your content</em></p>
 
@@ -118,17 +118,38 @@
 	>
 		
 
-<p><img src="http://gathergather.co.nz/grumpy-cat.png" alt="Grumpy Cat" width="300" /></p>
+<h2 id="content-section">Content Section</h2>
 
-<h2 id="css-with-grumpy-cat">CSS With Grumpy Cat</h2>
+<p>Add to your <code>index.html</code>, on a new line after your closing <code>&lt;/header&gt;</code> tag:</p>
 
-<p>Open this link in a new tab: <a href="http://codepen.io/gatherworkshops/pen/yyrQpd?editors=110" target="_blank">Grumpy Cat Code</a></p>
+<pre data-line="1-4"><code class="language-html">&lt;header class="page-header"&gt;
+    &lt;h1&gt;My Awesome Website&lt;/h1&gt;
+&lt;/header&gt;
 
-<p>Keep it open! We are going to be using CSS<br />
-to make it look way better.</p>
+&lt;section class="page-content"&gt;
+
+    &lt;h2&gt;Hello there, amazing person!&lt;/h2&gt;
+
+    &lt;p&gt;
+    This is a site all about my favourite stuff, 
+    thanks so much for visiting.
+    &lt;/p&gt;
+
+&lt;/section&gt;
+</code></pre>
+
+<p>We will use this <code>page-content</code> section on every page,<br />
+but we will change the content inside it for each page.</p>
 
 
 <aside class="notes">
+A section is just another layout rectangle, like header.
+
+It has no design by itself, it's just an invisible box to hold content.
+
+First we will put in some content, then we will design the section.
+
+Notice that we have given this section a name, or "class".
 
 </aside>
 
@@ -144,184 +165,37 @@ to make it look way better.</p>
 	
 	>
 		
-<h2 id="codepen-editor">CodePen Editor</h2>
 
-<p><img src="assets/images/codepen-css.png" alt="Screenshot of CodePen UI" /></p>
+<h2 id="content-section-design">Content Section Design</h2>
 
-<p>CodePen can show us both our HTML and our CSS.</p>
+<p>Add to your <code>style.css</code>:</p>
 
+<pre><code class="language-css">.page-content {
+    background-color: #222222;
+    padding: 30px;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
 
-<aside class="notes">
-
-The grey text at the top is a comment. It is not visible in the output.
-
-The white text is code. It is visible in the output.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="grumpy-cat-example">Grumpy Cat Example</h2>
-
-<p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="yyrQMr" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/yyrQMr/">Otter Challenge Demo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-<p>Next we will use code to make our output look something like this.</p>
-
-
-<aside class="notes">
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="classes">Classes</h2>
-
-<p>To make our page look pretty, first we create a CSS class with a unique name.</p>
-
-<p><strong>In your CSS panel:</strong></p>
-
-<pre class="big-code"><code class="language-css">.profile-pic {
-  width: 200px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 130%;
 }
 </code></pre>
 
-<p>We just created a <code>class</code> called <code>profile-pic</code>.</p>
-
-<p>This class can change the width of something on our page to be <code>200px</code>.</p>
-
-
-<aside class="notes">
-
-We use CSS to write code about how objects on our page should look.
-
-This code says that any HTML element with the class `profile-pic` should be displayed as 200 pixels wide.
-
-One little trick - don't forget the dot in front of the class name in CSS!
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="applying-classes">Applying Classes</h2>
-
-<p>Find the first image tag in the HTML panel,<br /> and apply the profile-pic class to it.</p>
-
-<p><strong>Find this line your HTML panel:</strong></p>
-
-<pre><code class="language-html">&lt;img src="http://gathergather.co.nz/grumpy-cat.png"&gt;
-</code></pre>
-
-<p><strong>And change it to:</strong></p>
-
-<pre><code class="language-html">&lt;img class="profile-pic" src="http://gathergather.co.nz/grumpy-cat.png"&gt;
-</code></pre>
-
-<p>Cartoon Grumpy Cat should now be much smaller.</p>
-
-
-<aside class="notes">
-We can apply a CSS class to any HTML element. We can also apply the *same* class to *many* different elements on the page.
-
-The class name you gave your element in the HTML and the class name you use in your CSS need to match exactly. 
-
-There is no dot before the class name in our HTML but we _do_ need that dot in our CSS code.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="font-styles">Font Styles</h2>
-
-<p>There are many font options in CSS. We can create another class to try them out.</p>
-
-<p><strong>In your CSS panel, on a new line:</strong></p>
-
-<pre><code class="language-css">.page-title {
-  font-family: "Comic Sans MS";
-  font-size: 50px;
-  text-align: center;
-  text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-}
-</code></pre>
-
-<p><strong>In your HTML, find the h1 and apply the class:</strong></p>
-
-<pre><code class="language-html">&lt;h1 class="page-title"&gt;Grumpy Cat&lt;/h1&gt;
-</code></pre>
+<p>This code will give you a starting point to begin<br />
+designing your content section.</p>
 
 
 <aside class="notes">
 
-:)
+Our content is on the page, but it is just kind of... floating.
 
-</aside>
+By adding some CSS, we can make our content section visible and start working on how we'd like it to look.
 
-</section>
+In our HTML, we gave our section the class `page-content`, so we can use that name to apply styling from our CSS code.
 
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="block-elements">Block Elements</h2>
-
-<p>Block elements are the “building blocks” of our website. </p>
-
-<p>Block elements are used for layout, and can contain other elements.</p>
-
-
-<aside class="notes">
-`header` might contain our h1 and menu bar<br>
-`section` could be an intro, gallery, or general info<br>
-`footer` might contain copyright and contact info
-
-Pages often have one **header**, lots of **sections** and one **footer**.
+The blank line is just to split up the layout stuff from the text design stuff, it doesn't affect the code.
 
 </aside>
 
@@ -338,19 +212,19 @@ Pages often have one **header**, lots of **sections** and one **footer**.
 	>
 		
 
-<h2 id="stuff-we-covered">Stuff We Covered</h2>
+<h2 id="content-section-ideas">Content Section Ideas</h2>
 
-<ul class="flex-list">
-  <li><strong>Rule Structure</strong><br />
-A design rule is made up of a target and a bunch of lines of design.</li>
-  <li><strong>Class Styles</strong><br />
-A design rule can be applied to specific elements using a class name</li>
-  <li><strong>Element Styles</strong><br />
-A design rule can be applied to all elements of one kind by the element name</li>
-</ul>
+<iframe height="450" scrolling="no" src="//codepen.io/gatherworkshops/embed/rVzZRp/?height=450&amp;theme-id=16068&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/gatherworkshops/pen/rVzZRp/">rVzZRp</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.
+</iframe>
+
+<p><em>Take a few minutes to make your content section</em><br /><br />
+<em>look how you want it.</em></p>
 
 
 <aside class="notes">
+Take some time to tweak the CSS for your content section.
+
+There are a whole bunch of different design ideas you can play with! Ask a mentor if you've got an idea but you're not sure how to achieve it.
 
 </aside>
 
@@ -369,11 +243,11 @@ A design rule can be applied to all elements of one kind by the element name</li
 
 <p><img src="/digital-media/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
 
-<h2 id="styley-design-complete">Styley Design: Complete!</h2>
+<h2 id="stacked-layouts-complete">Stacked Layouts: Complete!</h2>
 
-<p>Great, now let’s get started on our own projects…</p>
+<p>Great, now let’s explore how we’ll host our own site…</p>
 
-<p><a href="layout-basics.html">Take me to the next chapter!</a></p>
+<p><a href="infrastructure.html">Take me to the next chapter!</a></p>
 
 
 <aside class="notes">

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Custom Fonts</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/digital-media/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/digital-media/theme/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/digital-media/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
+        <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/digital-media/favicon.ico">
+
+    </head>
+
+    <body class="">
+<nav id="page-navigation">
+
+
+
+
+    <!-- branding - always visible. links to home page -->
+    <a class="navbar-brand" href="/digital-media/">
+        <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
+        Digital Media | Custom Fonts 
+    </a>
+
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+        
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+
+
+</nav>
+
+	
+		
+			
+<div class="page-content">
+
+
+<div class="slideshow">
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/digital-media/media/images/theme/theme-tile.svg" 
+		data-background-color="#9b3a00"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/digital-media/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="custom-fonts">Custom Fonts</h1>
+<p><em>Customise your look with Google Fonts</em></p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="page-header">Page Header</h2>
+
+<p>We can use the <code>header</code> element as a container for our title and navigation.</p>
+
+<p>Start by adding the header HTML with a title:</p>
+
+<pre><code class="language-html">&lt;header&gt;
+  &lt;h1&gt;Logo Here&lt;/h1&gt;
+&lt;/header&gt;
+</code></pre>
+
+
+<aside class="notes">
+
+The `<header>` element has no styles already associated with it.
+
+It is pretty much just a see-through box which you can use to contain anything you want.
+
+Using a `<header>` allows us to group together all the elements which are part of the header, for easy styling using CSS.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="header">Header</h2>
+
+<p><img src="assets/images/layout-header.svg" alt="The header goes at the top of the page. It will be a plain box containing a heading." /></p>
+
+<p><em>Adding a header to your page</em></p>
+
+
+<aside class="notes">
+Our first layout element will be a header.
+
+The header goes at the top of the page and generally contains the name of the website.
+
+It might also contain a "tagline" briefly explaining what the site is for.
+
+Our header will be a plain box containing a simple heading.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="header-content">Header Content</h2>
+
+<p>Add to <code>index.html</code>, between the <code>body</code> tags:</p>
+
+<pre data-line="1-2,6"><code class="language-html">&lt;body&gt;
+  &lt;!-- My HTML Code Goes Here--&gt;
+  &lt;header class="page-header"&gt;
+      &lt;h1&gt;My Awesome Website&lt;/h1&gt;
+  &lt;/header&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>You should now see a heading on your page.<br />
+The header box will be invisible until you add CSS.</p>
+
+
+<aside class="notes">
+
+The `header` element has no styles already associated with it.
+
+It is pretty much just a see-through box which you can use to contain anything you want.
+
+Using a header allows us to group together all the elements which are part of the header, for easy styling using CSS.
+
+Add the header code to the `body` of your page.
+
+You should change the heading text to suit your site!
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="header-design">Header Design</h2>
+
+<p>Add to your <code>style.css</code>:</p>
+
+<pre><code class="language-css">.page-header {
+    background-color: #222222;
+    color: #FFFFFF;
+    padding: 20px;
+}
+</code></pre>
+
+<p>This code will give your header a dark grey background,<br />
+white text and 20px of spacing around the inside edge.</p>
+
+
+<aside class="notes">
+Our sample styles show how you can add a background colour to your header, change the text colour, and get the stuff inside the header to be pushed away from the edges a bit.
+
+You don't have to have a background colour on your header - if you want to get rid of it, just delete that line completely!
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="header-ideas">Header Ideas</h2>
+
+<iframe height="450" scrolling="no" src="//codepen.io/gatherworkshops/embed/RPLvgb/?height=450&amp;theme-id=16068&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/gatherworkshops/pen/RPLvgb/">Header Examples</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Take a few minutes to make your header<br />
+look how you want it.</p>
+
+
+<aside class="notes">
+There are heaps of different header styles you could use.
+
+Your header could be full width, or centered, or have no background at all.
+
+It could be tall or small, with big text or little text, it's all up to your imagination!
+
+The links on this slide have a variety of different header styles you could try out. Click the links to open up the code examples in Codepen.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="header-styles">Header Styles</h2>
+
+<p>Add some style to our <code>header</code> container.</p>
+
+<pre><code class="language-css">header {
+  background-color: #222222;
+  color: #FFFFFF;
+  padding: 20px;
+}
+</code></pre>
+
+
+<aside class="notes">
+Our sample styles show how you can add a background colour to your header, change the text colour, and get the stuff inside the header to be pushed away from the edges a bit.
+
+You don't have to have a background colour on your header if you don't want to - you can just delete that line completely!
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="google-fonts">Google Fonts</h2>
+
+<p>For a simple logo design, we can start by choosing a nice font from <a href="http://google.com/fonts" target="_blank">Google Fonts</a> then clicking the “Quick Use” button.</p>
+
+<p><img src="/Building-the-Web/slides/workshop/images/google-font-selection.png" alt="Selecting a Google Font" /></p>
+
+
+<aside class="notes">
+Have a browse in the Google Fonts directory and pick a font you like.
+
+There are some filtering option down the left hand side if you want some more control over your search. 
+
+You can even change the "Grumpy Wizards" text to instead be the name of your web page. That might be helpful!
+
+Once you've chosen a font, click its "Quick Use" button which is the little sideways arrow inside a square.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="adding-the-font-to-your-site">Adding the font to your site</h2>
+
+<p>On the “Quick Use” page, look for step 3.</p>
+
+<p><img src="/Building-the-Web/slides/workshop/images/google-font-include.png" alt="Finding the Google Font embed code" /></p>
+
+<p>Copy that piece of HTML code<br /> <br />
+and put it between your site’s <code>&lt;head&gt;</code> tags.</p>
+
+<p>It should go on the line before the link to your own stylesheet.</p>
+
+
+<aside class="notes">
+The piece of code we add to our site's `head` is just a link to some special CSS on Google's web server.
+
+Google is providing us a CSS stylesheet that we can link to so that we don't have to write a whole lot of extra code ourselves to correctly embed the font in our site.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="using-the-font-in-your-css">Using the font in your CSS</h2>
+
+<p>Further down the “Quick Use” page you’ll find step 4.</p>
+
+<p><img src="/Building-the-Web/slides/workshop/images/google-font-css.png" alt="Finding the Google Font embed code" /></p>
+
+<p>This is an example of the CSS you can now use to apply the font to elements on your page.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="applying-the-font-to-our-header">Applying the font to our header</h2>
+
+<p>In our case, we’ll be adding the font to our <code>&lt;h1&gt;</code> element.</p>
+
+<pre><code class="language-css">h1 {
+  font-family: 'Pacifico', cursive;
+}
+</code></pre>
+
+<p>Make sure to use your own font’s name instead of “Pacifico”!</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="title-design">Title Design</h2>
+
+<p>Once our font is decided, we can tweak some other options:</p>
+
+<pre><code class="language-css">h1 {
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+</code></pre>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+
+
+		</div>
+
+	</div><!-- .reveal -->
+
+
+
+
+	<div class="sidenotes">
+		<div class="content">
+			<!-- display notes here using js -->
+			<p>Loading...</p>
+		</div>
+	</div>
+
+</div><!-- .slideshow -->
+
+
+
+</div>
+
+
+
+		<script src="/digital-media/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/digital-media/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/digital-media/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/digital-media/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>
