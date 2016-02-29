@@ -222,6 +222,9 @@ slides:
         Notice there is no dot in front of the rule name
         when styling elements by their tag name!
 
+        Your paragraphs should be blue with higher line spacing.
+        {:.checkpoint}
+
 
 
 
@@ -243,6 +246,8 @@ slides:
 
         We can use the same approach to design all images at once.
 
+        Your images should all have a white border and shadow.
+        {:.checkpoint}
 
 
     - content: |

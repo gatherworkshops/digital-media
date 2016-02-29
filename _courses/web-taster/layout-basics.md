@@ -74,6 +74,9 @@ slides:
 
         You can also add an image as a background.
 
+        You should see your chosen image in the background.
+        {:.checkpoint}
+
 
 
 
@@ -199,6 +202,9 @@ slides:
 
         And if it works, add more style.
 
+        Your text should move in from the edges.
+        {:.checkpoint}
+
 
     - content: |
 
@@ -270,7 +276,7 @@ slides:
 
         And you're done! Your first web page is complete.
 
-        [What did you think? Let us know!]()
+        [What did you think? Let us know!](http://gathergather.co.nz/workshops/feedback/digital-media-web-dev-taster/)
 
 
 
