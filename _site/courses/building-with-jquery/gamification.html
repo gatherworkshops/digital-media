@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Gamification</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/digital-media/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/digital-media/theme/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/digital-media/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
+        <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/digital-media/favicon.ico">
+
+    </head>
+
+    <body class="">
+<nav id="page-navigation">
+
+
+
+
+    <!-- branding - always visible. links to home page -->
+    <a class="navbar-brand" href="/digital-media/">
+        <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
+        Digital Media | Gamification 
+    </a>
+
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+        
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+
+
+</nav>
+
+	
+		
+			
+<div class="page-content">
+
+
+<div class="slideshow">
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/digital-media/media/images/theme/theme-tile.svg" 
+		data-background-color="#9b3a00"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/digital-media/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="gamification">Gamification</h1>
+<p><em>Turning your bubble popper into a game</em></p>
+
+
+<aside class="notes">
+
+In this section we will make our randomised bubble artwork into a game.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="demo"
+	
+	>
+		
+
+<h2 id="animation-demo">Animation Demo</h2>
+
+<iframe height="500" scrolling="no" src="//codepen.io/gatherworkshops/embed/KdNmLe/?height=500&amp;theme-id=16068&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/gatherworkshops/pen/KdNmLe/">Animated Bubble Art</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Try clicking a bubble or pressing spacebar.</p>
+
+
+<aside class="notes">
+
+Here's an example of something you might create.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="bubblecounter"
+	
+	>
+		
+
+<h2 id="bubble-counter">Bubble Counter</h2>
+
+<p>You’ll need a little bit of extra HTML:</p>
+
+<pre><code class="language-html">&lt;div id="bubbleCounter"&gt;0&lt;/div&gt;
+</code></pre>
+
+<p>And some CSS to design it:</p>
+
+<pre><code class="language-css">#bubbleCounter {
+background-color: white;
+position: absolute;
+top: 0;
+left: 0;
+}
+</code></pre>
+
+<p class="checkpoint">You should be able to see the bubble counter.</p>
+
+
+<aside class="notes">
+
+Display how many bubbles have been popped.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="livebubblecounter"
+	
+	>
+		
+
+<h2 id="live-updating-bubble-counter">Live Updating Bubble Counter</h2>
+
+<p>Every time a bubble is popped, you’ll need to track it and display it.</p>
+
+<pre data-line="1, 7, 9-10"><code class="language-javascript">var bubblesPopped = 0;
+
+function popBubble() {
+var bubble = $(this);
+bubble.remove();
+
+bubblesPopped = bubblesPopped + 1;
+
+var bubbleCounter = $('#bubbleCounter');
+bubbleCounter.textContent = bubblesPopped;
+}
+</code></pre>
+
+<p class="checkpoint">Your counter should update when a bubble is popped.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="countdowntimer"
+	
+	>
+		
+
+<h2 id="countdown-timer">Countdown Timer</h2>
+
+<p>You’ll need a little bit of extra HTML:</p>
+
+<pre><code class="language-html">&lt;div id="countdownTimer"&gt;60&lt;/div&gt;
+</code></pre>
+
+<p>And some CSS to design it:</p>
+
+<pre><code class="language-css">#countdownTimer {
+background-color: white;
+position: absolute;
+top: 0;
+right: 0;
+}
+</code></pre>
+
+<p class="checkpoint">You should be able to see the countdown timer.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="livecountdowntimer"
+	
+	>
+		
+
+<h2 id="live-countdown-timer">Live Countdown Timer</h2>
+
+<p>Every second, we want to update the countdown timer:</p>
+
+<pre><code class="language-javascript">var secondsRemaining = 60;
+var timer = setInterval(minusOneSecond, 1000);
+
+function minusOneSecond() {
+secondsRemaining = secondsRemaining - 1;
+
+var timerDisplay = $('#countdownTimer');
+timerDisplay.textContent = secondsRemaining;
+}
+</code></pre>
+
+<p class="checkpoint">Your timer should count down to zero… and beyond?</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="stoppingthetimer"
+	
+	>
+		
+
+<h2 id="stopping-the-timer">Stopping The Timer</h2>
+
+<p>When we get to zero, we want to stop the timer:</p>
+
+<pre data-line="3-7, 12"><code class="language-javascript">function minusOneSecond() {
+
+if( secondsRemaining == 0 ) {
+window.clearInterval( timer );
+}
+
+else {
+secondsRemaining = secondsRemaining - 1;
+
+var timerDisplay = $('#countdownTimer');
+timerDisplay.textContent = secondsRemaining;
+}
+}
+</code></pre>
+
+<p class="checkpoint">Your timer should now stop at zero.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="scoredisplay"
+	
+	>
+		
+
+<h2 id="challenge-score-display">Challenge: Score Display</h2>
+
+<p>When the timer runs out, display the person’s score<br />
+in a big box with big text.</p>
+
+
+<aside class="notes">
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="summary"
+	
+	>
+		
+
+<p><img src="/digital-media/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
+
+<h2 id="gamification-complete">Gamification: Complete</h2>
+
+<p>Good work! Now you know how to jQuery All Of The Things!</p>
+
+
+<aside class="notes">
+
+Good work. Now you have even made a game :)
+
+Well done :)
+
+</aside>
+
+</section>
+
+
+
+
+
+		</div>
+
+	</div><!-- .reveal -->
+
+
+
+
+	<div class="sidenotes">
+		<div class="content">
+			<!-- display notes here using js -->
+			<p>Loading...</p>
+		</div>
+	</div>
+
+</div><!-- .slideshow -->
+
+
+
+</div>
+
+
+
+		<script src="/digital-media/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/digital-media/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/digital-media/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/digital-media/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>

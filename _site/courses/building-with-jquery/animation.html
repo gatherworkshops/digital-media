@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Animation</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/digital-media/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/digital-media/theme/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/digital-media/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
+        <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/digital-media/favicon.ico">
+
+    </head>
+
+    <body class="">
+<nav id="page-navigation">
+
+
+
+
+    <!-- branding - always visible. links to home page -->
+    <a class="navbar-brand" href="/digital-media/">
+        <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
+        Digital Media | Animation 
+    </a>
+
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+        
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+
+
+</nav>
+
+	
+		
+			
+<div class="page-content">
+
+
+<div class="slideshow">
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/digital-media/media/images/theme/theme-tile.svg" 
+		data-background-color="#9b3a00"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/digital-media/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="animation">Animation</h1>
+<p><em>Moving stuff with jQuery</em></p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="demo"
+	
+	>
+		
+
+<h2 id="animation-demo">Animation Demo</h2>
+
+<iframe height="500" scrolling="no" src="//codepen.io/gatherworkshops/embed/KdNmLe/?height=500&amp;theme-id=16068&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/gatherworkshops/pen/KdNmLe/">Animated Bubble Art</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.
+</iframe>
+
+<p>You can create something like this but with your own theme</p>
+
+
+<aside class="notes">
+
+Here's an example of something you might create.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="startingmovement"
+	
+	>
+		
+
+<h2 id="make-the-bubbles-move">Make The Bubbles Move</h2>
+
+<p>You’ll need a function that knows how to move one bubble:</p>
+
+<pre><code class="language-javascript">function moveBubble() {
+
+  // code to move a single bubble goes here
+
+}
+
+</code></pre>
+
+<p>And you’ll also need to run the function for every bubble:</p>
+
+<pre><code class="language-javascript">var allBubbles = $('.bubble');
+allBubbles.each( moveBubble );
+</code></pre>
+
+
+<aside class="notes">
+
+When the page loads we want the bubbles
+to move.
+
+To move the bubbles, we need a reference to all the bubbles.
+
+Once we have all the bubbles, we can run the function on them.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="movebubble"
+	
+	>
+		
+
+<h2 id="identifying-a-single-bubble">Identifying a Single Bubble</h2>
+
+<pre data-line="3"><code class="language-javascript">function moveBubble() {
+
+  var bubble = $(this);
+
+}
+</code></pre>
+
+
+<aside class="notes">
+
+We said that each bubble should be run with the moveBubble function.
+
+When we have a whole set of things and we run 
+a function on each one individually, inside the
+function we can get the bubble using the keyword
+"this".
+
+Inside the function "this" means "this bubble".
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="newposition"
+	
+	>
+		
+
+<h2 id="new-bubble-position">New Bubble Position</h2>
+
+<pre data-line="5-6"><code class="language-javascript">function moveBubble() {
+
+var bubble = $(this);
+
+var leftSpace = Math.random() * container.width();
+var topSpace = Math.random() * container.height();
+
+}
+</code></pre>
+
+
+<aside class="notes">
+
+Inside this function, we need to decide on some new
+CSS values for our bubble.
+
+Once we have new values, we can animate a slow change
+from the old values to the new values.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="animatingposition"
+	
+	>
+		
+
+<h2 id="new-bubble-css">New Bubble CSS</h2>
+
+<pre data-line="8-13"><code class="language-javascript">function moveBubble() {
+
+var bubble = $(this);
+
+var leftSpace = Math.random() * container.width();
+var topSpace = Math.random() * container.height();
+
+var newCSS = {
+  'left': leftSpace,
+  'top': topSpace
+}
+
+bubble.animate( newCSS, 5000 );
+
+}
+</code></pre>
+
+<p class="checkpoint">Your bubbles should now move when you refresh.</p>
+
+
+<aside class="notes">
+
+Inside this function, we need to decide on some new
+CSS values for our bubble.
+
+Once we have new values, we can animate a slow change
+from the old values to the new values.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="animatingsize"
+	
+	>
+		
+
+<h2 id="animating-size">Animating Size</h2>
+
+<p>Add a new size to your animation:</p>
+
+<pre data-line="3, 8-9"><code class="language-javascript">var leftSpace = Math.random() * container.width();
+var topSpace = Math.random() * container.height();
+var size = Math.random() * 200;
+
+var newCSS = {
+  'left': leftSpace,
+  'top': topSpace,
+  'width': size,
+  'height': size
+}
+</code></pre>
+
+<p class="checkpoint">Your bubbles should now move and change size.</p>
+
+
+<aside class="notes">
+
+You can also change the size.
+
+Create another variable to calculate the new width and height,
+then add that to the animation set.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="randomanimationlength"
+	
+	>
+		
+
+<h2 id="animation-time">Animation time</h2>
+
+<pre><code class="language-javascript">var animationTime = Math.random() * 10000 + 5000;
+bubble.animate( newCSS, animationTime );
+
+</code></pre>
+
+
+<aside class="notes">
+
+At the moment, all our bubbles take 5 seconds to
+animate from their old CSS values to their new
+values.
+
+We can use a random number generator to have each
+bubble take a different amount of time to animate.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="moveforever"
+	
+	>
+		
+
+<h2 id="floating-forever">Floating forever</h2>
+
+<pre><code class="language-javascript">bubble.animate( newCSS, animationTime, moveBubble );
+
+</code></pre>
+
+
+<aside class="notes">
+
+We can also make our bubbles animate forever.
+
+We do this by waiting until the end of the animation,
+and then running the bubble through `moveBubble` all
+over again.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="challenge"
+	
+	>
+		
+
+<h2 id="challenge-themed-animations">Challenge: Themed Animations</h2>
+
+<p>Give your animations a personal twist.</p>
+
+
+<aside class="notes">
+
+See if you can change your animations to match your theme.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="summary"
+	
+	>
+		
+
+<p><img src="/digital-media/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
+
+<h2 id="animations-complete">Animations: Complete</h2>
+
+<p>Woohoo, animations! But what about interactions…</p>
+
+<p><a href="interaction.html">Take me to the next chapter!</a></p>
+
+
+<aside class="notes">
+
+Great, now you can do animations too!
+
+Through this chapter you have learned about:
+
+- Getting a group of elements by their class
+- Running a function on every element in a group
+- Storing CSS values in JavaScript Objects
+- Animating CSS from old to new values
+- Looping CSS animations
+
+Well done :)
+
+</aside>
+
+</section>
+
+
+
+
+
+		</div>
+
+	</div><!-- .reveal -->
+
+
+
+
+	<div class="sidenotes">
+		<div class="content">
+			<!-- display notes here using js -->
+			<p>Loading...</p>
+		</div>
+	</div>
+
+</div><!-- .slideshow -->
+
+
+
+</div>
+
+
+
+		<script src="/digital-media/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/digital-media/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/digital-media/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/digital-media/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>jQuery Basics</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/digital-media/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/digital-media/theme/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/digital-media/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
+        <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/digital-media/favicon.ico">
+
+    </head>
+
+    <body class="">
+<nav id="page-navigation">
+
+
+
+
+    <!-- branding - always visible. links to home page -->
+    <a class="navbar-brand" href="/digital-media/">
+        <img class="avatar" src="/digital-media/theme/assets/images/gw-avatar.png">
+        Digital Media | jQuery Basics 
+    </a>
+
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+        
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+
+
+</nav>
+
+	
+		
+			
+<div class="page-content">
+
+
+<div class="slideshow">
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/digital-media/media/images/theme/theme-tile.svg" 
+		data-background-color="#9b3a00"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/digital-media/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="jquery-basics">jQuery Basics</h1>
+<p><em>Using jQuery on top of HTML and CSS</em></p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="weblanguages"
+	
+	>
+		
+
+<h2 id="languages-of-the-web">Languages of The Web</h2>
+
+<p><img src="assets/images/html_css_js.png" alt="HTML, CSS and JS Venn Diagram" height="500" /></p>
+
+<p>The visible part of every website is made up of these languages.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="html"
+	
+	>
+		
+
+<h2 id="html-coding-our-content">HTML: Coding Our Content</h2>
+
+<p><img src="assets/images/google_html.png" alt="" /></p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="css"
+	
+	>
+		
+
+<h2 id="css-coding-our-design">CSS: Coding Our Design</h2>
+
+<p><img src="assets/images/google_html_css.png" alt="" /></p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="javascript"
+	
+	>
+		
+
+<h2 id="javascript-coding-our-interactions">JavaScript: Coding Our Interactions</h2>
+
+<p><img src="assets/images/google_html_css_js.png" alt="" /></p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="getelements"
+	
+	>
+		
+
+<h2 id="getting-elements">Getting Elements</h2>
+
+<p>We can get an element the same way as in CSS,<br /><br />
+with its <code>id</code> its <code>class</code> or the element tag type.</p>
+
+<pre><code class="language-javascript">var header = $('#pageHeader');
+var allPhotos = $('.photo');
+var allImages = $('img');
+</code></pre>
+
+<p>When we find an element, we give it a <code>var</code> name,<br /><br />
+so we can do stuff to it later using an easy name.</p>
+
+
+<aside class="notes">
+
+We can use jQuery to find and capture elements on a page.
+
+To get an element or group of elements, we can use an ID, a class,
+or the type of element.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="changingelements"
+	
+	>
+		
+
+<h2 id="changing-elements">Changing Elements</h2>
+
+<p>Add or remove a class to change how it looks:</p>
+
+<pre><code class="language-javascript">var header = $('#pageHeader');
+header.addClass('fancyBorder');
+header.removeClass('plainBorder');
+</code></pre>
+
+<p>Change its size and position:</p>
+
+<pre><code class="language-javascript">var allPhotos = $('.photo');
+allPhotos.width(100);
+allPhotos.left(300);
+</code></pre>
+
+<p>Fade in or fade out:</p>
+
+<pre><code class="language-javascript">var allImages = $('img');
+allImages.fadeIn();
+allImages.fadeOut();
+</code></pre>
+
+
+<aside class="notes">
+
+One we've got an element, we can do stuff to it:
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="jquerywithunicorns"
+	
+	>
+		
+
+<p><img src="assets/images/unicorn.svg" alt="" height="300" /></p>
+
+<h2 id="jquery-basics-with-unicorns">jQuery Basics with Unicorns</h2>
+
+<p><a href="http://codepen.io/gatherworkshops/pen/merJYM" target="_blank">Click here to start</a></p>
+
+
+<aside class="notes">
+
+Open this practice in codepen.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="unicornclasses"
+	
+	>
+		
+
+<h2 id="make-january-golden">Make January Golden</h2>
+
+<p>In your JavaScript panel, add the class “gold” to January:</p>
+
+<pre><code class="language-javascript">var january = $('#january');
+january.addClass('gold');
+</code></pre>
+
+<p><strong>Challenge:</strong></p>
+
+<ul>
+  <li>February should be orange</li>
+  <li>March should be pink</li>
+  <li>April should be blue</li>
+  <li>The others can be any colour</li>
+</ul>
+
+
+<aside class="notes">
+
+Open this practice in codepen.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="unicornsizes"
+	
+	>
+		
+
+<h2 id="make-the-august-unicorn-smaller">Make the August Unicorn Smaller</h2>
+
+<p>In your JavaScript panel:</p>
+
+<pre><code class="language-javascript">var august = $('#august .unicorn');
+august.height('40%');
+</code></pre>
+
+<p><strong>Challenge:</strong></p>
+
+<ul>
+  <li>May should be the same height as August</li>
+  <li>March should be 70% of the height of her box</li>
+</ul>
+
+
+<aside class="notes">
+
+Change the sizes of specific unicorns using their names.
+
+The CSS says that every `unicorn` should have a height of 50%.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="events"
+	
+	>
+		
+
+<h2 id="flying-pegasus-ponies">Flying Pegasus Ponies</h2>
+
+<p>Create a function containing the code you want to run:<br />
+<code>javascript
+function fly() {
+  var unicorn = $(this);
+  unicorn.animate({'margin-bottom':'+=15'}, 1000);
+  unicorn.animate({'margin-bottom':'-=15'}, 1000, fly);
+}
+</code></p>
+
+<p>Tell the selected objects when to run the function:<br />
+<code>javascript
+var pegasusPonies = $('.pegasus');
+pegasusPonies.click(fly);
+</code></p>
+
+<p>Pegasus ponies should now fly when clicked.<br />
+<!-- .element class="checkpoint" --></p>
+
+
+<aside class="notes">
+
+Sometimes we dont want to do things automatically as soon
+as the page loads.
+
+Sometimes we want to do something after a certain amount
+of time, or when something happens like a click or a keyboard
+button being pressed.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="unicornevents"
+	
+	>
+		
+
+<h2 id="junes-disappearing-trick">June’s Disappearing Trick</h2>
+
+<p>Create the <code>turnInvisible</code> function:<br />
+<code>javascript
+function turnInvisible() {
+var clickedUnicorn = $(this);
+clickedUnicorn.fadeOut();
+}
+</code></p>
+
+<p>Run the function when June is clicked:<br />
+<code>javascript
+var june = $('#june .unicorn');
+june.click( turnInvisible );
+</code></p>
+
+<p>June should now disappear when clicked.<br />
+<!-- .element class="checkpoint" --></p>
+
+
+<aside class="notes">
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="jumpingunicorns"
+	
+	>
+		
+
+<h2 id="jumping-jacks">Jumping Jacks</h2>
+
+<p>Here’s a function to make a unicorn jump:</p>
+
+<pre><code class="language-javascript">function jump() {
+  var unicorn = $(this);
+  unicorn.animate({'margin-bottom': '+=20'}, 300);
+  unicorn.animate({'margin-bottom': '-=20'}, 300);
+}
+</code></pre>
+
+<p><strong>Challenge:</strong><br /><br />
+Make one of the unicorns jump when the <code>mouseover</code> event happens.</p>
+
+
+<aside class="notes">
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="summary"
+	
+	>
+		
+
+<p><img src="/digital-media/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
+
+<h2 id="jquery-basics-complete">jQuery Basics: Complete!</h2>
+
+<p>Great, now it’s time to build our own…</p>
+
+<p><a href="pixel-art.html">Take me to the next chapter!</a></p>
+
+
+<aside class="notes">
+
+Great! Now that we know the basics, let's get started on our own projects.
+
+</aside>
+
+</section>
+
+
+
+
+
+		</div>
+
+	</div><!-- .reveal -->
+
+
+
+
+	<div class="sidenotes">
+		<div class="content">
+			<!-- display notes here using js -->
+			<p>Loading...</p>
+		</div>
+	</div>
+
+</div><!-- .slideshow -->
+
+
+
+</div>
+
+
+
+		<script src="/digital-media/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/digital-media/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/digital-media/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/digital-media/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/digital-media/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/digital-media/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>
