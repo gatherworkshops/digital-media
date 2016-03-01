@@ -9,9 +9,9 @@ slides:
 
       ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
 
-      # Stacked Layouts
+      # The Internet
 
-      _Designing your content_
+      _How it all works_
 
 
 
@@ -155,18 +155,18 @@ slides:
 
       The Internet is the same. It is _decentralised_ which means that it has no central control room and it can still function as a whole if some parts stop working.
 
-      
+
 
 
   - content: |
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
-      ## Stacked Layouts: Complete!
+      ## The Internet: Complete!
 
       Great, now let's explore where we'll build our own site...
 
-      [Take me to the next chapter!](infrastructure.html)
+      [Take me to the next chapter!](site-setup.html)
 
 
     notes: |

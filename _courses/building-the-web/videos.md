@@ -46,7 +46,24 @@ slides:
 
       :)
 
+  
 
+
+
+  - content: |
+
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
+
+      ## YouTube Videos: Complete!
+
+      Great, now let's explore where we'll build our own site...
+
+      [Take me to the next chapter!](menu-bar.html)
+
+
+    notes: |
+
+      Great! Now that we know the basics, let's get started on our own projects.
 
 
 

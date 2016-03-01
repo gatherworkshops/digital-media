@@ -151,7 +151,22 @@ slides:
       You can change these values to make your buttons look however you like.
 
 
+  - content: |
 
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
+
+      ## The Internet: Complete!
+
+      Great, now let's explore where we'll build our own site...
+
+      [Take me to the next chapter!](ownership.html)
+
+
+    notes: |
+
+      Great! Now that we know the basics, let's get started on our own projects.
+
+---
 
 
 

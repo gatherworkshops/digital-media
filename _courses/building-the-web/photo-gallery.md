@@ -9,7 +9,7 @@ slides:
       ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
 
       # Photo Gallery
-      _Design a theme for your site_
+      _Display a series of images_
 
 
 
@@ -125,6 +125,23 @@ slides:
 
     notes: |
       :)
+
+
+
+  - content: |
+
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
+
+      ## Photo Gallery: Complete!
+
+      Great, now let's explore where we'll build our own site...
+
+      [Take me to the next chapter!](videos.html)
+
+
+    notes: |
+
+      Great! Now that we know the basics, let's get started on our own projects.
 
 
 ---

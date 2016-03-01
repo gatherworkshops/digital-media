@@ -452,7 +452,7 @@ slides:
 
       Now let's add some more sections to our page...
 
-      [Take me to the next chapter!](gallery.html)
+      [Take me to the next chapter!](page-header.html)
 
 
     notes: |

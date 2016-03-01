@@ -108,7 +108,7 @@ slides:
       There are a whole bunch of different design ideas you can play with! Ask a mentor if you've got an idea but you're not sure how to achieve it.
 
 
-      
+
 
   - content: |
 
@@ -118,7 +118,7 @@ slides:
 
       Great, now let's explore how we'll host our own site...
 
-      [Take me to the next chapter!](infrastructure.html)
+      [Take me to the next chapter!](photo-gallery.html)
 
 
     notes: |
