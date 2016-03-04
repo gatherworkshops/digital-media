@@ -1,0 +1,36 @@
+{
+	"course": "web-taster",
+	"title": "Web Development Taster",
+	"tagline": "Use HTML and CSS to code a simple web page from the ground up.",
+
+	"chapters": [
+
+		
+			{
+			"name": "intro",
+			"title": "Introduction"
+			}
+			,
+		
+			{
+			"name": "html-basics",
+			"title": "Coding Content"
+			}
+			,
+		
+			{
+			"name": "css-basics",
+			"title": "Styley Design"
+			}
+			,
+		
+			{
+			"name": "layout-basics",
+			"title": "Tidy Layouts"
+			}
+			
+		
+
+	]
+
+}
