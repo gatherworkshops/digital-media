@@ -1,0 +1,33 @@
+---
+layout: coursedata
+title: Web Development Taster
+course: web-taster
+
+heading: Web Development Taster
+tagline: Use HTML and CSS to code a simple web page from the ground up.
+
+chapters:
+
+    - name: intro
+      subtitle: Intro
+      title: Introduction
+      description: Understand how web sites are put together and the different languages involved.
+
+    - name: html-basics
+      subtitle: Chapter One
+      title: Coding Content
+      description: Learn how we use HTML code to represent content in web pages.
+
+    - name: css-basics
+      subtitle: Chapter Two
+      title: Styley Design
+      description: Use CSS to add some design flair to your web page.
+
+    - name: layout-basics
+      subtitle: Chapter Three
+      title: Tidy Layouts
+      description: Tidy up the layout of your web page using a combination of HTML and CSS knowledge.
+
+---
+
+
