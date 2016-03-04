@@ -21,16 +21,6 @@ slides:
       Welcome to the Gather Workshops Web Development taster workshop.
 
 
-  - content: |
-
-      ## Why Code?
-
-      - Valuable skill in every industry
-      - Not about being a programmer
-      - Opportunity for growth
-      - Structured thinking
-      - Academic tech pathway
-
 
   - content: |
 
