@@ -24,7 +24,7 @@ slides:
 
       ## Sharing and Feedback: Complete!
 
-      Great, now let's explore where we'll build our own site...
+      Woo! You're now an actual proper web developer, well done :)
 
       [See other Digital Media Courses!](/)
 
