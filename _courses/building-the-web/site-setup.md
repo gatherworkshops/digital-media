@@ -448,7 +448,7 @@ slides:
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
-      ## Building Layouts: Complete!
+      ## Site Setup: Complete!
 
       Now let's add some more sections to our page...
 
