@@ -22,7 +22,7 @@ slides:
 
       ## Menu Bar
 
-      ![The menu bar goes between the header and the content area. It will be a plain box containing some links.]({{ site.baseurl }}/slides/workshop/menubar/images/layout-menubar.svg)
+      ![The menu bar goes between the header and the content area. It will be a plain box containing some links.](assets/images/layout-menubar.svg)
 
       _Adding a menu bar to your page_
 
@@ -42,7 +42,7 @@ slides:
       Add the `nav` on the line after your closing `</header>` tag:
 
       ```html
-      <nav class="main-menu">
+      <nav class="menuBar">
 
       </nav>
       ```
@@ -72,9 +72,14 @@ slides:
 
       Add your page links, between the `nav` tags:
 
+      ```html
+      <nav class="menuBar">
           <a href="index.html">Home</a>
           <a href="pictures.html">Pictures</a>
           <a href="videos.html">Videos</a>
+      </nav>
+      ```
+      {: data-line="1,5"}
 
       _Add some links to your menu bar_
 
@@ -100,14 +105,16 @@ slides:
 
       In your CSS, create a new rule:
 
-          .main-menu {
-              background: #FF0000;
-          }
+      ```css
+      .menuBar {
+          background: #FF0000;
+      }
+      ```
 
       _Add a background to your nav, so you can see it_
 
     notes: |
-      Our nav has the class `main-menu` so we can use this in our CSS to add some design to our nav.
+      Our nav has the class `menuBar` so we can use this in our CSS to add some design to our nav.
 
       Keep in mind that we are currently just styling the `nav` element, which is a container for all our navigation links.
 
@@ -124,19 +131,19 @@ slides:
       In your CSS, create two new rules:
 
       ```css
-      .main-menu a {
+      .menuBar {
+          background: #FF0000;
+      }
+
+      .menuBar a {
           background-color: #00FF00;
           border-color: #00DD00;
           font-weight: bold;
           display: inline-block;
           padding: 5px 10px;
       }
-
-      .main-menu a:hover {
-          background-color: #00DD00;
-          color: #FFFFFF;
-      }
       ```
+      {: data-line="1-3"}
 
 
       _Style your links to look like buttons_
@@ -144,20 +151,49 @@ slides:
 
     notes: |
   
-      The first CSS rule says how we want the menu buttons to look.
-
-      The second CSS rules says how we want the buttons to look when we move our mouse pointer over them, when we "hover".
+      This CSS rule says how we want the menu buttons to look.
 
       You can change these values to make your buttons look however you like.
 
 
   - content: |
 
+      ## Navigation Button Hover
+
+      ```css
+      .menuBar {
+          background: #FF0000;
+      }
+
+      .menuBar a {
+          background-color: #00FF00;
+          border-color: #00DD00;
+          font-weight: bold;
+          display: inline-block;
+          padding: 5px 10px;
+      }
+
+      .menuBar a:hover {
+          background-color: #00DD00;
+          color: #FFFFFF;
+      }
+      ```
+      {: data-line="1-11"}
+
+
+      _Style your links when the mouse is over them_
+
+    notes: |
+
+      This CSS rules says how we want the buttons to look when we move our mouse pointer over them, when we "hover".
+
+  - content: |
+
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
-      ## The Internet: Complete!
+      ## Menu Bar: Complete!
 
-      Great, now let's explore where we'll build our own site...
+      Great, now let's have a quick talk about ownership...
 
       [Take me to the next chapter!](ownership.html)
 
