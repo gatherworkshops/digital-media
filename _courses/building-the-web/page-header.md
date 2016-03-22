@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Custom Fonts
+title: Page Header
 slides:
 
   - class: title-slide
@@ -263,7 +263,7 @@ slides:
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
-      ## Stacked Layouts: Complete!
+      ## Page Header: Complete!
 
       Great, now let's explore where we'll build our own site...
 
