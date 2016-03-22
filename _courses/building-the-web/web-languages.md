@@ -16,7 +16,7 @@ slides:
 
       ### A web page is made of three main languages
 
-      ![Venn diagram of HTML, CSS and JS all overlapping](assets/images/html-css-js.png)
+      ![Venn diagram of HTML, CSS and JS all overlapping](assets/images/html-css-js.png){:height="350"}
 
 
     notes: |
@@ -35,7 +35,9 @@ slides:
 
       ### **HTML** is the markup language
 
-      ![Screenshot of Google with only HTML enabled](assets/images/google-html.png)
+      ![Screenshot of Google with only HTML enabled](assets/images/google-html.png){:height="350"}
+
+      HTML is used to define the content of a web page.
 
 
     notes: |
@@ -56,7 +58,9 @@ slides:
 
       ### **CSS** is the style sheet language
 
-      ![Screenshot of Google with both HTML and CSS enabled](assets/images/google-css.png)
+      ![Screenshot of Google with both HTML and CSS enabled](assets/images/google-css.png){:height="350"}
+
+      CSS is used to define the design of a web page.
 
 
     notes: |
@@ -79,7 +83,9 @@ slides:
 
       ### **JavaScript** is the programming language
 
-      ![Screenshot of Google with all of HTML, CSS, JS enabled](assets/images/google-javascript.png)
+      ![Screenshot of Google with all of HTML, CSS, JS enabled](assets/images/google-javascript.png){:height="350"}
+
+      JavaScript is used to define the interactions of a web page.
 
 
     notes: |
@@ -119,5 +125,9 @@ slides:
       Now we know how the languages fit together, let's try them out...
 
       [Take me to the next chapter!](html-basics.html)
+
+    notes: |
+
+      Now we know how the languages fit together, let's try them out...
 
 ---
