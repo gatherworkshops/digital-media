@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -177,7 +177,7 @@
 
 <aside class="notes">
 
-In this section we will make our randomised bubble artwork into a game.
+<p>In this section we will make our randomised bubble artwork into a game.</p>
 
 </aside>
 
@@ -204,7 +204,7 @@ In this section we will make our randomised bubble artwork into a game.
 
 <aside class="notes">
 
-Here's an example of something you might create.
+<p>Here’s an example of something you might create.</p>
 
 </aside>
 
@@ -243,7 +243,7 @@ left: 0;
 
 <aside class="notes">
 
-Display how many bubbles have been popped.
+<p>Display how many bubbles have been popped.</p>
 
 </aside>
 
@@ -282,7 +282,7 @@ bubbleCounter.textContent = bubblesPopped;
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -321,7 +321,7 @@ right: 0;
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -358,7 +358,7 @@ timerDisplay.textContent = secondsRemaining;
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -399,7 +399,7 @@ timerDisplay.textContent = secondsRemaining;
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -423,7 +423,7 @@ in a big box with big text.</p>
 
 
 <aside class="notes">
-:)
+<p>:)</p>
 
 </aside>
 
@@ -449,9 +449,9 @@ in a big box with big text.</p>
 
 <aside class="notes">
 
-Good work. Now you have even made a game :)
+<p>Good work. Now you have even made a game :)</p>
 
-Well done :)
+<p>Well done :)</p>
 
 </aside>
 
@@ -496,6 +496,11 @@ Well done :)
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -524,7 +529,13 @@ Well done :)
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

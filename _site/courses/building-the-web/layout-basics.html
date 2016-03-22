@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -178,6 +178,396 @@
 
 <aside class="notes">
 
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="block-elements">Block Elements</h2>
+
+<p>Block elements are the “building blocks” of our website. </p>
+
+<p>Block elements are used for layout, and can contain other elements.</p>
+
+
+<aside class="notes">
+<p><code>header</code> might contain our h1 and menu bar<br /><br />
+<code>section</code> could be an intro, gallery, or general info<br /><br />
+<code>footer</code> might contain copyright and contact info</p>
+
+<p>Pages often have one <strong>header</strong>, lots of <strong>sections</strong> and one <strong>footer</strong>.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="header-html">Header HTML</h2>
+
+<p>Our header block will contain the profile pic, “Grumpy Cat” heading and the first paragraph of text.</p>
+
+<p><strong>In your HTML, on the line <em>before</em> the profile pic:</strong></p>
+
+<pre><code class="language-html">&lt;header class="page-header"&gt;
+</code></pre>
+
+<p><strong>In your HTML, <em>after</em> the first paragraph:</strong></p>
+
+<pre><code class="language-html">&lt;/header&gt;
+</code></pre>
+
+<p>There should now be a dark blue box at the top of your page.</p>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="header-styles">Header Styles</h2>
+
+<p>Let’s design a header to contain Grumpy Cat’s profile pic, page title, and first paragraph.</p>
+
+<p><strong>In your CSS, on a new line:</strong></p>
+
+<pre><code class="language-css">.page-header {
+  background-color: darkblue;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+</code></pre>
+
+<p>Our header block will have large, centered, bold text.</p>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="info-section-html">Info Section HTML</h2>
+
+<p>This content block is a section not a header, so we use the <code>section</code> tag.</p>
+
+<p><strong>In your HTML, <em>before</em> the second paragraph:</strong></p>
+
+<pre><code class="language-html">&lt;section class="info-section"&gt;
+</code></pre>
+
+<p><strong>And <em>after</em> the third paragraph:</strong></p>
+
+<pre><code class="language-html">&lt;/section&gt;
+</code></pre>
+
+<p>There should now be a yellow block around two paragraphs.</p>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="info-section-styles">Info Section Styles</h2>
+
+<p>Now we want a box around the other two paragraphs.</p>
+
+<p><strong>In your CSS, on a new line:</strong></p>
+
+<pre><code class="language-css">.info-section {
+  background-color: yellow;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+</code></pre>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="gallery-section-html">Gallery Section HTML</h2>
+
+<p>Now create the section block around your gallery images.</p>
+
+<p><strong>In your HTML, <em>before</em> the first gallery image:</strong></p>
+
+<pre><code class="language-html">&lt;section class="gallery-section"&gt;
+</code></pre>
+
+<p><strong>And <em>after</em> the last gallery image:</strong></p>
+
+<pre><code class="language-html">&lt;/section&gt;
+</code></pre>
+
+<p>You should now have a dark green section around your gallery images.</p>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="gallery-section-styles">Gallery Section Styles</h2>
+
+<p>We can style our gallery section the same way.</p>
+
+<p><strong>In your CSS:</strong></p>
+
+<pre><code class="language-css">.gallery-section {
+  background-color: darkgreen;
+  text-align: center;
+}
+</code></pre>
+
+<p>Then in your HTML code, add <code>section</code> tags around your gallery images. Remember to add the class!</p>
+
+<p>If you can’t remember how, there is code on the next page…</p>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="gallery-image-styles">Gallery Image Styles</h2>
+
+<p>We can also use a trick to style the images <em>inside</em> the gallery section, without adding a class to every single one.</p>
+
+<p><strong>In your CSS, on a new line:</strong></p>
+
+<pre><code class="language-css">.gallery-section img {
+  border: 5px solid white;
+  height: 150px;
+}
+</code></pre>
+
+<p>Your gallery images should now have white borders and all be the same height.</p>
+
+
+<aside class="notes">
+
+<p>This style says “find a block with the class <code>gallery</code>, then find every <code>img</code> element inside it and apply these styles”</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="element-selectors">Element Selectors</h2>
+
+<p>Rather than always using classes, we can also choose to style all HTML elements of the same type.</p>
+
+<p><strong>At the top of your CSS, on a new line:</strong></p>
+
+<pre><code class="language-css">header,
+section {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 130%;
+}
+</code></pre>
+
+<p>All your sections (and your header) should now be centered on the page.</p>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="whole-page-styles">Whole Page Styles</h2>
+
+<p>When we have styles we want to apply to the whole page, we can target the <code>body</code>, because all other tags are between the <code>body</code> tags.</p>
+
+<p><strong>At the top of your CSS, on a new line:</strong></p>
+
+<pre><code class="language-css">body {
+  background-color: gold;
+  background-image: url(http://subtlepatterns.com/patterns/food.png);
+  font-family: sans-serif;
+}
+</code></pre>
+
+<p>Your background should now be yellow with a pattern.</p>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="element-selectors">Element Selectors</h2>
+
+<p>Now all that we have to do is tidy up our colours. We need to remove the backgrounds we used for planning our layout.</p>
+
+<p><strong>In your CSS:</strong></p>
+
+<ul>
+  <li>Find <code>.page-header</code> and remove the background</li>
+  <li>Find <code>.info-section</code> and change background to white</li>
+  <li>Find <code>.gallery-section</code> and remove the background</li>
+</ul>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="grumpy-cat-output">Grumpy Cat Output</h2>
+
+<p>Your own output window should now look like this:</p>
+
+<div style="height:570px" data-height="570" data-theme-id="0" data-slug-hash="yyrQMr" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/yyrQMr/">yyrQMr</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</div>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>If it doesn’t, check that all your styles are correct! </p>
+
+
+<aside class="notes">
+
+
 </aside>
 
 </section>
@@ -204,7 +594,7 @@
 
 <aside class="notes">
 
-Great! Now that we know the basics, let's get started on our own projects.
+<p>Great! Now that we know the basics, let’s get started on our own projects.</p>
 
 </aside>
 
@@ -249,6 +639,11 @@ Great! Now that we know the basics, let's get started on our own projects.
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -277,7 +672,13 @@ Great! Now that we know the basics, let's get started on our own projects.
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

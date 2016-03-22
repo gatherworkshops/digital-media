@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -177,7 +177,7 @@
 
 <aside class="notes">
 
-In this section we will make a pixel art drawing board.
+<p>In this section we will make a pixel art drawing board.</p>
 
 </aside>
 
@@ -203,9 +203,9 @@ In this section we will make a pixel art drawing board.
 
 <aside class="notes">
 
-All digital images are made up of pixels.
+<p>All digital images are made up of pixels.</p>
 
-We talk about cameras having a certain number of "megapixels". A megapixel is a _million_ pixels!
+<p>We talk about cameras having a certain number of “megapixels”. A megapixel is a <em>million</em> pixels!</p>
 
 </aside>
 
@@ -231,13 +231,13 @@ We talk about cameras having a certain number of "megapixels". A megapixel is a 
 
 <aside class="notes">
 
-Although all images are made up of pixels, when we talk about "pixel art" 
-we mean images where the artist has drawn each pixel.
+<p>Although all images are made up of pixels, when we talk about “pixel art” <br />
+we mean images where the artist has drawn each pixel.</p>
 
-In pixel art, there is usually a limited number of colours and sometimes
-the image is displayed bigger, so that each "pixel" block is plainly visible.
+<p>In pixel art, there is usually a limited number of colours and sometimes<br />
+the image is displayed bigger, so that each “pixel” block is plainly visible.</p>
 
-Pixel art can be scaled down very small and still be recognisable. 
+<p>Pixel art can be scaled down very small and still be recognisable. </p>
 
 </aside>
 
@@ -263,7 +263,7 @@ Pixel art can be scaled down very small and still be recognisable.
 
 <aside class="notes">
 
-Design a picture or pattern by colouring in whole squares in only black.
+<p>Design a picture or pattern by colouring in whole squares in only black.</p>
 
 </aside>
 
@@ -289,7 +289,7 @@ Design a picture or pattern by colouring in whole squares in only black.
 
 <aside class="notes">
 
-Here is an example of the pixel art drawing board we will be creating.
+<p>Here is an example of the pixel art drawing board we will be creating.</p>
 
 </aside>
 
@@ -316,7 +316,7 @@ Here is an example of the pixel art drawing board we will be creating.
 
 <aside class="notes">
 
-Let's get started building our own!
+<p>Let’s get started building our own!</p>
 
 </aside>
 
@@ -355,9 +355,9 @@ Let's get started building our own!
 
 <aside class="notes">
 
-The first thing we need is the drawing board.
+<p>The first thing we need is the drawing board.</p>
 
-Our drawing board will be a white box with a solid border.
+<p>Our drawing board will be a white box with a solid border.</p>
 
 </aside>
 
@@ -392,17 +392,17 @@ Our drawing board will be a white box with a solid border.
 
 <aside class="notes">
 
-We can also put the board in the middle of the page.
+<p>We can also put the board in the middle of the page.</p>
 
-Because our drawing board is a div, it is a "block" element.
+<p>Because our drawing board is a div, it is a “block” element.</p>
 
-Block elements can be horizontally positioned using their margins.
+<p>Block elements can be horizontally positioned using their margins.</p>
 
-By setting the left margin and right margin to both be `auto`,
-the board will automatically use the same amount of spacing on
-both the left and the right sides.
+<p>By setting the left margin and right margin to both be <code>auto</code>,<br />
+the board will automatically use the same amount of spacing on<br />
+both the left and the right sides.</p>
 
-Unfortunately this doesn't work for vertical positioning!
+<p>Unfortunately this doesn’t work for vertical positioning!</p>
 
 </aside>
 
@@ -442,18 +442,18 @@ Unfortunately this doesn't work for vertical positioning!
 
 <aside class="notes">
 
-Next we need to create our pixels.
+<p>Next we need to create our pixels.</p>
 
-Each "pixel" will be an empty box with a subtle border.
+<p>Each “pixel” will be an empty box with a subtle border.</p>
 
-For this particular drawing board, we will have a 10x10
-grid, making up a total of 100 pixels.
+<p>For this particular drawing board, we will have a 10x10<br />
+grid, making up a total of 100 pixels.</p>
 
-To fit 10 boxes across, the width of each pixel will need
-to be 10% of the drawing board's width.
+<p>To fit 10 boxes across, the width of each pixel will need<br />
+to be 10% of the drawing board’s width.</p>
 
-To fit 10 boxes down, the pixel height will also need to
-be 10% of the board's height.
+<p>To fit 10 boxes down, the pixel height will also need to<br />
+be 10% of the board’s height.</p>
 
 </aside>
 
@@ -490,15 +490,15 @@ be 10% of the board's height.
 
 <aside class="notes">
 
-We've now got all the pixels we need, but they go for miles off
-the bottom of the page.
+<p>We’ve now got all the pixels we need, but they go for miles off<br />
+the bottom of the page.</p>
 
-This is because each pixel is a `block` element, and block elements
-take up a whole line of their own by default, forcing anything after
-them to go to the next line.
+<p>This is because each pixel is a <code>block</code> element, and block elements<br />
+take up a whole line of their own by default, forcing anything after<br />
+them to go to the next line.</p>
 
-We can fix this by using a `flex` layout. Boxes with `flex` enabled
-can have other boxes inside which easily stack against each other.
+<p>We can fix this by using a <code>flex</code> layout. Boxes with <code>flex</code> enabled<br />
+can have other boxes inside which easily stack against each other.</p>
 
 </aside>
 
@@ -535,14 +535,14 @@ can have other boxes inside which easily stack against each other.
 
 <aside class="notes">
 
-We now have borders between our pixels which are 2px wide, when we
-only wanted 1px.
+<p>We now have borders between our pixels which are 2px wide, when we<br />
+only wanted 1px.</p>
 
-This is because each pixel box has a 1px border, so putting them right next
-to each other makes 2px between each box in total.
+<p>This is because each pixel box has a 1px border, so putting them right next<br />
+to each other makes 2px between each box in total.</p>
 
-We can selectively hide the border for two sides of each pixel box,
-to make the dividers appear as only 1px wide.
+<p>We can selectively hide the border for two sides of each pixel box,<br />
+to make the dividers appear as only 1px wide.</p>
 
 </aside>
 
@@ -572,9 +572,9 @@ alert( allPixels.length );
 
 <aside class="notes">
 
-The objects on the page we want to be working with are 
-the pixels, so our first step is to use jQuery to identify
-all of the pixels in our box.
+<p>The objects on the page we want to be working with are <br />
+the pixels, so our first step is to use jQuery to identify<br />
+all of the pixels in our box.</p>
 
 </aside>
 
@@ -609,7 +609,7 @@ allPixels.addClass('white');
 
 <aside class="notes">
 
-When we first load the page, we want all the pixel to be white.
+<p>When we first load the page, we want all the pixel to be white.</p>
 
 </aside>
 
@@ -647,24 +647,24 @@ allPixels.click(changeColor);
 
 <aside class="notes">
 
-Using jQuery, we can quickly and easily tell our code to
-look out for someone clicking an object on the page.
+<p>Using jQuery, we can quickly and easily tell our code to<br />
+look out for someone clicking an object on the page.</p>
 
-Because we already have a variable containing all the pixels,
-we can add a "click listener" to the variable, and that will
-apply to all the pixel objects stored in the variable.
+<p>Because we already have a variable containing all the pixels,<br />
+we can add a “click listener” to the variable, and that will<br />
+apply to all the pixel objects stored in the variable.</p>
 
-Inside the brackets we tell the code what it is we want to
-happen when a click occurs.
+<p>Inside the brackets we tell the code what it is we want to<br />
+happen when a click occurs.</p>
 
-The words inside the bracket are a function name. We need to
-write some code which runs under that function name.
+<p>The words inside the bracket are a function name. We need to<br />
+write some code which runs under that function name.</p>
 
-To check our clicks work, we'll make our clicks show a test
-message on the screen.
+<p>To check our clicks work, we’ll make our clicks show a test<br />
+message on the screen.</p>
 
-Create a function called `changeColor` and put the code to
-run between the function's curly brackets.
+<p>Create a function called <code>changeColor</code> and put the code to<br />
+run between the function’s curly brackets.</p>
 
 </aside>
 
@@ -703,16 +703,16 @@ run between the function's curly brackets.
 
 <aside class="notes">
 
-When we click a pixel, we want it to turn black.
+<p>When we click a pixel, we want it to turn black.</p>
 
-To do this, we will need to use CSS to change the background colour
-of the pixel box.
+<p>To do this, we will need to use CSS to change the background colour<br />
+of the pixel box.</p>
 
-There are a few different ways to do this, but today we'll create 
-a new class called `black` which will set the background colour 
-to black.
+<p>There are a few different ways to do this, but today we’ll create <br />
+a new class called <code>black</code> which will set the background colour <br />
+to black.</p>
 
-When we apply the class "black" to a pixel, it will turn black.
+<p>When we apply the class “black” to a pixel, it will turn black.</p>
 
 </aside>
 
@@ -753,16 +753,16 @@ When we apply the class "black" to a pixel, it will turn black.
 
 <aside class="notes">
 
-You can now change the colour of pixels, but what if you 
-make a mistake?
+<p>You can now change the colour of pixels, but what if you <br />
+make a mistake?</p>
 
-We need a way to also change the color from black back to
-white again if you click a second time.
+<p>We need a way to also change the color from black back to<br />
+white again if you click a second time.</p>
 
-Use an `if - else` statement to change the color class.
+<p>Use an <code>if - else</code> statement to change the color class.</p>
 
-You should then be able to change between black and white
-by clicking a pixel more than once.
+<p>You should then be able to change between black and white<br />
+by clicking a pixel more than once.</p>
 
 </aside>
 
@@ -790,7 +790,7 @@ by clicking a pixel more than once.
 
 <aside class="notes">
 
-Your pixel art drawing board should now work just like this one.
+<p>Your pixel art drawing board should now work just like this one.</p>
 
 </aside>
 
@@ -816,7 +816,7 @@ Your pixel art drawing board should now work just like this one.
 
 <aside class="notes">
 
-Design a picture or pattern by colouring in whole squares in any colour.
+<p>Design a picture or pattern by colouring in whole squares in any colour.</p>
 
 </aside>
 
@@ -843,7 +843,7 @@ Design a picture or pattern by colouring in whole squares in any colour.
 
 <aside class="notes">
 
-Here is an example of the pixel art drawing board we will be creating.
+<p>Here is an example of the pixel art drawing board we will be creating.</p>
 
 </aside>
 
@@ -869,14 +869,14 @@ Here is an example of the pixel art drawing board we will be creating.
 
 <aside class="notes">
 
-Now how might we add more colours to our tile clicking
-options?
+<p>Now how might we add more colours to our tile clicking<br />
+options?</p>
 
-The CSS has support for lots more colours, and you could
-add more if you want to.
+<p>The CSS has support for lots more colours, and you could<br />
+add more if you want to.</p>
 
-Adding more colours is done by adding more `else if`
-options to the `if` code we already have.
+<p>Adding more colours is done by adding more <code>else if</code><br />
+options to the <code>if</code> code we already have.</p>
 
 </aside>
 
@@ -918,7 +918,7 @@ options to the `if` code we already have.
 
 <aside class="notes">
 
-Add `else if` options to the `if` code you already have.
+<p>Add <code>else if</code> options to the <code>if</code> code you already have.</p>
 
 </aside>
 
@@ -945,10 +945,10 @@ Add `else if` options to the `if` code you already have.
 
 <aside class="notes">
 
-Here's a demo of the final product, in case you 
-get lost and can't figure out what's going wrong!
+<p>Here’s a demo of the final product, in case you <br />
+get lost and can’t figure out what’s going wrong!</p>
 
-You can look at the HTML, CSS or JavaScript 
+<p>You can look at the HTML, CSS or JavaScript </p>
 
 </aside>
 
@@ -976,7 +976,7 @@ You can look at the HTML, CSS or JavaScript
 
 <aside class="notes">
 
-Your pixel art drawing board should now work.
+<p>Your pixel art drawing board should now work.</p>
 
 </aside>
 
@@ -1004,7 +1004,7 @@ more detailed images.</p>
 
 <aside class="notes">
 
-See if you can make a higher-definition version of the grid.
+<p>See if you can make a higher-definition version of the grid.</p>
 
 </aside>
 
@@ -1032,16 +1032,18 @@ See if you can make a higher-definition version of the grid.
 
 <aside class="notes">
 
-Congratulations! You've made your first jQuery app!
+<p>Congratulations! You’ve made your first jQuery app!</p>
 
-Through this chapter you have learned about:
+<p>Through this chapter you have learned about:</p>
 
-- Getting a group of elements in a page
-- Functions
-- Running a function when a click happens
-- Adding and removing classes
+<ul>
+  <li>Getting a group of elements in a page</li>
+  <li>Functions</li>
+  <li>Running a function when a click happens</li>
+  <li>Adding and removing classes</li>
+</ul>
 
-Well done :)
+<p>Well done :)</p>
 
 </aside>
 
@@ -1086,6 +1088,11 @@ Well done :)
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -1114,7 +1121,13 @@ Well done :)
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

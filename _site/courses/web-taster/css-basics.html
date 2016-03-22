@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -177,7 +177,7 @@
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -203,6 +203,7 @@
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -231,6 +232,7 @@
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -254,6 +256,7 @@
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -285,6 +288,7 @@ Make sure to check your spelling of “color”!</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -315,6 +319,7 @@ Make sure to check your spelling of “color”!</p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -349,6 +354,7 @@ Make sure to check your spelling of “color”!</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -377,6 +383,7 @@ They're otterly adorable.
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -410,6 +417,7 @@ They're otterly adorable.
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -451,6 +459,7 @@ by changing the margin on both elements.</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -475,6 +484,7 @@ and apply it to all three subheadings.</p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -511,6 +521,7 @@ when styling elements by their tag name!</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -545,6 +556,7 @@ when styling elements by their tag name!</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -569,6 +581,7 @@ when styling elements by their tag name!</p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -599,6 +612,7 @@ A design rule can be applied to all elements of one kind by the element name</li
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -625,7 +639,7 @@ A design rule can be applied to all elements of one kind by the element name</li
 
 <aside class="notes">
 
-Great! Now that we know the basics, let's get started on our own projects.
+<p>Great! Now that we know the basics, let’s get started on our own projects.</p>
 
 </aside>
 
@@ -670,6 +684,11 @@ Great! Now that we know the basics, let's get started on our own projects.
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -698,7 +717,13 @@ Great! Now that we know the basics, let's get started on our own projects.
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

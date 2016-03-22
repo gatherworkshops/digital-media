@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -177,11 +177,11 @@
 
 <aside class="notes">
 
-Welcome to Building with jQuery!
+<p>Welcome to Building with jQuery!</p>
 
-This workshop is designed to introduce you to the basics of writing JavaScript with jQuery.
+<p>This workshop is designed to introduce you to the basics of writing JavaScript with jQuery.</p>
 
-By the end of the workshop you will have coded and published a selection of small interactive code demos.
+<p>By the end of the workshop you will have coded and published a selection of small interactive code demos.</p>
 
 </aside>
 
@@ -205,13 +205,13 @@ and you can ask them (almost) anything!</p>
 
 
 <aside class="notes">
-Your mentors are super friendly, make sure to say hi.
+<p>Your mentors are super friendly, make sure to say hi.</p>
 
-They actually get paid to do this stuff for a job, which is super cool.
+<p>They actually get paid to do this stuff for a job, which is super cool.</p>
 
-You can ask them for help with your code, ask them about their day job, or ask them what their favourite colour is.
+<p>You can ask them for help with your code, ask them about their day job, or ask them what their favourite colour is.</p>
 
-They're here to help, so ask them anything :)
+<p>They’re here to help, so ask them anything :)</p>
 
 </aside>
 
@@ -240,13 +240,13 @@ They're here to help, so ask them anything :)
 
 
 <aside class="notes">
-Let's quickly go around the room and introduce ourselves.
+<p>Let’s quickly go around the room and introduce ourselves.</p>
 
-Tell us all one of your favourite things - favourite food, sport, hobby, animal, anything!
+<p>Tell us all one of your favourite things - favourite food, sport, hobby, animal, anything!</p>
 
-If you could choose one super power, which would it be?
+<p>If you could choose one super power, which would it be?</p>
 
-Last of all, tell us your name.
+<p>Last of all, tell us your name.</p>
 
 </aside>
 
@@ -281,13 +281,13 @@ Last of all, tell us your name.
 
 
 <aside class="notes">
-Today's workshop is arranged in six different sections.
+<p>Today’s workshop is arranged in six different sections.</p>
 
-In the first part we will look at how the Internet works and what this means for us as coders, plus take a look at the basics of web code languages. 
+<p>In the first part we will look at how the Internet works and what this means for us as coders, plus take a look at the basics of web code languages. </p>
 
-After that we will start working on our own websites, so think about a topic! We will design a page layout and a menu bar.
+<p>After that we will start working on our own websites, so think about a topic! We will design a page layout and a menu bar.</p>
 
-Later we will add some fancy extras to our site, like YouTube videos and a gallery.
+<p>Later we will add some fancy extras to our site, like YouTube videos and a gallery.</p>
 
 </aside>
 
@@ -315,7 +315,7 @@ Later we will add some fancy extras to our site, like YouTube videos and a galle
 
 <aside class="notes">
 
-Great! Now that's all sorted, let's get started!
+<p>Great! Now that’s all sorted, let’s get started!</p>
 
 </aside>
 
@@ -360,6 +360,11 @@ Great! Now that's all sorted, let's get started!
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -388,7 +393,13 @@ Great! Now that's all sorted, let's get started!
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

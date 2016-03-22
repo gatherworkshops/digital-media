@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -177,6 +177,7 @@
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -199,13 +200,13 @@
 
 
 <aside class="notes">
-Find and download some images to use in your gallery.
+<p>Find and download some images to use in your gallery.</p>
 
-It is important to use images which are shared under a Creative Commons licence, which means that the owner of the image has given permission for it to be used by other people for free.
+<p>It is important to use images which are shared under a Creative Commons licence, which means that the owner of the image has given permission for it to be used by other people for free.</p>
 
-You can use Flickr to search for Creative Commons images.
+<p>You can use Flickr to search for Creative Commons images.</p>
 
-Right click an image and choose "Save Image As..." to download it.
+<p>Right click an image and choose “Save Image As…” to download it.</p>
 
 </aside>
 
@@ -230,9 +231,9 @@ Right click an image and choose "Save Image As..." to download it.
 
 
 <aside class="notes">
-Upload the photos to your Cloud Cannon project.
+<p>Upload the photos to your Cloud Cannon project.</p>
 
-The photos should all be uploaded to your `images` folder.
+<p>The photos should all be uploaded to your <code>images</code> folder.</p>
 
 </aside>
 
@@ -257,11 +258,11 @@ The photos should all be uploaded to your `images` folder.
 
 
 <aside class="notes">
-Rename each of your photos to have simple names. This will make it easier to type the file names into your code.
+<p>Rename each of your photos to have simple names. This will make it easier to type the file names into your code.</p>
 
-Remember that file names for websites should be all lowercase letters (no capitals!) and should have no spaces.
+<p>Remember that file names for websites should be all lowercase letters (no capitals!) and should have no spaces.</p>
 
-Instead of a space, you can use underscore `_` or dash `-`.
+<p>Instead of a space, you can use underscore <code>_</code> or dash <code>-</code>.</p>
 
 </aside>
 
@@ -292,9 +293,9 @@ Instead of a space, you can use underscore `_` or dash `-`.
 
 <aside class="notes">
 
-Add at least three images to your pictures page.
+<p>Add at least three images to your pictures page.</p>
 
-Don't worry about the sizes for now, we will fix that next.
+<p>Don’t worry about the sizes for now, we will fix that next.</p>
 
 </aside>
 
@@ -325,7 +326,7 @@ Don't worry about the sizes for now, we will fix that next.
 
 
 <aside class="notes">
-:)
+<p>:)</p>
 
 </aside>
 
@@ -356,7 +357,7 @@ Don't worry about the sizes for now, we will fix that next.
 
 
 <aside class="notes">
-:)
+<p>:)</p>
 
 </aside>
 
@@ -384,7 +385,7 @@ Don't worry about the sizes for now, we will fix that next.
 
 <aside class="notes">
 
-Great! Now that we know the basics, let's get started on our own projects.
+<p>Great! Now that we know the basics, let’s get started on our own projects.</p>
 
 </aside>
 
@@ -429,6 +430,11 @@ Great! Now that we know the basics, let's get started on our own projects.
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -457,7 +463,13 @@ Great! Now that we know the basics, let's get started on our own projects.
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

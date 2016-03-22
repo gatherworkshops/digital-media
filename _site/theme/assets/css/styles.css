@@ -110,7 +110,7 @@ body {
     flex-grow: 0; }
   body .page-content {
     flex-grow: 1;
-    overflow: scroll;
+    overflow: auto;
     position: relative; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -335,18 +335,26 @@ body.chapter {
     padding-right: 50px;
     margin-top: 30px; }
 
-/* tile-like list of links to individual chapters */
-.chapter-links {
+/* tile-like list of links to individual chapters and courses */
+.chapter-links,
+.course-links {
   /* remove bottom border from last row */ }
-  .chapter-links.row {
+  .chapter-links.row,
+  .course-links.row {
     padding: 30px 0;
     border-bottom: 1px solid rgba(150, 0, 0, 0.2); }
-  .chapter-links > div:last-of-type {
+  .chapter-links > div:last-of-type,
+  .course-links > div:last-of-type {
     border: none; }
-  .chapter-links .break {
+  .chapter-links .break,
+  .course-links .break {
     font-size: 3em;
     font-family: "Lunchbox";
     text-align: center; }
+
+.chapter-links .header-image {
+  display: none;
+  /* hide all chapter images cos we have none */ }
 
 /* the tile block */
 .tile-link a {
@@ -408,38 +416,9 @@ body.chapter {
   .reveal .slides > section p {
     margin-top: 0.4em;
     margin-bottom: 0.8em; }
-  .reveal pre {
-    width: 100%;
-    margin-bottom: 2em; }
-    .reveal pre code {
-      padding: 0 10px; }
-    .reveal pre[data-line] code {
-      padding-left: 2em; }
-  .reveal .line-highlight {
-    background: rgba(255, 255, 255, 0.7); }
-    .reveal .line-highlight::before, .reveal .line-highlight[data-end]::before, .reveal .line-highlight[data-end]::after {
-      content: ""; }
-  .reveal [data-linestyle="delete"] .line-highlight {
-    border-left: 10px solid #D00;
-    background: rgba(255, 0, 0, 0.1); }
-  .reveal .highlight {
-    border-radius: 0 0 5px 5px; }
-    .reveal .highlight pre {
-      margin: 0 0;
-      margin-bottom: 1em;
-      font-size: 100%;
-      width: 100%;
-      box-shadow: none; }
-      .reveal .highlight pre code {
-        padding: 10px;
-        font-size: inherit;
-        max-height: none; }
-  .reveal .big-code {
-    font-size: 26px;
-    padding: 20px 0; }
-  .reveal pre.language-css {
-    width: 80%;
-    margin: 0 auto; }
+  .reveal .slides > .present {
+    max-height: 576px;
+    overflow: hidden; }
   .reveal code {
     background-color: rgba(255, 255, 255, 0.6);
     padding: 6px; }
@@ -465,68 +444,6 @@ body.chapter {
     border: 0 !important;
     box-shadow: none !important;
     background: transparent !important; }
-  .reveal .slides > .default-slide {
-    text-align: left; }
-  .reveal .slides > .centered-slide {
-    text-align: center; }
-  .reveal .slides > .info-sheet-slide {
-    text-align: left; }
-    .reveal .slides > .info-sheet-slide img {
-      float: left;
-      display: block;
-      padding-right: 20px;
-      padding-left: 30px;
-      margin-right: 20px; }
-  .reveal .slides > .title-slide {
-    color: #DCE3B2;
-    text-shadow: 2px 2px 1px #351400; }
-    .reveal .slides > .title-slide h1, .reveal .slides > .title-slide h2, .reveal .slides > .title-slide h3 {
-      color: #DCE3B2;
-      text-shadow: 2px 2px 1px #351400; }
-  .reveal .slides .flex-list {
-    display: flex;
-    list-style-type: none; }
-    .reveal .slides .flex-list > li {
-      flex: 1;
-      text-align: center;
-      border-right: 1px dotted rgba(0, 0, 0, 0.3);
-      padding: 20px 0;
-      font-size: 70%;
-      line-height: 120%; }
-      .reveal .slides .flex-list > li strong {
-        font-size: 120%;
-        line-height: 150%; }
-      .reveal .slides .flex-list > li:last-of-type {
-        border-right: none; }
-
-.reveal p.checkpoint {
-  background: rgba(255, 200, 180, 0.5);
-  border: 1px solid orange;
-  padding: 10px 10px 12px 20px;
-  border-radius: 5px;
-  text-align: left;
-  margin-top: 20px !important;
-  display: inline-block;
-  max-width: 100%; }
-  .reveal p.checkpoint:hover::after {
-    background: white; }
-  .reveal p.checkpoint::after {
-    content: "Done!";
-    border: 1px solid gray;
-    background: rgba(255, 255, 255, 0.7);
-    font-size: 70%;
-    box-sizing: border-box;
-    border-radius: 5px;
-    height: 100%;
-    float: right;
-    margin-left: 20px;
-    width: 5em;
-    text-align: center; }
-  .reveal p.checkpoint.checked {
-    background: rgba(180, 255, 200, 0.5);
-    border-color: green; }
-    .reveal p.checkpoint.checked::after {
-      content: "Great!"; }
 
 .reveal .controls div {
   opacity: 0.15; }
@@ -687,6 +604,152 @@ body {
         padding: 2px 5px; }
   .slideshow.with-notes .sidenotes {
     flex: 0.5; }
+
+.reveal .slides {
+  /* 
+  slide with an iframe displaying 
+  demo output 
+  */
+  /*
+  slide with a code block displaying multiple
+  changes in a long piece of code
+  */ }
+  .reveal .slides > .default-slide {
+    text-align: left; }
+  .reveal .slides > .centered-slide {
+    text-align: center; }
+  .reveal .slides > .info-sheet-slide {
+    text-align: left; }
+    .reveal .slides > .info-sheet-slide img {
+      float: left;
+      display: block;
+      padding-right: 20px;
+      padding-left: 30px;
+      margin-right: 20px; }
+  .reveal .slides > .title-slide {
+    color: #DCE3B2;
+    text-shadow: 2px 2px 1px #351400; }
+    .reveal .slides > .title-slide h1, .reveal .slides > .title-slide h2, .reveal .slides > .title-slide h3 {
+      color: #DCE3B2;
+      text-shadow: 2px 2px 1px #351400; }
+  .reveal .slides > .demo {
+    height: 100%;
+    width: 100%;
+    top: -50% !important;
+    left: -50% !important;
+    padding: 0;
+    text-align: left;
+    overflow: visible; }
+    .reveal .slides > .demo iframe {
+      float: left;
+      height: 100%;
+      max-height: 100%;
+      margin-right: 30px;
+      width: 50%;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }
+    .reveal .slides > .demo h2 {
+      margin-top: 50px; }
+  .reveal .slides > .long-code {
+    height: 100%;
+    width: 100%;
+    top: -50% !important;
+    left: -50% !important;
+    padding: 0;
+    text-align: left;
+    overflow: visible; }
+    .reveal .slides > .long-code pre {
+      float: left;
+      height: 100%;
+      max-height: 100%;
+      margin-right: 30px;
+      width: 50%; }
+    .reveal .slides > .long-code h2 {
+      margin-top: 50px; }
+
+.reveal .slides {
+  /*
+  displays a list of items horizontally
+  across the slide
+  */
+  /*
+  a paragraph which can be clicked to confirm that
+  the student has completed the task. flicks to the
+  next slide after a brief pause.
+  */ }
+  .reveal .slides .flex-list {
+    display: flex;
+    list-style-type: none; }
+    .reveal .slides .flex-list > li {
+      flex: 1;
+      text-align: center;
+      border-right: 1px dotted rgba(0, 0, 0, 0.3);
+      padding: 20px 10px;
+      font-size: 70%;
+      line-height: 120%; }
+      .reveal .slides .flex-list > li strong {
+        font-size: 120%;
+        line-height: 150%; }
+      .reveal .slides .flex-list > li:last-of-type {
+        border-right: none; }
+  .reveal .slides p.checkpoint {
+    background: rgba(255, 200, 180, 0.5);
+    border: 1px solid orange;
+    padding: 10px 10px 12px 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 20px !important;
+    display: inline-block;
+    max-width: 100%;
+    font-size: 80%; }
+    .reveal .slides p.checkpoint:hover::after {
+      background: white; }
+    .reveal .slides p.checkpoint::after {
+      content: "Done!";
+      border: 1px solid gray;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 70%;
+      box-sizing: border-box;
+      border-radius: 5px;
+      height: 100%;
+      float: right;
+      margin-left: 20px;
+      width: 5em;
+      text-align: center; }
+    .reveal .slides p.checkpoint.checked {
+      background: rgba(180, 255, 200, 0.5);
+      border-color: green; }
+      .reveal .slides p.checkpoint.checked::after {
+        content: "Great!"; }
+
+pre[class*="language-"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 1em;
+  background-image: none; }
+  pre[class*="language-"].big-code code {
+    font-size: 26px; }
+  pre[class*="language-"].fit-code {
+    display: inline-block;
+    width: auto;
+    min-width: 50%; }
+    pre[class*="language-"].fit-code code {
+      display: inline-block;
+      padding-right: 4em; }
+  pre[class*="language-"].language-css {
+    width: 80%;
+    margin: 0 auto; }
+  pre[class*="language-"] code {
+    padding: 0 10px; }
+  pre[class*="language-"][data-line] {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+  pre[class*="language-"] .line-highlight {
+    background: rgba(255, 255, 255, 0.7); }
+    pre[class*="language-"] .line-highlight::before, pre[class*="language-"] .line-highlight[data-end]::before, pre[class*="language-"] .line-highlight[data-end]::after {
+      content: ""; }
+  pre[class*="language-"][data-linestyle="delete"] .line-highlight {
+    border-left: 10px solid #ce4d00;
+    background: rgba(255, 0, 0, 0.1); }
 
 .printable.slides {
   width: 100%;

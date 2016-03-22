@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -176,9 +176,123 @@
 
 
 <aside class="notes">
-A menu bar will allow visitors to click between the different pages in our website.
 
-To add a menu bar, we will need some extra HTML and CSS code. 
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h1 id="who-owns-it-all">Who owns it all?</h1>
+
+<p><em>Who owns the Internet?</em><br />
+<em>And who owns the Web?</em></p>
+
+
+<aside class="notes">
+
+<p>So who owns the Internet?</p>
+
+<p>And who owns the web?</p>
+
+<p>Telecom? The United States? Whoever invented it?</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h2 id="who-owns-the-internet">Who owns the Internet?</h2>
+
+<ul>
+  <li>Nobody</li>
+  <li>Lots of people</li>
+</ul>
+
+<h2 id="who-owns-the-world-wide-web">Who owns the World Wide Web?</h2>
+
+<ul>
+  <li>Content Creators</li>
+  <li>You!</li>
+</ul>
+
+
+<aside class="notes">
+<p>Nobody can claim ownership of the Internet, but many people own parts of the system which make the Internet possible.</p>
+
+<p>The web is a set of documents, so nobody can claim ownership of the web either.</p>
+
+<p>You still own your own contribution though, right?  </p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h3 id="an-isp-can-charge-extra-to-allow-access-br-to-your-favourite-website">An ISP can charge extra to allow access <br /> to your favourite website</h3>
+
+<p>e.g. Facebook, YouTube, Google</p>
+
+
+<aside class="notes">
+<p>What if the government or Spark decided you had to pay $10 for every YouTube video you watched?</p>
+
+<p>What if you had to pay an extra $50 a month for access to Facebook?</p>
+
+<p>Even though YouTube and Facebook themselves are free, it is possible for ISPs to know what data you are accessing from which websites, and charge you for that.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+<h3 id="a-government-can-censor-access-to-information">A government can censor access to information</h3>
+
+<p>e.g. North Korea and China</p>
+
+
+<aside class="notes">
+<p>Internet access is illegal in North Korea. Only a very few government officials have access to the Internet through a secret connection. The rest of the citizens only have access to the country’s own intranet.</p>
+
+<p>This way, the government can control everything their citizens read on the Internet, and ensures that nothing is published which disagrees with the government.</p>
+
+<p>China controls all search engines to ensure that the citizens can find only the information they allow them to find.</p>
 
 </aside>
 
@@ -199,14 +313,14 @@ To add a menu bar, we will need some extra HTML and CSS code.
 
 <h2 id="ownership-complete">Ownership: Complete!</h2>
 
-<p>Great, now let’s explore where we’ll build our own site…</p>
+<p>Great, now let’s share what we have created…</p>
 
 <p><a href="sharing-and-feedback.html">Take me to the next chapter!</a></p>
 
 
 <aside class="notes">
 
-Great! Now that we know the basics, let's get started on our own projects.
+<p>Great! Now that we know the basics, let’s get started on our own projects.</p>
 
 </aside>
 
@@ -251,6 +365,11 @@ Great! Now that we know the basics, let's get started on our own projects.
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -279,7 +398,13 @@ Great! Now that we know the basics, let's get started on our own projects.
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

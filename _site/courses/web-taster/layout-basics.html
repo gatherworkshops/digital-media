@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -177,7 +177,7 @@
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -204,6 +204,7 @@
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -225,6 +226,7 @@
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -258,6 +260,7 @@ page is called… <code>html</code>! And we can style it!</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -287,6 +290,7 @@ page is called… <code>html</code>! And we can style it!</p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -321,6 +325,7 @@ and can be “fixed” to keep it from scrolling.</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -345,6 +350,7 @@ and can be “fixed” to keep it from scrolling.</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -366,6 +372,7 @@ and can be “fixed” to keep it from scrolling.</p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -405,6 +412,7 @@ at the correct positions in your HTML code.</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -431,6 +439,7 @@ at the correct positions in your HTML code.</p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -461,6 +470,7 @@ by adding a background colour.</p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -493,6 +503,7 @@ by adding a background colour.</p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -530,6 +541,7 @@ a fixed width and using automatic margins.</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -565,6 +577,7 @@ make more room for our background image to be seen.</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -589,6 +602,7 @@ make more room for our background image to be seen.</p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -616,7 +630,7 @@ make more room for our background image to be seen.</p>
 
 <aside class="notes">
 
-Great! Now that we know the basics, let's get started on our own projects.
+<p>Great! Now that we know the basics, let’s get started on our own projects.</p>
 
 </aside>
 
@@ -661,6 +675,11 @@ Great! Now that we know the basics, let's get started on our own projects.
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -689,7 +708,13 @@ Great! Now that we know the basics, let's get started on our own projects.
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

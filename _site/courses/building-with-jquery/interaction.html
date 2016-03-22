@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -177,7 +177,7 @@
 
 <aside class="notes">
 
-In this section we will make stuff happen by looking out for events.
+<p>In this section we will make stuff happen by looking out for events.</p>
 
 </aside>
 
@@ -204,7 +204,7 @@ In this section we will make stuff happen by looking out for events.
 
 <aside class="notes">
 
-Here's an example of something you might create.
+<p>Here’s an example of something you might create.</p>
 
 </aside>
 
@@ -242,7 +242,7 @@ allBubbles.click(popBubble);
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -288,7 +288,7 @@ allBubbles.hover( makeBubbleRed, makeBubbleWhite );
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -329,8 +329,8 @@ allBubbles.hover( makeBubbleRed, makeBubbleWhite );
 
 <aside class="notes">
 
-You've already got a `createBubble` function, <br>
-we just need to run it when spacebar is pressed.
+<p>You’ve already got a <code>createBubble</code> function, <br /><br />
+we just need to run it when spacebar is pressed.</p>
 
 </aside>
 
@@ -352,7 +352,7 @@ we just need to run it when spacebar is pressed.
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -377,7 +377,7 @@ a bit weird or kinda funny.</p>
 
 <aside class="notes">
 
-See if you can change your interactions to match your theme.
+<p>See if you can change your interactions to match your theme.</p>
 
 </aside>
 
@@ -405,17 +405,19 @@ See if you can change your interactions to match your theme.
 
 <aside class="notes">
 
-Good work. Now you can do interactions too!
+<p>Good work. Now you can do interactions too!</p>
 
-Through this chapter you have learned about:
+<p>Through this chapter you have learned about:</p>
 
-- Click events
-- Hover events
-- Keyboard events
-- Timer events
-- Running functions when events happen
+<ul>
+  <li>Click events</li>
+  <li>Hover events</li>
+  <li>Keyboard events</li>
+  <li>Timer events</li>
+  <li>Running functions when events happen</li>
+</ul>
 
-Well done :)
+<p>Well done :)</p>
 
 </aside>
 
@@ -460,6 +462,11 @@ Well done :)
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -488,7 +495,13 @@ Well done :)
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

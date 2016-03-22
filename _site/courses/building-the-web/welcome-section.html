@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -171,12 +171,13 @@
 
 <p><img src="/digital-media/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
 
-<h1 id="stacked-layouts">Stacked Layouts</h1>
+<h1 id="welcome-section">Welcome Section</h1>
 
-<p><em>Designing your content</em></p>
+<p><em>Introducing visitors to your site</em></p>
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -218,13 +219,13 @@ but we will change the content inside it for each page.</p>
 
 
 <aside class="notes">
-A section is just another layout rectangle, like header.
+<p>A section is just another layout rectangle, like header.</p>
 
-It has no design by itself, it's just an invisible box to hold content.
+<p>It has no design by itself, it’s just an invisible box to hold content.</p>
 
-First we will put in some content, then we will design the section.
+<p>First we will put in some content, then we will design the section.</p>
 
-Notice that we have given this section a name, or "class".
+<p>Notice that we have given this section a name, or “class”.</p>
 
 </aside>
 
@@ -264,13 +265,13 @@ designing your content section.</p>
 
 <aside class="notes">
 
-Our content is on the page, but it is just kind of... floating.
+<p>Our content is on the page, but it is just kind of… floating.</p>
 
-By adding some CSS, we can make our content section visible and start working on how we'd like it to look.
+<p>By adding some CSS, we can make our content section visible and start working on how we’d like it to look.</p>
 
-In our HTML, we gave our section the class `page-content`, so we can use that name to apply styling from our CSS code.
+<p>In our HTML, we gave our section the class <code>page-content</code>, so we can use that name to apply styling from our CSS code.</p>
 
-The blank line is just to split up the layout stuff from the text design stuff, it doesn't affect the code.
+<p>The blank line is just to split up the layout stuff from the text design stuff, it doesn’t affect the code.</p>
 
 </aside>
 
@@ -297,9 +298,9 @@ The blank line is just to split up the layout stuff from the text design stuff, 
 
 
 <aside class="notes">
-Take some time to tweak the CSS for your content section.
+<p>Take some time to tweak the CSS for your content section.</p>
 
-There are a whole bunch of different design ideas you can play with! Ask a mentor if you've got an idea but you're not sure how to achieve it.
+<p>There are a whole bunch of different design ideas you can play with! Ask a mentor if you’ve got an idea but you’re not sure how to achieve it.</p>
 
 </aside>
 
@@ -318,16 +319,16 @@ There are a whole bunch of different design ideas you can play with! Ask a mento
 
 <p><img src="/digital-media/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
 
-<h2 id="stacked-layouts-complete">Stacked Layouts: Complete!</h2>
+<h2 id="welcome-section-complete">Welcome Section: Complete!</h2>
 
-<p>Great, now let’s explore how we’ll host our own site…</p>
+<p>Great, now let’s add in a photo album…</p>
 
 <p><a href="photo-gallery.html">Take me to the next chapter!</a></p>
 
 
 <aside class="notes">
 
-Great! Now that we know the basics, let's get started on our own projects.
+<p>Great! Now that we know the basics, let’s get started on our own projects.</p>
 
 </aside>
 
@@ -372,6 +373,11 @@ Great! Now that we know the basics, let's get started on our own projects.
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -400,7 +406,13 @@ Great! Now that we know the basics, let's get started on our own projects.
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

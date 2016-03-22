@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -178,6 +178,7 @@
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -205,6 +206,7 @@ to make it look way better.</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -228,9 +230,9 @@ to make it look way better.</p>
 
 <aside class="notes">
 
-The grey text at the top is a comment. It is not visible in the output.
+<p>The grey text at the top is a comment. It is not visible in the output.</p>
 
-The white text is code. It is visible in the output.
+<p>The white text is code. It is visible in the output.</p>
 
 </aside>
 
@@ -255,6 +257,7 @@ The white text is code. It is visible in the output.
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -288,11 +291,11 @@ The white text is code. It is visible in the output.
 
 <aside class="notes">
 
-We use CSS to write code about how objects on our page should look.
+<p>We use CSS to write code about how objects on our page should look.</p>
 
-This code says that any HTML element with the class `profile-pic` should be displayed as 200 pixels wide.
+<p>This code says that any HTML element with the class <code>profile-pic</code> should be displayed as 200 pixels wide.</p>
 
-One little trick - don't forget the dot in front of the class name in CSS!
+<p>One little trick - don’t forget the dot in front of the class name in CSS!</p>
 
 </aside>
 
@@ -326,11 +329,11 @@ One little trick - don't forget the dot in front of the class name in CSS!
 
 
 <aside class="notes">
-We can apply a CSS class to any HTML element. We can also apply the *same* class to *many* different elements on the page.
+<p>We can apply a CSS class to any HTML element. We can also apply the <em>same</em> class to <em>many</em> different elements on the page.</p>
 
-The class name you gave your element in the HTML and the class name you use in your CSS need to match exactly. 
+<p>The class name you gave your element in the HTML and the class name you use in your CSS need to match exactly. </p>
 
-There is no dot before the class name in our HTML but we _do_ need that dot in our CSS code.
+<p>There is no dot before the class name in our HTML but we <em>do</em> need that dot in our CSS code.</p>
 
 </aside>
 
@@ -368,35 +371,7 @@ There is no dot before the class name in our HTML but we _do_ need that dot in o
 
 <aside class="notes">
 
-:)
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="block-elements">Block Elements</h2>
-
-<p>Block elements are the “building blocks” of our website. </p>
-
-<p>Block elements are used for layout, and can contain other elements.</p>
-
-
-<aside class="notes">
-`header` might contain our h1 and menu bar<br>
-`section` could be an intro, gallery, or general info<br>
-`footer` might contain copyright and contact info
-
-Pages often have one **header**, lots of **sections** and one **footer**.
+<p>:)</p>
 
 </aside>
 
@@ -427,6 +402,7 @@ A design rule can be applied to all elements of one kind by the element name</li
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -453,7 +429,7 @@ A design rule can be applied to all elements of one kind by the element name</li
 
 <aside class="notes">
 
-Great! Now that we know the basics, let's get started on our own projects.
+<p>Great! Now that we know the basics, let’s get started on our own projects.</p>
 
 </aside>
 
@@ -498,6 +474,11 @@ Great! Now that we know the basics, let's get started on our own projects.
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -526,7 +507,13 @@ Great! Now that we know the basics, let's get started on our own projects.
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

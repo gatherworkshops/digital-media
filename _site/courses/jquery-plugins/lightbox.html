@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -177,7 +177,7 @@
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -203,7 +203,7 @@
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -229,7 +229,7 @@
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -265,7 +265,7 @@ And two files: index.html, README.markdown</p>
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -289,7 +289,7 @@ And two files: index.html, README.markdown</p>
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -317,7 +317,7 @@ And two files: index.html, README.markdown</p>
 
 <aside class="notes">
 
-none
+<p>none</p>
 
 </aside>
 
@@ -348,7 +348,7 @@ none
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -376,7 +376,7 @@ none
 
 <aside class="notes">
 
-Great! Now that we know the basics, let's get started on our own projects.
+<p>Great! Now that we know the basics, let’s get started on our own projects.</p>
 
 </aside>
 
@@ -421,6 +421,11 @@ Great! Now that we know the basics, let's get started on our own projects.
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -449,7 +454,13 @@ Great! Now that we know the basics, let's get started on our own projects.
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

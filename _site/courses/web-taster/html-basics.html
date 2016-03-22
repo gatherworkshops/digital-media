@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -177,7 +177,7 @@
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -204,6 +204,7 @@ to make it look way better.</p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -228,9 +229,9 @@ to make it look way better.</p>
 
 <aside class="notes">
 
-The grey text at the top is a comment. It is not visible in the output.
+<p>The grey text at the top is a comment. It is not visible in the output.</p>
 
-The white text is code. It is visible in the output.
+<p>The white text is code. It is visible in the output.</p>
 
 </aside>
 
@@ -256,6 +257,7 @@ The white text is code. It is visible in the output.
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -287,11 +289,11 @@ The white text is code. It is visible in the output.
 
 <aside class="notes">
 
-Let's start with some really common HTML elements.
+<p>Let’s start with some really common HTML elements.</p>
 
-The first line is how we make large heading text, using the `h1` element. That's a "one" after the "h" by the way!
+<p>The first line is how we make large heading text, using the <code>h1</code> element. That’s a “one” after the “h” by the way!</p>
 
-See how the start and end of the element are written the same, except for the  extra "slash" at the end? That's a really common format in HTML.
+<p>See how the start and end of the element are written the same, except for the  extra “slash” at the end? That’s a really common format in HTML.</p>
 
 </aside>
 
@@ -321,9 +323,9 @@ See how the start and end of the element are written the same, except for the  e
 
 <aside class="notes">
 
-Just like we used `h1` for the most important title on the page, we can use `h2` for headings which are second most important.
+<p>Just like we used <code>h1</code> for the most important title on the page, we can use <code>h2</code> for headings which are second most important.</p>
 
-The start and end of the element are still written the same, with the extra "slash" in the closing tag.
+<p>The start and end of the element are still written the same, with the extra “slash” in the closing tag.</p>
 
 </aside>
 
@@ -359,9 +361,9 @@ and a <code>&lt;/p&gt;</code> <em>after</em> each paragraph.</p>
 
 <aside class="notes">
 
-Paragraphs of text use the `p` element.
+<p>Paragraphs of text use the <code>p</code> element.</p>
 
-A paragraph of text will automatically have some space before and after it.
+<p>A paragraph of text will automatically have some space before and after it.</p>
 
 </aside>
 
@@ -389,6 +391,7 @@ A paragraph of text will automatically have some space before and after it.
 
 
 <aside class="notes">
+
 
 </aside>
 
@@ -421,6 +424,7 @@ This is optional, it is the height in pixels.  </p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -450,6 +454,7 @@ This is optional, it is the height in pixels.  </p>
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -475,21 +480,23 @@ This is optional, it is the height in pixels.  </p>
 
 <aside class="notes">
 
-If your own page doesn't look like the example, check that all your tags are correct!
+<p>If your own page doesn’t look like the example, check that all your tags are correct!</p>
 
-Remember most tags come in pairs:
+<p>Remember most tags come in pairs:</p>
 
-    <h1> </h1>
+<pre><code>&lt;h1&gt; &lt;/h1&gt;
 
-    <h2> </h2>
+&lt;h2&gt; &lt;/h2&gt;
 
-    <p> </p>
+&lt;p&gt; &lt;/p&gt;
 
-    <a href="#"> </a>
+&lt;a href="#"&gt; &lt;/a&gt;
+</code></pre>
 
-But images only need one tag:<br>
-  
-    <img src="#">
+<p>But images only need one tag:<br /></p>
+
+<pre><code>&lt;img src="#"&gt;
+</code></pre>
 
 </aside>
 
@@ -520,6 +527,7 @@ Don’t have a closing tag, and use the <code>src</code> attribute to define an 
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -546,7 +554,7 @@ Don’t have a closing tag, and use the <code>src</code> attribute to define an 
 
 <aside class="notes">
 
-:)
+<p>:)</p>
 
 </aside>
 
@@ -591,6 +599,11 @@ Don’t have a closing tag, and use the <code>src</code> attribute to define an 
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -619,7 +632,13 @@ Don’t have a closing tag, and use the <code>src</code> attribute to define an 
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

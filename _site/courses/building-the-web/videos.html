@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Youtube Videos</title>
+        <title>YouTube Videos</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- google translate - language identifier -->
@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -70,7 +70,7 @@
         
         <ul class="chapter-nav nav navbar-nav invisible">
         <li class="dropdown">
-          <a href="#" class="chapter-name dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Youtube Videos <span class="caret"></span></a>
+          <a href="#" class="chapter-name dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">YouTube Videos <span class="caret"></span></a>
           <ul class="chapters dropdown-menu">
           </ul>
         </li>
@@ -177,6 +177,7 @@
 
 <aside class="notes">
 
+
 </aside>
 
 </section>
@@ -198,7 +199,7 @@
 
 <p>Create another section as usual, but this time copy in the “Embed” code for a video from YouTube.</p>
 
-<pre><code>&lt;section class="videos"&gt;
+<pre><code class="language-html">&lt;section class="videos"&gt;
 
     &lt;h2&gt;Videos&lt;/h2&gt;
 
@@ -215,29 +216,7 @@
 
 
 <aside class="notes">
-Add in a video section too, and include a few YouTube videos.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<p>TODO</p>
-
-
-<aside class="notes">
-
-:)
+<p>Add in a video section too, and include a few YouTube videos.</p>
 
 </aside>
 
@@ -258,14 +237,14 @@ Add in a video section too, and include a few YouTube videos.
 
 <h2 id="youtube-videos-complete">YouTube Videos: Complete!</h2>
 
-<p>Great, now let’s explore where we’ll build our own site…</p>
+<p>Great, now we can add in some navigation…</p>
 
 <p><a href="menu-bar.html">Take me to the next chapter!</a></p>
 
 
 <aside class="notes">
 
-Great! Now that we know the basics, let's get started on our own projects.
+<p>Great! Now that we know the basics, let’s get started on our own projects.</p>
 
 </aside>
 
@@ -310,6 +289,11 @@ Great! Now that we know the basics, let's get started on our own projects.
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -338,7 +322,13 @@ Great! Now that we know the basics, let's get started on our own projects.
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>

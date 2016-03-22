@@ -24,12 +24,12 @@
         <!-- revealjs for slideshows -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/revealjs/css/reveal.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
-
         <!-- Prism -->
         <link rel="stylesheet" href="/digital-media/theme/assets/submodules/prism/prism.css">
         <script src="/digital-media/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/digital-media/theme/assets/css/styles.css">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/digital-media/favicon.ico">
@@ -59,7 +59,7 @@
     
 
         <!-- course name has to be set by jQuery from JSON data -->
-        <a class="course-name navbar-text invisible" href="#"></a>
+        <a class="course-name navbar-text invisible" href="index.html"></a>
 
     
 
@@ -178,7 +178,11 @@
 
 <aside class="notes">
 
-Let's begin with some HTML and CSS snippets.
+<p>Every web page has HTML at its foundations. </p>
+
+<p>An HTML file consists of the text and images which make up the content of the web page, with some extra code added to describe the different types of content.</p>
+
+<p>HTML stands for “HyperText Markup Language”, and we use HTML code to <em>mark up</em> our content. </p>
 
 </aside>
 
@@ -205,6 +209,10 @@ to make it look way better.</p>
 
 <aside class="notes">
 
+<p>To introduce you to HTML code, we’ve created some text content for you to mark up.</p>
+
+<p>Open the Alpacas Code activity and then switch to the next slide to start working through the steps.</p>
+
 </aside>
 
 </section>
@@ -222,7 +230,7 @@ to make it look way better.</p>
 
 <h2 id="codepen-editor">CodePen Editor</h2>
 
-<p><img src="assets/images/codepen-html.png" alt="Screenshot of CodePen UI" /></p>
+<p><img src="assets/images/codepen-html.png" alt="Screenshot of CodePen UI" height="350" /></p>
 
 <p>CodePen shows us our code on the left,<br />
 and the output on the right.</p>
@@ -230,9 +238,9 @@ and the output on the right.</p>
 
 <aside class="notes">
 
-The grey text at the top is a comment. It is not visible in the output.
+<p>The grey text at the top is a comment. It is not visible in the output.</p>
 
-The white text is code. It is visible in the output.
+<p>The white text is code. It is visible in the output.</p>
 
 </aside>
 
@@ -241,7 +249,7 @@ The white text is code. It is visible in the output.
 
 
 <!-- slide -->
-<section class=""
+<section class="demo"
 		
 	
 		id=""
@@ -249,15 +257,16 @@ The white text is code. It is visible in the output.
 	>
 		
 
-<h2 id="alpaca-text-example">Alpaca Text Example</h2>
+<iframe src="assets/demos/alpacas/"></iframe>
 
-<p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="gbyXgo" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/gbyXgo/">Otter Challenge Demo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+<h2 id="alpaca-text-example">Alpaca Text Example</h2>
 
 <p>We will use code to make our output look like this.</p>
 
 
 <aside class="notes">
+
+<p>After we’ve completed all the steps in this chapter, your final output should look something like this.</p>
 
 </aside>
 
@@ -276,22 +285,28 @@ The white text is code. It is visible in the output.
 
 <h2 id="headings">Headings</h2>
 
-<p>Add <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code> tags to make the <code>Alpacas</code> heading big and bold.</p>
+<pre class="big-code fit-code" data-line="3-5"><code class="language-html">&lt;h1&gt;Alpacas&lt;/h1&gt;
 
-<pre class="big-code"><code class="language-html">&lt;h1&gt;Alpacas&lt;/h1&gt;
+An alpaca is a domesticated species of
+South American camelid. It resembles a
+small llama in appearance.
 </code></pre>
 
-<p><code>&lt;h1&gt;</code> says “start the heading here”<br />
-<code>&lt;/h1&gt;</code> says “end the heading here”</p>
+<p>Add heading tags around the word <code>Alpacas</code>.</p>
+
+<p class="checkpoint">The word “Alpacas” should now be big and bold.</p>
 
 
 <aside class="notes">
 
-Let's start with some really common HTML elements.
+<p>Let’s start with some really common HTML elements.</p>
 
-The first line is how we make large heading text, using the `h1` element. That's a "one" after the "h" by the way!
+<p>The first line is how we make large heading text, using the <code>h1</code> element. That’s a “one” after the “h” by the way!</p>
 
-See how the start and end of the element are written the same, except for the  extra "slash" at the end? That's a really common format in HTML.
+<p>See how the start and end of the element are written the same, except for the  extra “slash” at the end? That’s a really common format in HTML.</p>
+
+<p><code>&lt;h1&gt;</code> means <em>“start the heading here”</em><br />
+<code>&lt;/h1&gt;</code> means <em>“end the heading here”</em></p>
 
 </aside>
 
@@ -312,8 +327,34 @@ See how the start and end of the element are written the same, except for the  e
 
 <p>Now use <code>&lt;h2&gt;</code> tags to make <code>Alpaca Hair</code> and <code>Habitat</code> big.</p>
 
-<pre class="big-code"><code class="language-html">    &lt;h2&gt;Alpaca Hair&lt;/h2&gt;
+<pre class="big-code fit-code"><code class="language-html">&lt;h2&gt;Alpaca Hair&lt;/h2&gt;
 </code></pre>
+
+<p class="checkpoint">Your page should now have a main heading and two subheadings.</p>
+
+
+<aside class="notes">
+
+<p>Just like we used <code>h1</code> for the most important title on the page, we can use <code>h2</code> for headings which are second most important.</p>
+
+<p>The start and end of the element are still written the same, with the extra “slash” in the closing tag.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="sub-subheadings">Sub-Subheadings</h2>
 
 <p><code>h1</code> is the biggest heading<br />
 <code>h2</code> is the second biggest heading<br />
@@ -324,9 +365,11 @@ See how the start and end of the element are written the same, except for the  e
 
 <aside class="notes">
 
-Just like we used `h1` for the most important title on the page, we can use `h2` for headings which are second most important.
+<p>The biggest heading is <code>h1</code> and the smallest heading is <code>h6</code>.</p>
 
-The start and end of the element are still written the same, with the extra "slash" in the closing tag.
+<p>There are only six sizes, but you should very rarely need to use all of them.</p>
+
+<p>If you somehow manage to get down to <code>h4</code> you may need to re-think the structure of your web page!</p>
 
 </aside>
 
@@ -347,7 +390,7 @@ The start and end of the element are still written the same, with the extra "sla
 
 <p>Now use <code>&lt;p&gt;</code> tags to split up your paragraphs.</p>
 
-<pre><code class="language-html">&lt;p&gt;
+<pre class="big-code fit-code" data-line="2-4"><code class="language-html">&lt;p&gt;
 An alpaca is a domesticated species of 
 South American camelid. It resembles a 
 small llama in appearance.
@@ -360,47 +403,9 @@ and a <code>&lt;/p&gt;</code> <em>after</em> each paragraph.</p>
 
 <aside class="notes">
 
-Paragraphs of text use the `p` element.
+<p>Paragraphs of text use the <code>p</code> element.</p>
 
-A paragraph of text will automatically have some space before and after it.
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="links">Links</h2>
-
-<p>Find the word <code>Wikipedia</code> in your code.</p>
-
-<p>Turn it into a link using <code>a</code> tags, like this:</p>
-
-<pre class="big-code"><code class="language-html">&lt;a&gt;Wikipedia&lt;/a&gt;
-</code></pre>
-
-<p>Then add the <code>href</code> attribute to the opening tag.</p>
-
-<pre class="big-code"><code class="language-html">&lt;a href="#"&gt;Wikipedia&lt;/a&gt;
-</code></pre>
-
-<p>This turns the link blue, but we need another step to make it clickable.</p>
-
-
-<aside class="notes">
-
-Links help us connect our website to the rest of the World Wide Web.
-
-The `a` element stands for "anchor" but you can think of it as meaning "action" if that's easier to remember. Clicking a link takes you to another web page.
+<p>A paragraph of text will automatically have some space before and after it.</p>
 
 </aside>
 
@@ -417,26 +422,83 @@ The `a` element stands for "anchor" but you can think of it as meaning "action" 
 	>
 		
 
-<h2 id="link-attribute">Link Attribute</h2>
+<h2 id="link-tags">Link Tags</h2>
 
-<p>We tell the link where to go when it’s clicked using <code>href</code>.</p>
-
-<p>Find your opening <code>&lt;a&gt;</code> tag. Add in the <code>href</code> and link.</p>
-
-<pre><code class="language-html">&lt;a href="http://en.wikipedia.org/wiki/Alpaca"&gt;Wikipedia&lt;/a&gt;
+<pre class="big-code fit-code"><code class="language-html">&lt;a&gt;Wikipedia&lt;/a&gt;
 </code></pre>
 
-<p>The only part we added was: <br />
-<code>html
-href="http://en.wikipedia.org/wiki/Alpaca"
-</code></p>
+<p>In the last paragraph, add <code>a</code> tags around the word Wikipedia.</p>
+
+<p class="checkpoint">Nothing will change yet, we have more to do!</p>
 
 
 <aside class="notes">
 
-The attribute `href` stands for "hyperlink reference" which is just a fancy way of saying "website address".
+<p>Links help us connect our website to the rest of the World Wide Web.</p>
 
-The `href` attribute is what we use to tell a link where it should link to.
+<p>The <code>a</code> element stands for “anchor” but you can think of it as meaning “action” if that’s easier to remember. Clicking a link takes you to another web page.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="link-href">Link href</h2>
+
+<p>Now add the <code>href</code> attribute to the opening tag.</p>
+
+<pre class="big-code fit-code"><code class="language-html">&lt;a href="#"&gt;Wikipedia&lt;/a&gt;
+</code></pre>
+
+<p class="checkpoint">Your link should be blue, but we need another step to make it clickable.</p>
+
+
+<aside class="notes">
+
+<p>Links help us connect our website to the rest of the World Wide Web.</p>
+
+<p>The <code>a</code> element stands for “anchor” but you can think of it as meaning “action” if that’s easier to remember. Clicking a link takes you to another web page.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="link-url">Link URL</h2>
+
+<p>Replace the hashtag with a link to an actual web page.</p>
+
+<pre class="fit-code"><code class="language-html">&lt;a href="http://en.wikipedia.org/wiki/Alpaca"&gt;Wikipedia&lt;/a&gt;
+</code></pre>
+
+<p class="checkpoint">Your link should now work when you click it.</p>
+
+
+<aside class="notes">
+
+<p>The attribute <code>href</code> stands for “hyperlink reference” which is just a fancy way of saying “website address”.</p>
+
+<p>The <code>href</code> attribute is what we use to tell a link where it should link to.</p>
 
 </aside>
 
@@ -457,17 +519,19 @@ The `href` attribute is what we use to tell a link where it should link to.
 
 <p>Add an <code>img</code> tag to the very bottom of your code:</p>
 
-<pre><code class="language-html">&lt;img src="#" height="100"&gt;
+<pre class="big-code fit-code"><code class="language-html">&lt;img src="#"&gt;
 </code></pre>
 
-<p><strong><code>src</code> stands for “source”</strong><br /><br />
-Replace the <code>#</code> with a link to an image online.</p>
-
-<p><strong><code>height</code> is the height of the image</strong><br /><br />
-This is optional, it is the height in pixels.  </p>
+<p class="checkpoint">You should see a small box with a “broken image” icon.</p>
 
 
 <aside class="notes">
+
+<p>The image tag is an odd one - where is its closing tag?</p>
+
+<p>That’s the trick, it doesn’t have one! Image tags need only an opening tag, plus the <code>src</code> attribute, which say where on the Internet the actual image is stored.</p>
+
+<p>Here we are using a hashtag as the source. Just as for links, we can use the hashtag until we know the actual image URL we want to use.</p>
 
 </aside>
 
@@ -488,15 +552,21 @@ This is optional, it is the height in pixels.  </p>
 
 <p>Find an image online, and copy the link to it.</p>
 
-<p>Replace the <code>#</code> as the <code>src</code> value, using paste:</p>
-
-<pre><code class="language-html">&lt;img src="http://place.com/photo.jpg" height="100"&gt;
+<pre class="big-code fit-code"><code class="language-html">&lt;img src="http://placekitten.com/200/300"&gt;
 </code></pre>
 
-<p>Find and add at least 2 more images.</p>
+<p>Replace the <code>#</code> as the <code>src</code> value, using paste.</p>
+
+<p class="checkpoint">Your image should now be visible.</p>
 
 
 <aside class="notes">
+
+<p>Setting the image source to a valid image link should make the image show up on your page.</p>
+
+<p>Occasionally this won’t work, such as if you link directly from Google’s cached images, or if you link to an image on a site which is blocking image linking.</p>
+
+<p>Linking to an image doesn’t copy it to your site, it loads the image from the original location every time you load the page. If the original owner takes the image offline, it will disappear from your site.</p>
 
 </aside>
 
@@ -513,32 +583,101 @@ This is optional, it is the height in pixels.  </p>
 	>
 		
 
-<h2 id="final-result">Final Result</h2>
+<h2 id="image-size">Image Size</h2>
 
-<p>Your own output window should now look like this:</p>
+<pre class="big-code fit-code"><code class="language-html">&lt;img src="http://placekitten.com/200/300" height="100"&gt;
+</code></pre>
 
-<div style="height:570px" data-height="570" data-theme-id="0" data-slug-hash="gbyXgo" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/gbyXgo/">gbyXgo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</div>
-<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
-
+<p><strong><code>height</code> is the height of the image</strong><br /><br />
+This is optional, it is the height in pixels. </p>
 
 
 <aside class="notes">
 
-If your own page doesn't look like the example, check that all your tags are correct!
+<p>The width and height of an image is considered to be part of its design, so we should really be setting the width and height from CSS <strong>not</strong> from HTML.</p>
 
-Remember most tags come in pairs:
+<p>We’ll use the <code>height</code> attribute for now, because we haven’t done CSS yet.</p>
 
-    <h1> </h1>
+</aside>
 
-    <h2> </h2>
+</section>
 
-    <p> </p>
 
-    <a href="#"> </a>
 
-But images only need one tag:<br>
-  
-    <img src="#">
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="more-images">More Images</h2>
+
+<p>Add at least two more images to your page.</p>
+
+<pre class="big-code fit-code"><code class="language-html">&lt;img src="http://placekitten.com/200/300" height="100"&gt;
+&lt;img src="http://placekitten.com/300/400" height="100"&gt;
+&lt;img src="http://placekitten.com/100/150" height="100"&gt;
+</code></pre>
+
+<p class="checkpoint">Your page should now have at least three images.</p>
+
+
+<aside class="notes">
+
+<p>Notice that you need a whole separate image tag for every image you want to include.</p>
+
+<p>Usually, you would put each image on a new line in your code to make it easy to read.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="demo"
+		
+	
+		id=""
+	
+	>
+		
+
+<iframe src="assets/demos/alpacas/"></iframe>
+
+<h2 id="final-result">Final Result</h2>
+
+<p>Your own output window should now look something like this.</p>
+
+<p><a href="http://codepen.io/gatherworkshops/pen/gbyXgo/">Edit on CodePen</a></p>
+
+
+<aside class="notes">
+
+<p>Your HTML demo page should now be pretty much done!</p>
+
+<p>If you’d like to see the code we wrote for it, you can explore the HTML and CSS for it on <a href="http://codepen.io/gatherworkshops/pen/gbyXgo/">CodePen</a>].</p>
+
+<p>If your own page doesn’t look like the example, check that all your tags are correct!</p>
+
+<p>Remember most tags come in pairs:</p>
+
+<pre><code>&lt;h1&gt; &lt;/h1&gt;
+
+&lt;h2&gt; &lt;/h2&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;a href="#"&gt; &lt;/a&gt;
+</code></pre>
+
+<p>But images only need one tag:<br /></p>
+
+<pre><code>&lt;img src="#"&gt;
+</code></pre>
 
 </aside>
 
@@ -571,6 +710,8 @@ Use the <code>href</code> attribute to link to another page on the web.</li>
 
 <aside class="notes">
 
+<p>We only covered a few HTML elements, but there is heaps that we can do with them!</p>
+
 </aside>
 
 </section>
@@ -596,6 +737,8 @@ Use the <code>href</code> attribute to link to another page on the web.</li>
 
 
 <aside class="notes">
+
+<p>Great, now it’s time to do some design…</p>
 
 </aside>
 
@@ -640,6 +783,11 @@ Use the <code>href</code> attribute to link to another page on the web.</li>
 		history: true,
 		center: true,
 
+		width: 1024,
+		height: 576,
+		margin: 0.1,
+		maxScale: 5,
+
 		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -668,7 +816,13 @@ Use the <code>href</code> attribute to link to another page on the web.</li>
 	    }
 	}
 
-	
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+		slide = $(event.currentSlide);
+		if(slide.hasClass('fullscreen')) {
+			slide.css('zoom', 1 / Reveal.getScale());
+			slide.children().css('zoom', Reveal.getScale());
+		}
+	});
 		
 
 </script>
