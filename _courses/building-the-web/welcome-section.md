@@ -9,9 +9,9 @@ slides:
 
       ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
 
-      # Stacked Layouts
+      # Welcome Section
 
-      _Designing your content_
+      _Introducing visitors to your site_
 
 
 
@@ -114,9 +114,9 @@ slides:
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
-      ## Stacked Layouts: Complete!
+      ## Welcome Section: Complete!
 
-      Great, now let's explore how we'll host our own site...
+      Great, now let's add in a photo album...
 
       [Take me to the next chapter!](photo-gallery.html)
 
