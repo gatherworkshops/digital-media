@@ -71,8 +71,8 @@ slides:
 
       ## Schedule
 
-      **How the Internet Works**
-      **HTML and CSS Basics**
+      **Web Languages**
+      **Basic Layouts**
 
       _Morning Break_
 
@@ -81,8 +81,8 @@ slides:
 
       _Lunch Break_
 
-      **Fancy Fonts and Gallery**
-      **Go Live!**
+      **YouTube Videos**
+      **Menu Bar**
 
 
     notes: |
@@ -97,137 +97,19 @@ slides:
 
 
 
-
-  
-
-
-
-
-
-  - content: |
-
-      # Who owns it all?
-
-      _Who owns the Internet?_
-      _And who owns the Web?_
-
-
-
-    notes: |
-
-      So who owns the Internet?
-
-      And who owns the web?
-
-      Telecom? The United States? Whoever invented it?
-
-
-
-
-  - content: |
-
-      ## Who owns the Internet?
-      - Nobody
-      - Lots of people  
-
-      ## Who owns the World Wide Web?
-      - Content Creators
-      - You!
-
-
-
-    notes: |
-
-      Nobody can claim ownership of the Internet, but many people own parts of the system which make the Internet possible.
-
-      The web is a set of documents, so nobody can claim ownership of the web either.
-
-      You still own your own contribution though, right? 
-
-
-
-
-
-  - content: |
-
-      ### An ISP can charge extra to allow access <br> to your favourite website
-
-      e.g. Facebook, YouTube, Google
-
-
-    notes: |
-
-      What if the government or Spark decided you had to pay $10 for every YouTube video you watched?
-
-      What if you had to pay an extra $50 a month for access to Facebook?
-
-      Even though YouTube and Facebook themselves are free, it is possible for ISPs to know what data you are accessing from which websites, and charge you for that.
-
-
-
-
-  - content: |
-
-      ### A government can censor access to information
-
-      e.g. North Korea and China
-
-    notes: |
-
-      Internet access is illegal in North Korea. Only a very few government officials have access to the Internet through a secret connection. The rest of the citizens only have access to the country's own intranet.
-
-      This way, the government can control everything their citizens read on the Internet, and ensures that nothing is published which disagrees with the government.
-
-      China controls all search engines to ensure that the citizens can find only the information they allow them to find.
-   
-
-   
-  - content: |
-
-      ### Chorus owns the Southern Cross Cable
-
-      They could slow down international requests for other ISPs
-
-
-    notes: |
-
-      The Southern Cross Cable is our only connection to the outside world.
-
-      It carries all our phone and internet communication.
-  
-    
-  
-
-  - content: |
-
-      ## Your corner of the web
-
-      By creating your own website, you are taking ownership of a small portion of the world wide web. 
-
-      **It's all yours.**
-
-      You can publish and share anything you like, go forth and create!
-
-
-    notes: |
-
-      Making our own website lets us shape the internet and share information with anyone in the world.
-
-      What would you like to share? Have a think about it, because today you get to make a website about anything you like.
-
-      Cats? Rugby? Surfing? Unicorns? Movies? Yourself? Anything goes. Have a think.
-
-
-
   - content: |
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
       ## Introduction: Complete!
 
-      Cool, the web is no longer a mystery! Now let's get coding...
+      Excellent! Now that we know the plan, let's get started...
 
       [Take me to the next chapter!](web-languages.html)
+
+    notes: |
+
+      Excellent! Now that we know the plan, let's get started...
   
 
 ---
