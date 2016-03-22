@@ -15,7 +15,11 @@ slides:
 
       notes: |
 
-        Let's begin with some HTML and CSS snippets.
+        Every web page has HTML at its foundations. 
+
+        An HTML file consists of the text and images which make up the content of the web page, with some extra code added to describe the different types of content.
+
+        HTML stands for "HyperText Markup Language", and we use HTML code to _mark up_ our content. 
 
 
     - content: |
@@ -27,12 +31,20 @@ slides:
         Keep it open! We are going to be using HTML
         to make it look way better.
 
+      notes: |
+
+        To introduce you to HTML code, we've created some text content for you to mark up.
+
+        Open the Alpacas Code activity and then switch to the next slide to start working through the steps.
+
+
+
 
     - content: |
 
         ## CodePen Editor
 
-        ![Screenshot of CodePen UI](assets/images/codepen-html.png)
+        ![Screenshot of CodePen UI](assets/images/codepen-html.png){:height="350"}
 
         CodePen shows us our code on the left,
         and the output on the right.
@@ -44,29 +56,38 @@ slides:
         The white text is code. It is visible in the output.
 
 
-    - content: |
+
+    - class: demo
+      content: |
+
+        <iframe src="assets/demos/alpacas/"></iframe>
 
         ## Alpaca Text Example
 
-        <p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="gbyXgo" data-default-tab="result" data-user="gatherworkshops" class='codepen'>See the Pen <a href='http://codepen.io/gatherworkshops/pen/gbyXgo/'>Otter Challenge Demo</a> by Gather Workshops (<a href='http://codepen.io/gatherworkshops'>@gatherworkshops</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
         We will use code to make our output look like this.
+
+      notes: |
+
+        After we've completed all the steps in this chapter, your final output should look something like this.
 
 
     - content: |
 
         ## Headings
 
-        Add `<h1>` and `</h1>` tags to make the `Alpacas` heading big and bold.
-
         ```html
         <h1>Alpacas</h1>
-        ```
-        {:.big-code}
 
-        `<h1>` says "start the heading here"
-        `</h1>` says "end the heading here"
+        An alpaca is a domesticated species of
+        South American camelid. It resembles a
+        small llama in appearance.
+        ```
+        {:.big-code .fit-code data-line="3-5"}
+
+        Add heading tags around the word `Alpacas`.
+
+        The word "Alpacas" should now be big and bold.
+        {:.checkpoint}
 
       notes: |
 
@@ -75,6 +96,9 @@ slides:
         The first line is how we make large heading text, using the `h1` element. That's a "one" after the "h" by the way!
         
         See how the start and end of the element are written the same, except for the  extra "slash" at the end? That's a really common format in HTML.
+
+        `<h1>` means _"start the heading here"_
+        `</h1>` means _"end the heading here"_
 
 
 
@@ -85,9 +109,25 @@ slides:
         Now use `<h2>` tags to make `Alpaca Hair` and `Habitat` big.
 
         ```html
-            <h2>Alpaca Hair</h2>
+        <h2>Alpaca Hair</h2>
         ```
-        {:.big-code}
+        {:.big-code .fit-code}
+
+        Your page should now have a main heading and two subheadings.
+        {:.checkpoint}
+
+
+
+      notes: |
+
+        Just like we used `h1` for the most important title on the page, we can use `h2` for headings which are second most important.
+
+        The start and end of the element are still written the same, with the extra "slash" in the closing tag.
+
+
+    - content: |
+
+        ## Sub-Subheadings
 
         `h1` is the biggest heading
         `h2` is the second biggest heading
@@ -98,9 +138,11 @@ slides:
 
       notes: |
 
-        Just like we used `h1` for the most important title on the page, we can use `h2` for headings which are second most important.
+        The biggest heading is `h1` and the smallest heading is `h6`.
 
-        The start and end of the element are still written the same, with the extra "slash" in the closing tag.
+        There are only six sizes, but you should very rarely need to use all of them.
+
+        If you somehow manage to get down to `h4` you may need to re-think the structure of your web page!
 
 
     - content: |
@@ -116,6 +158,7 @@ slides:
         small llama in appearance.
         </p>
         ```
+        {:.big-code .fit-code data-line="2-4" }
 
         Put a `<p>` *before* each paragraph,
         and a `</p>` *after* each paragraph.
@@ -129,25 +172,18 @@ slides:
 
     - content: |
 
-        ## Links
-
-        Find the word `Wikipedia` in your code.
-
-        Turn it into a link using `a` tags, like this:
+        ## Link Tags
 
         ```html
         <a>Wikipedia</a>
         ```
-        {:.big-code}
+        {:.big-code .fit-code}
 
-        Then add the `href` attribute to the opening tag.
+        In the last paragraph, add `a` tags around the word Wikipedia.
 
-        ```html
-        <a href="#">Wikipedia</a>
-        ```
-        {:.big-code}
+        Nothing will change yet, we have more to do!
+        {:.checkpoint}
 
-        This turns the link blue, but we need another step to make it clickable.
 
       notes: |
 
@@ -158,20 +194,38 @@ slides:
 
     - content: |
 
-        ## Link Attribute
+        ## Link href
 
-        We tell the link where to go when it's clicked using `href`.
+        Now add the `href` attribute to the opening tag.
 
-        Find your opening `<a>` tag. Add in the `href` and link.
+        ```html
+        <a href="#">Wikipedia</a>
+        ```
+        {:.big-code .fit-code}
+
+        Your link should be blue, but we need another step to make it clickable.
+        {:.checkpoint}
+
+      notes: |
+
+        Links help us connect our website to the rest of the World Wide Web.
+
+        The `a` element stands for "anchor" but you can think of it as meaning "action" if that's easier to remember. Clicking a link takes you to another web page.
+
+
+    - content: |
+
+        ## Link URL
+
+        Replace the hashtag with a link to an actual web page.
 
         ```html
         <a href="http://en.wikipedia.org/wiki/Alpaca">Wikipedia</a>
         ```
+        {:.fit-code}
 
-        The only part we added was: 
-        ```html
-        href="http://en.wikipedia.org/wiki/Alpaca"
-        ```
+        Your link should now work when you click it.
+        {:.checkpoint}
 
       notes: |
 
@@ -187,14 +241,20 @@ slides:
         Add an `img` tag to the very bottom of your code:
 
         ```html
-        <img src="#" height="100">
+        <img src="#">
         ```
+        {:.big-code .fit-code}
 
-        **`src` stands for "source"**<br>
-        Replace the `#` with a link to an image online.
+        You should see a small box with a "broken image" icon.
+        {:.checkpoint} 
 
-        **`height` is the height of the image**<br>
-        This is optional, it is the height in pixels.  
+      notes: |
+
+        The image tag is an odd one - where is its closing tag?
+
+        That's the trick, it doesn't have one! Image tags need only an opening tag, plus the `src` attribute, which say where on the Internet the actual image is stored.
+
+        Here we are using a hashtag as the source. Just as for links, we can use the hashtag until we know the actual image URL we want to use.
 
 
     - content: |
@@ -203,26 +263,83 @@ slides:
 
         Find an image online, and copy the link to it.
 
-        Replace the `#` as the `src` value, using paste:
-
         ```html
-        <img src="http://place.com/photo.jpg" height="100">
+        <img src="http://placekitten.com/200/300">
         ```
+        {:.big-code .fit-code}
 
-        Find and add at least 2 more images.
+        Replace the `#` as the `src` value, using paste.
+
+        Your image should now be visible.
+        {:.checkpoint}
+
+      notes: |
+
+        Setting the image source to a valid image link should make the image show up on your page.
+
+        Occasionally this won't work, such as if you link directly from Google's cached images, or if you link to an image on a site which is blocking image linking.
+
+        Linking to an image doesn't copy it to your site, it loads the image from the original location every time you load the page. If the original owner takes the image offline, it will disappear from your site.
 
 
     - content: |
 
-        ## Final Result
+        ## Image Size
 
-        Your own output window should now look like this:
+        ```html
+        <img src="http://placekitten.com/200/300" height="100">
+        ```
+        {:.big-code .fit-code}
 
-        <div style="height:570px" data-height="570" data-theme-id="0" data-slug-hash="gbyXgo" data-default-tab="result" data-user="gatherworkshops" class='codepen'>See the Pen <a href='http://codepen.io/gatherworkshops/pen/gbyXgo/'>gbyXgo</a> by Gather Workshops (<a href='http://codepen.io/gatherworkshops'>@gatherworkshops</a>) on <a href='http://codepen.io'>CodePen</a>.</div>
-        <script async src="//assets.codepen.io/assets/embed/ei.js"></script> 
-
+        **`height` is the height of the image**<br>
+        This is optional, it is the height in pixels. 
 
       notes: |
+
+        The width and height of an image is considered to be part of its design, so we should really be setting the width and height from CSS **not** from HTML.
+
+        We'll use the `height` attribute for now, because we haven't done CSS yet.
+
+
+    - content: |
+
+        ## More Images
+
+        Add at least two more images to your page.
+
+        ```html
+        <img src="http://placekitten.com/200/300" height="100">
+        <img src="http://placekitten.com/300/400" height="100">
+        <img src="http://placekitten.com/100/150" height="100">
+        ```
+        {:.big-code .fit-code}
+
+        Your page should now have at least three images.
+        {:.checkpoint}
+
+      notes: |
+
+        Notice that you need a whole separate image tag for every image you want to include.
+
+        Usually, you would put each image on a new line in your code to make it easy to read.
+
+
+    - class: demo
+      content: |
+
+        <iframe src="assets/demos/alpacas/"></iframe>
+
+        ## Final Result
+
+        Your own output window should now look something like this.
+
+        [Edit on CodePen](http://codepen.io/gatherworkshops/pen/gbyXgo/)
+
+      notes: |
+
+        Your HTML demo page should now be pretty much done!
+
+        If you'd like to see the code we wrote for it, you can explore the HTML and CSS for it on [CodePen](http://codepen.io/gatherworkshops/pen/gbyXgo/)].
 
         If your own page doesn't look like the example, check that all your tags are correct!
 
@@ -257,6 +374,11 @@ slides:
         {:.flex-list}
 
 
+      notes: |
+
+        We only covered a few HTML elements, but there is heaps that we can do with them!
+
+
 
 
     - content: |
@@ -268,5 +390,10 @@ slides:
         Great, now it's time to do some design...
 
         [Take me to the next chapter!](css-basics.html)
+
+      notes: |
+
+        Great, now it's time to do some design...
+
 
 ---
