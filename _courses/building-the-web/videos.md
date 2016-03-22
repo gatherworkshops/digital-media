@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Youtube Videos
+title: YouTube Videos
 slides:
 
   - class: title-slide
@@ -20,13 +20,15 @@ slides:
 
       Create another section as usual, but this time copy in the "Embed" code for a video from YouTube.
 
-          <section class="videos">
+      ```html
+      <section class="videos">
 
-              <h2>Videos</h2>
+          <h2>Videos</h2>
 
-              <!-- Paste embed code here -->
+          <!-- Paste embed code here -->
 
-          </section>
+      </section>
+      ```
 
       - Find a video you like
       - Click "Share", then click "Embed"
@@ -35,16 +37,6 @@ slides:
     notes: |
         Add in a video section too, and include a few YouTube videos.
 
-
-
-
-  - content: |
-
-      TODO
-
-    notes: |
-
-      :)
 
   
 
@@ -56,7 +48,7 @@ slides:
 
       ## YouTube Videos: Complete!
 
-      Great, now let's explore where we'll build our own site...
+      Great, now we can add in some navigation...
 
       [Take me to the next chapter!](menu-bar.html)
 
