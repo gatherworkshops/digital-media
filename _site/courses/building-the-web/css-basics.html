@@ -178,6 +178,9 @@
 
 <aside class="notes">
 
+<p>In website development, we use code describe the content <em>and</em> the design.</p>
+
+<p>We can use CSS code to tell our web pages how our content should look.</p>
 
 </aside>
 
@@ -194,18 +197,19 @@
 	>
 		
 
-<p><img src="http://gathergather.co.nz/grumpy-cat.png" alt="Grumpy Cat" width="300" /></p>
+<p><img src="assets/images/icecream-scoops.png" alt="Icecream Scoops" width="220" /></p>
 
-<h2 id="css-with-grumpy-cat">CSS With Grumpy Cat</h2>
+<h2 id="css-with-icecream">CSS With Icecream</h2>
 
-<p>Open this link in a new tab: <a href="http://codepen.io/gatherworkshops/pen/yyrQpd?editors=110" target="_blank">Grumpy Cat Code</a></p>
-
-<p>Keep it open! We are going to be using CSS<br />
-to make it look way better.</p>
+<p>Open this link in a new tab: <a href="http://codepen.io/gatherworkshops/pen/yyrQpd?editors=110" target="_blank">Icecream Code</a><br />
+We’ll use CSS to make it look way better.</p>
 
 
 <aside class="notes">
 
+<p>Here’s another activity for you, this time using Icecream to explore CSS!</p>
+
+<p>Open up the CodePen link and then continue to the next slide for instructions.</p>
 
 </aside>
 
@@ -221,18 +225,45 @@ to make it look way better.</p>
 	
 	>
 		
+
 <h2 id="codepen-editor">CodePen Editor</h2>
 
 <p><img src="assets/images/codepen-css.png" alt="Screenshot of CodePen UI" /></p>
 
-<p>CodePen can show us both our HTML and our CSS.</p>
+<p>Open up both your HTML and CSS panels in CodePen.</p>
 
 
 <aside class="notes">
 
-<p>The grey text at the top is a comment. It is not visible in the output.</p>
+<p>This time in CodePen we need to have both the HTML and CSS code panels open.</p>
 
-<p>The white text is code. It is visible in the output.</p>
+<p>To apply design using CSS, we’ll need to use both.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="demo"
+		
+	
+		id=""
+	
+	>
+		
+
+<iframe src="assets/demos/icecream/"></iframe>
+
+<h2 id="icecream-example">Icecream Example</h2>
+
+<p>We will use code to make our output look like this.</p>
+
+
+<aside class="notes">
+
+<p>After we’ve completed all the steps in this chapter, your final output should look something like this.</p>
 
 </aside>
 
@@ -248,130 +279,356 @@ to make it look way better.</p>
 	
 	>
 		
-<h2 id="grumpy-cat-example">Grumpy Cat Example</h2>
 
-<p data-height="550" style="height:550px;" data-theme-id="19418" data-slug-hash="yyrQMr" data-default-tab="result" data-user="gatherworkshops" class="codepen">See the Pen <a href="http://codepen.io/gatherworkshops/pen/yyrQMr/">Otter Challenge Demo</a> by Gather Workshops (<a href="http://codepen.io/gatherworkshops">@gatherworkshops</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+<h2 id="designing-a-class">Designing a Class</h2>
 
-<p>Next we will use code to make our output look something like this.</p>
+<p>In your CSS panel, create the <code>main-heading</code> class.</p>
 
-
-<aside class="notes">
-
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="classes">Classes</h2>
-
-<p>To make our page look pretty, first we create a CSS class with a unique name.</p>
-
-<p><strong>In your CSS panel:</strong></p>
-
-<pre class="big-code"><code class="language-css">.profile-pic {
-  width: 200px;
-}
-</code></pre>
-
-<p>We just created a <code>class</code> called <code>profile-pic</code>.</p>
-
-<p>This class can change the width of something on our page to be <code>200px</code>.</p>
-
-
-<aside class="notes">
-
-<p>We use CSS to write code about how objects on our page should look.</p>
-
-<p>This code says that any HTML element with the class <code>profile-pic</code> should be displayed as 200 pixels wide.</p>
-
-<p>One little trick - don’t forget the dot in front of the class name in CSS!</p>
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="applying-classes">Applying Classes</h2>
-
-<p>Find the first image tag in the HTML panel,<br /> and apply the profile-pic class to it.</p>
-
-<p><strong>Find this line your HTML panel:</strong></p>
-
-<pre><code class="language-html">&lt;img src="http://gathergather.co.nz/grumpy-cat.png"&gt;
-</code></pre>
-
-<p><strong>And change it to:</strong></p>
-
-<pre><code class="language-html">&lt;img class="profile-pic" src="http://gathergather.co.nz/grumpy-cat.png"&gt;
-</code></pre>
-
-<p>Cartoon Grumpy Cat should now be much smaller.</p>
-
-
-<aside class="notes">
-<p>We can apply a CSS class to any HTML element. We can also apply the <em>same</em> class to <em>many</em> different elements on the page.</p>
-
-<p>The class name you gave your element in the HTML and the class name you use in your CSS need to match exactly. </p>
-
-<p>There is no dot before the class name in our HTML but we <em>do</em> need that dot in our CSS code.</p>
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-<h2 id="font-styles">Font Styles</h2>
-
-<p>There are many font options in CSS. We can create another class to try them out.</p>
-
-<p><strong>In your CSS panel, on a new line:</strong></p>
-
-<pre><code class="language-css">.page-title {
-  font-family: "Comic Sans MS";
-  font-size: 50px;
+<pre class="big-code"><code class="language-css">.main-heading {
+  color: hotpink;
+  font-size: 100px;
   text-align: center;
-  text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  font-family: Comic Sans MS;
 }
 </code></pre>
 
-<p><strong>In your HTML, find the h1 and apply the class:</strong></p>
-
-<pre><code class="language-html">&lt;h1 class="page-title"&gt;Grumpy Cat&lt;/h1&gt;
-</code></pre>
+<p class="checkpoint">Nothing on your page will change yet!</p>
 
 
 <aside class="notes">
 
-<p>:)</p>
+<p>This class describes what a “main-heading” should look like.</p>
+
+<p>This class says that anything called “main-heading” will be hot pink with a font size of 100 pixels. It will also be center-aligned and the font will be Comic Sans.</p>
+
+<p>Problem is, we don’t have anything called “main-heading” on our page yet.</p>
+
+<p>See the next slide for how to apply this class.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="applying-a-class">Applying a Class</h2>
+
+<pre class="big-code"><code class="language-html">&lt;h1 class="main-heading"&gt;Icecream&lt;/h1&gt;
+</code></pre>
+
+<p>To apply a class, we add the <code>class</code> attribute to an opening HTML tag.</p>
+
+<p class="checkpoint">Your main heading should now be large, pink and centered.</p>
+
+
+<aside class="notes">
+
+<p>If your CSS didn’t work, check for these common problems:</p>
+
+<ul>
+  <li>The class name <code>main-heading</code> must be spelled exactly the same in both the CSS and the HTML</li>
+  <li>In the CSS there is a full stop before the class name, in HTML there is not.</li>
+  <li>Your CSS class must have opening and closing brackets.</li>
+  <li>Your CSS class must have a semicolon ; on the end of each line.</li>
+</ul>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="modifying-a-class">Modifying a Class</h2>
+
+<p>If we ever want to change how something looks,<br />
+we can add or remove lines from its class.</p>
+
+<pre data-line="1-5, 7"><code class="language-css">.main-heading {
+  color: hotpink;
+  font-size: 100px;
+  text-align: center;
+  font-family: Comic Sans MS;
+  text-shadow: 2px 2px 2px brown;
+}
+</code></pre>
+
+<p class="checkpoint">Your main heading should now have a drop shadow.</p>
+
+
+<aside class="notes">
+
+<p>To change how things look on our page, we create classes for each piece<br />
+of our design and we update those classes as needed.</p>
+
+<p>It’s best practice to avoid creating more than one class with the same name in your CSS - all design for a particular element should be in a single class definition.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="styling-our-tagline">Styling our Tagline</h2>
+
+<p>Use what you’ve learned about classes to design your <code>tagline</code>.<br />
+That’s the paragraph directly below the main heading.</p>
+
+<pre class="big-code"><code class="language-html">&lt;p class="tagline"&gt;The icy summer treat of New Zealand&lt;/p&gt;
+</code></pre>
+
+<p class="checkpoint">This time, add the class in the HTML before doing the CSS.</p>
+
+
+<aside class="notes">
+
+<p>You can create the CSS class first, or you can add the HTML class first - either way is fine!</p>
+
+<p>As long as the names match up, you can do the steps in any order.</p>
+
+<p>Just remember that you won’t see any changes until you’ve done both steps!</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="designing-our-tagline">Designing our Tagline</h2>
+
+<p>Use what you’ve learned about CSS classes to design your <code>tagline</code>.</p>
+
+<pre class="big-code"><code class="language-css">.tagline {
+  color: brown;
+}
+</code></pre>
+
+<p class="checkpoint">Add some lines to make your tagline text bigger, centered and in Comic Sans.</p>
+
+
+<aside class="notes">
+
+<p>You can add as many lines to each CSS class as you like, as long as they are all between the curly brackets.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="styling-images">Styling Images</h2>
+
+<p>We can also style images using CSS, such as the<br />
+image on our page with the class <code>icecream-scoops</code>.</p>
+
+<pre class="big-code"><code class="language-css">.icecream-scoops {
+  width: 300px;
+}
+</code></pre>
+
+<p class="checkpoint">Your icecream scoops should now be much smaller.</p>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="aligning-images">Aligning Images</h2>
+
+<p>To center-align images, you need three extra lines of CSS:</p>
+
+<pre class="big-code" data-line="1-2, 6"><code class="language-css">.icecream-scoops {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</code></pre>
+
+<p class="checkpoint">Your icecream scoops should now be centered.</p>
+
+
+<aside class="notes">
+
+<p>Images are weird, they’re not text so we can’t use text-align to center them.</p>
+
+<p>Instead, we have to first tell an image that it is a “block” element, then we need to make it have automatic spacing on either side, to push it to the middle.</p>
+
+<p>Very strange, but it should make a little more sense once we cover alignment and stacked layouts.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="styling-all-subheadings">Styling all Subheadings</h2>
+
+<p>You can style all tags of one type by using the<br />
+tag name instead of a class name, without the full stop.</p>
+
+<pre class="big-code"><code class="language-css">h2 {
+  color: hotpink;
+  font-size: 30px;
+}
+</code></pre>
+
+<p class="checkpoint">All your subheadings should now be hot pink.</p>
+
+
+<aside class="notes">
+
+<p>Rather than adding a class to every single element, we can also design based on the <strong>type</strong> of element.</p>
+
+<p>When styling in this way, the name of the CSS rule is the tag name rather than a class name, and it doesn’t have a full stop at the start.</p>
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="styling-all-paragraphs">Styling all Paragraphs</h2>
+
+<p>Use what you learned about styling by tag name<br />
+to style all your paragraphs to be:</p>
+
+<ul>
+  <li>14px in size </li>
+  <li>Verdana as the font</li>
+  <li>Coloured brown</li>
+  <li>Line height of 150%</li>
+</ul>
+
+<p class="checkpoint">Create a CSS rule to make your paragraphs look like the description.</p>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="vertical-spacing">Vertical spacing</h2>
+
+
+<aside class="notes">
+
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="demo"
+		
+	
+		id=""
+	
+	>
+		
+
+<iframe src="assets/demos/icecream/"></iframe>
+
+<h2 id="final-result">Final Result</h2>
+
+<p>Your own output window should now look something like this.</p>
+
+<p>TODO: <a href="http://codepen.io/gatherworkshops/pen/gbyXgo/">Edit on CodePen</a></p>
+
+
+<aside class="notes">
+
 
 </aside>
 
