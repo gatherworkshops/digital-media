@@ -11,7 +11,7 @@ slides:
 
       # Stacked Layouts
 
-      _Designing your content_
+      _Laying out your content_
 
 
   - content: |
