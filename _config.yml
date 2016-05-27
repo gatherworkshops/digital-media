@@ -6,12 +6,15 @@ theme_images: "/digital-media/theme/assets/images"
 course_images: "/digital-media/media/images"
 
 markdown: kramdown
-highlighter: null
+highlighter: null # disable syntax highlighting locally
 
 kramdown:
   input: GFM
   enable_coderay: false
   hard_wrap: true
+  # disable syntax highlighting on github pages
+  syntax_highlighter_opts:
+    disable : true
 
 # Where things are
 source:       .
