@@ -86,6 +86,9 @@ slides:
 
       ## Enabling Responsive Design
 
+      Regular computers allow responsive by default,
+      but mobile devices need websites to enable it.
+
     notes: |
 
       Laptops and desktops will respond to percentage-based layouts automatically.
@@ -215,6 +218,7 @@ slides:
 
       ```css
       .container {
+        width: 100%;
         max-width: 800px;
         padding: 0 20px;
         margin: 0 auto;
@@ -232,6 +236,10 @@ slides:
 
       Your item list area should stop growing at 800px wide.
       {:.checkpoint}
+
+
+
+
 
 
 
@@ -376,6 +384,10 @@ slides:
   
 
 
+
+
+
+
   - content: |
 
       ## Fixed-Width Header
@@ -421,6 +433,60 @@ slides:
         align-items: baseline;
       }
       ```
+
+
+
+
+
+
+
+
+
+#  - content: |
+#
+#      ## Combining Styles
+#
+#      We can also use our `container` to align 
+#      the other content on our site.
+#
+#
+#  - content: |
+#
+#      For clarity, all of our text content
+#      should be displayed on a light background.
+#
+#
+#  - content: |
+#
+#      We can combine our `container` class with another
+#      `light-background` class to make our content readable.
+#
+#
+#  - content: |
+#
+#      In your stylesheet, create a new class:
+#
+#      ```css
+#      .light-background {
+#        background-color: white;
+#        margin: 20px 0;
+#      }
+#      ```
+#
+#  - content: |
+#
+#      In your `index` page, add a container with
+#      a light background around the text content.
+#
+#      ```html
+#      <div class="light-background container">
+#          <h1>Hello!</h1>
+#      </div>
+#      ```
+
+
+
+
 
 
 

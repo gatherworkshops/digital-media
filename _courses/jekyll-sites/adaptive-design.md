@@ -9,12 +9,12 @@ slides:
       _Considering specific screen sizes_
 
 
-  - content: 
+  - content: |
 
       ## Navigation
 
-      The most obvious target for adaptive design
-      is our menu bar, which doesn't fit on small screens.
+      The most obvious target for adaptive design is 
+      our menu bar, which doesn't fit on small screens.
 
 
   - content: |
@@ -24,13 +24,12 @@ slides:
 
   - content: |
 
-      To achieve this effect, on small 
-      devices we will need to:
+      To achieve this effect, 
+      on small devices we need to:
 
       - Design a vertical menu layout
       - Add a button to show/hide it
-      - Hide the menu by default
-      - Make a class for the visible menu
+      - Hide the menu using a class
       - Toggle the class using jQuery
 
 
@@ -129,7 +128,8 @@ slides:
 
   - content: |
 
-      Now we can style our nav buttons to be vertical by making them display block.
+      Now we can style our nav buttons to 
+      be vertical by making them display block.
 
       ```css
       @media only screen and (max-width: 500px) {
