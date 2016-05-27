@@ -6,6 +6,10 @@ slides:
   - content: |
       # Generated Sites
 
+    notes: |
+
+      This chapter will covers installing and running Jekyll, site structure, configuration, and creating pages.
+
 
   - content: |
 
@@ -115,7 +119,9 @@ slides:
 
     notes: |
 
-      No notes.
+      If you are unable to install Ruby or Jekyll on your computer, we recommend creating an account with CloudCannon and skipping the install instructions here.
+
+      Instead, go straight to creating a project and skip any bits talking about the command line.
 
 
   - content: |
@@ -128,6 +134,9 @@ slides:
       - **Mac**
         Has Ruby pre-installed - yay!
       {:.flex-list}
+
+      Run the installer and complete the installation process.
+      {:.checkpoint}
 
     notes: |
 
@@ -152,6 +161,9 @@ slides:
         Press Enter
       {:.flex-list}
 
+      You should have CMD or Terminal open.
+      {:.checkpoint}
+
     notes: |
 
       We'll be using the command line a lot when working with Jekyll, so you may want to lock the app to your taskbar or launcher bar for easy access.
@@ -161,7 +173,8 @@ slides:
       To check if Ruby is installed correctly, 
       type in `ruby -v` and press enter.
 
-      It should say 2.0.0
+      The displayed Ruby version should be 2.0.0 or higher.
+      {:.checkpoint}
 
     notes: |
 
@@ -173,6 +186,9 @@ slides:
 
       In your command window, type in 
       `gem install jekyll` and press enter.
+
+      Wait for the Jekyll installer to complete.
+      {:.checkpoint}
 
     notes: |
 
@@ -207,11 +223,24 @@ slides:
 
       This name can be changed later.
 
+      Create a folder called `jekyll-site` in a safe place.
+      {:.checkpoint}
+
+    notes: |
+
+      You can create this folder anywhere you like, but we recommend having a Projects folder where you keep all of your programming projects so you don't accidentally misplace them!
+
   - content: |
 
       Open the project folder in your favourite 
       text editor so we can begin adding files.
 
+      Open your project in a text editor.
+      {:.checkpoint}
+
+    notes: |
+
+      We recommend [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/) editor. Both are free and work on both Mac and Windows.
 
 
 
@@ -261,10 +290,6 @@ slides:
       ```yaml
       name: Jekyll Site
       ```
-
-      Make sure to save your configuration file!
-      {:.checkpoint}
-
      
 
     notes: |
@@ -275,7 +300,30 @@ slides:
 
       We will add more configurations here as we need them.
 
+  
+  - content: |
 
+      It is also a good idea to specify
+      which version of Jekyll you are using.
+
+      ```yaml
+      name: Jekyll Site
+      version: 3.0.3
+      ```
+
+      Make sure to save your configuration file!
+      {:.checkpoint}
+
+    notes: |
+      Different versions of Jekyll have different functionality, so it's a good idea to specify the version so that others running your code know which version to use.
+
+      If you are using Jekyll via the command line, your version number is the one you see when you run `jekyll -v` from the command line.
+
+      CloudCannon supports Jekyll versions `2.4.0`, `2.5.3`, and `3.0.3`. You should use `3.0.3` which is the newest version.
+
+      If you do not specify a version, `2.4.0` will be used.
+
+      [CloudCannon Jekyll Documentation](https://docs.cloudcannon.com/building/jekyll/)
 
 
   - content: |
@@ -309,7 +357,11 @@ slides:
 
   - content: |
 
-      In your browser go to http://localhost:4000/
+      In your browser, go to
+      [http://localhost:4000/](http://localhost:4000/){: target="_blank"}
+
+      You should see the word "Hello!"
+      {:.checkpoint}
 
     notes: |
 
@@ -383,7 +435,12 @@ slides:
   - content: |
       ## Adding Pages
 
-      To add another page create another html file.
+      Extra pages can be added by making 
+      a new HTML file for each page.
+
+    notes: |
+
+      For individual website pages, you create one file for each page just like in a normal website.
 
   - content: |
 
@@ -404,10 +461,27 @@ slides:
       </html>
       ```
 
+      Make sure to save your contact page!
+      {:.checkpoint}
+
+    notes: |
+
+      This page is identical to the index page, except for the heading text.
+
+
+
 
   - content: |
 
-      Preview in your browser at `localhost:4000/contact.html`
+      Preview in your browser at `localhost:4000/contact.html`.
+
+    notes: |
+
+      Because we are running `jekyll serve`, this new page will be automatically picked up by Jekyll, and will be available on localhost after a couple of seconds delay.
+
+      All your pages can be found on localhost, with a forward slash followed by the file name for pages other than the index page.
+
+
 
 
 
@@ -422,14 +496,24 @@ slides:
       - **Creating Pages**
         Pages can be added by creating normal HTML files for each page.
       - **Live Preview**
-        Serving your site from the command line enables browser preview.
+        Serving your site with Jekyll enables browser preview.
       {:.flex-list}
+
+    notes: |
+
+      Now that we've covered the basics of running a Jekyll site, we can begin to introduce some of the nifty tricks it offers us.
 
   - content: |
 
       ### Generated Sites: Complete
 
       [Next Chapter](themes.html)
+
+    notes: |
+
+      You've completed the Generated Sites chapter, well done!
+
+      Continue to the next chapter for more.
 
 
 

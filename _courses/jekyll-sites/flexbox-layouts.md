@@ -1,21 +1,14 @@
 ---
-title: Complex Layouts
+title: FlexBox Layouts
 
 slides: 
 
   - content: |
 
-      # Complex Layouts
+      # FlexBox Layouts
+      _The CSS3 answer to floats_
 
-
-
-  - content: |
-
-      ## FlexBox
-
-  - content: |
-
-      New-school answer to floats.
+      
 
 
 
@@ -50,7 +43,9 @@ slides:
 
   - content: |
 
-      ## Navigation bar
+      ## Box Links
+
+
 
 
 
@@ -59,7 +54,7 @@ slides:
 
   - content: |
 
-      ## Something else
+      ## Gallery Layout
 
 
 
