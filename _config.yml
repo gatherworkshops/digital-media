@@ -6,6 +6,7 @@ theme_images: "/digital-media/theme/assets/images"
 course_images: "/digital-media/media/images"
 
 markdown: kramdown
+highlighter: pygments
 
 kramdown:
   input: GFM
