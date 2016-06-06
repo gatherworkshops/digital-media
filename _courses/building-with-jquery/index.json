@@ -1,0 +1,41 @@
+---
+layout: coursedata
+title: Building with jQuery
+course: building-with-jquery
+
+heading: Building with jQuery
+tagline: Make a simple bubble-popping game with jQuery
+
+chapters:
+
+    - name: introduction
+      subtitle: Intro
+      title: Introduction
+
+    - name: jquery-basics
+      subtitle: Chapter One
+      title: jQuery Basics
+
+    - name: pixel-art
+      subtitle: Chapter Two
+      title: Pixel Art
+
+    - name: bubble-art
+      subtitle: Chapter Three
+      title: Bubble Art
+
+    - name: animation
+      subtitle: Chapter Four
+      title: Animation
+
+    - name: interaction
+      subtitle: Chapter Five
+      title: Interaction
+
+    - name: gamification
+      subtitle: Chapter Six
+      title: Gamification
+
+---
+
+
