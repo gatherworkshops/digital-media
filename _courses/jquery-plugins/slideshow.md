@@ -16,7 +16,8 @@ slides:
 
       ![Backstretch Logo](assets/images/backstretch-logo.png)
 
-      Allows you to add a dynamically-resized, slideshow-capable background image to any page or element.
+      Allows you to add a dynamically-resized, slideshow-capable 
+      background image to any page or element.
 
       Download from [here](http://srobbin.com/jquery-plugins/backstretch/).
 
@@ -74,6 +75,6 @@ slides:
 
       ## Slideshow: Complete!
 
-      Well done! You now know the basics of using jQuery.
+      Well done! Now you know the basics of using jQuery.
 
 ---

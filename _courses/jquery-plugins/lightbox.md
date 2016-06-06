@@ -36,7 +36,8 @@ slides:
 
       ![Lightbox Logo](assets/images/lightbox-logo.png)
 
-      Provides a simple way to create a gallery with both thumbnails and full-view images.
+      Provides a simple way to create a gallery 
+      with both thumbnails and full-view images.
 
 
   ##########
@@ -55,7 +56,8 @@ slides:
 
       Download Lightbox from [here](http://lokeshdhakar.com/projects/lightbox2/).
 
-      Unzip the folder once it's downloaded - we'll need to upload some of the files to Neocities!
+      Unzip the folder once it's downloaded - we'll need 
+      to upload some of the files to Neocities!
 
 
 ##########
@@ -117,7 +119,8 @@ slides:
 
       ## Include
 
-      Now that we've uploaded the files, we need to tell our HTML page that they exist.
+      Now that we've uploaded the files, we need 
+      to tell our HTML page that they exist.
 
       ```html
       <link rel="stylesheet" href="lightbox.css">
