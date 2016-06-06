@@ -18,8 +18,6 @@ slides:
 
     content: |
 
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
       # Building with jQuery
       _Create and publish an interactive website_
 

@@ -13,8 +13,6 @@ slides:
 
     content: |
 
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
       # Interaction
       _Reacting to clicks and key presses_
 

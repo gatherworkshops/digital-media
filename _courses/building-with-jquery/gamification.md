@@ -12,8 +12,6 @@ slides:
 
     content: |
 
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
       # Gamification
       _Turning your bubble popper into a game_
 

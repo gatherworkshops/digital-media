@@ -13,8 +13,6 @@ slides:
 
     content: |
 
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
       # Pixel Art
       _Clicking elements and changing their classes_
 

@@ -12,8 +12,6 @@ slides:
 
     content: |
 
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
       # Bubble Art
       _Creating piles of random bubbles_
 
