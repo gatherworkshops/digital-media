@@ -6,8 +6,6 @@ slides:
   - class: title-slide
     content: |
 
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
       # Custom Fonts
       _Customise your look with Google Fonts_
 

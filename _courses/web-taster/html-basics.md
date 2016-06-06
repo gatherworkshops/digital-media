@@ -7,8 +7,6 @@ slides:
 
       content: |
 
-        ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
         # Coding Content
         _Using HTML to construct page content_
 

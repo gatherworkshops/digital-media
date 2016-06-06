@@ -15,9 +15,7 @@ slides:
       :)
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
+      
       # jQuery Basics
       _Using jQuery on top of HTML and CSS_
 

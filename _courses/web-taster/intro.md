@@ -7,8 +7,6 @@ slides:
 
     content: |
 
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
       # Web Development Taster
       _Building Websites with HTML & CSS_
 

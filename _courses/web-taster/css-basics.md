@@ -7,8 +7,6 @@ slides:
 
       content: |
 
-        ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
         # Styley Design
         _Making things pretty with CSS_
 

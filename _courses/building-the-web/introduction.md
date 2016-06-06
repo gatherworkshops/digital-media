@@ -6,8 +6,6 @@ slides:
   - class: title-slide
     content: |
 
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
       # Building the Web
       _Create and publish your own web page_
   

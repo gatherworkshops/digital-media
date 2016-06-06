@@ -16,8 +16,6 @@ slides:
 
     content: |
 
-      ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
-
       # Lightbox
       _Popup image gallery_
 
