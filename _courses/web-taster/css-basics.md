@@ -1,5 +1,4 @@
 ---
-layout: chapter
 title: Styley Design
 slides:
 

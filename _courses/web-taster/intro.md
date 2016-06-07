@@ -1,6 +1,6 @@
 ---
-layout: chapter
 title: Introduction
+
 slides:
 
   - class: title-slide

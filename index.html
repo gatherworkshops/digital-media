@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Courses
 
 heading: Digital Media Courses
@@ -51,7 +51,7 @@ courses:
             <div class="row course-links">
         {% endif %}
 
-                {% include course-tile.html %}
+                {% include components/tiles/course-tile.html %}
 
         {% if index_modulo == 0 or forloop.last %}
             </div>
