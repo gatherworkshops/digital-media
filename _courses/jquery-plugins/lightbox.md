@@ -111,6 +111,7 @@ slides:
       to tell our HTML page that they exist.
       
       First add the CSS in the `head`:
+      
       ```html
       <head>
           <title>My Website</title>
@@ -120,7 +121,7 @@ slides:
       ```
       {: data-line="1-3,5" }
       
-      Then add the JavaScript after jQuery:
+      Then add the Lightbox JavaScript after jQuery:
       
       ```html
           <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
