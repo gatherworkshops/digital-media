@@ -6,30 +6,22 @@ slides:
 ##########
 
 
-  - title: title-page
-    class: title-slide
+  - content: |
+
+      # Lightbox
+      _Popup image gallery_
 
     notes: |
 
       :)
 
-    content: |
-
-      # Lightbox
-      _Popup image gallery_
+    
 
 
 ##########
 
 
-  - title: featherlight
-    class: centered-slide
-
-    notes: |
-
-      :)
-
-    content: |
+  - content: |
 
       ## Featherlight
 
@@ -38,45 +30,43 @@ slides:
       Provides a simple way to create a gallery 
       with both thumbnails and full-view images.
 
-
-  ##########
-
-
-  - title: download
-    class: centered-slide
-
     notes: |
 
       :)
 
-    content: |
+    
+
+
+  ##########
+
+
+  - content: |
 
       ## Download Lightbox
 
       Download Lightbox from [here](http://lokeshdhakar.com/projects/lightbox2/).
 
       Unzip the folder once it's downloaded - we'll need 
-      to upload some of the files to Neocities!
+      to add some of the files to our site!
 
-
-##########
-
-
-  - title: zipcontents
-    class: centered-slide
 
     notes: |
 
       :)
 
-    content: |
+    
+
+##########
+
+
+  - content: |
 
       ## What's in the Zip
 
       There are three folders: css, img, js<br>
       And two files: index.html, README.markdown
 
-      We need to upload just a few of the files:
+      We need to copy just a few of the files:
 
       - css/lightbox.css
       - js/lightbox.js
@@ -85,83 +75,88 @@ slides:
       - img/prev.png
       - img/loading.png
 
+    notes: |
+
+      :)
+
+    
+
 
 ##########
 
 
-  - title: upload
-    class: centered-slide
+  - content: |
+
+      ## Add the files to your site
+
+      Copy the files specified on the previous slide,
+      making sure to keep them in their correct folders!
 
     notes: |
 
       :)
 
-    content: |
-
-      ## Upload
-
-      Upload the files to neocities.
+    
 
 
 
 ##########
 
 
-  - title: include
-    class: centered-slide
+  - content: |
 
-    notes: |
-
-      none
-
-    content: |
-
-      ## Include
+      ## Include the LightBox CSS and JavaScript
 
       Now that we've uploaded the files, we need 
       to tell our HTML page that they exist.
-
+      
+      First add the CSS in the `head`:
       ```html
-      <link rel="stylesheet" href="lightbox.css">
-      <script src="lightbox.js"></script>
+      <head>
+          <title>My Website</title>
+          
+          <link rel="stylesheet" href="css/lightbox.css">
+      </head>
       ```
+      {: data-line="1-3,5" }
+      
+      Then add the JavaScript after jQuery:
+      
+      ```html
+          <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+          <script src="js/lightbox.js"></script>
+      </body>
+      ```
+      {: data-line="1,3"}
+
+
+    
 
 
 ##########
 
 
-  - title: initialise
-    class: centered-slide
-
-    notes: |
-
-      :)
-
-    content: |
+  - content: |
 
       ## Initialise Lightbox
 
       This plugin doesn't need JavaScript initialisation.
 
-      Instead, wrap each image in a link with a data-lightbox attribute.
+      Instead, wrap each image in a link with a `data-lightbox` attribute.
 
       ```html
       <a href="image.png" data-lightbox="gallery">
-      <img src="image.png">
+          <img src="image.png">
       </a>
       ```
+
+
+    
 
 ##########
 
 
-  - title: summary
-    class: centered-slide
-
-    notes: |
-
-      Great! Now that we know the basics, let's get started on our own projects.
-
-    content: |
+  - content: |
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
@@ -170,6 +165,12 @@ slides:
       Great, now for the next bit...
 
       [Take me to the next chapter!](slideshow.html)
+
+    notes: |
+
+      Great! Now that we know the basics, let's get started on our own projects.
+
+    
 
 
 ---

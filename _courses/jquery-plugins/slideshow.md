@@ -20,16 +20,24 @@ slides:
 
       Download from [here](http://srobbin.com/jquery-plugins/backstretch/).
 
+  - content: |
+      
+      ## Copy Backstretch to your site
+
+      Find the `jquery.backstretch.min.js` file you 
+      downloaded and copy it into your site's `js` folder.
+
 
   - content: |
 
       ## Include the plugin
 
       ```html
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
       <script src="jquery.backstretch.min.js"></script>
       ```
 
-      Add a script tag in the `head` of your html, linking to the plugin file.
+      Add a script tag after your jQuery import, linking to the plugin file.
 
 
 
@@ -72,7 +80,7 @@ slides:
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
-      ## Slideshow: Complete!
+      ## jQuery Plugins: Complete!
 
       Well done! Now you know the basics of using jQuery.
 
