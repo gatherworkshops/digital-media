@@ -110,7 +110,7 @@ slides:
       Now that we've uploaded the files, we need 
       to tell our HTML page that they exist.
       
-      First add the CSS to your page's head:
+      First add the CSS to your page's `head`:
       
       ```html
       <head>
