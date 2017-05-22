@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 		    },
 		    dist: {                             // Target
 		      options: {                        // Target options
-		        dest: '<%= dist %>',
+		        dest: 'dist',
 		        config: '_config.yml'
 		      }
 		    }
