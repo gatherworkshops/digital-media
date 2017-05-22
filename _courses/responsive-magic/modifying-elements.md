@@ -46,7 +46,7 @@ slides:
       In your console, create a variable `box` and save `first-box` into it
 
       ```javascript
-      var box = document.getElementById('first-box')
+      var firstBox = document.getElementById('first-box')
       ```
 
     notes: |
@@ -94,9 +94,9 @@ slides:
       Copy the code you've learned into your `site-script.js`.
 
       ```javascript
-      var box = document.getElementById('first-box');
-      box.innerHTML = 'lion'
-      box.css.color = 'gold';
+      var firstBox = document.getElementById('first-box');
+      firstBox.innerHTML = 'lion'
+      firstBox.css.color = 'gold';
       ```
 
   - content: |
@@ -117,9 +117,9 @@ slides:
       While frozen, you can look at the value in a variable!
 
       ```javascript
-      var box = document.getElementById('first-box');
-      box.innerHTML = 'lion'
-      box.css.color = 'gold';
+      var firstBox = document.getElementById('first-box');
+      firstBox.innerHTML = 'lion'
+      firstBox.css.color = 'gold';
 
       debugger;
 
