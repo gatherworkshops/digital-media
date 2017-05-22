@@ -3,18 +3,17 @@ layout: default
 title: Using JavaScript
 slides:
 
-  - title: title-page
-    class: title-slide
-
-    notes: |
-
-      In this section we will add a JavaScript file to a web page and test that it works.
+  - class: title-slide
 
     content: |
 
       # Using JavaScript
 
       _Adding those first lines of JavaScript to your site_
+
+    notes: |
+
+      In this section we will add a JavaScript file to a web page and test that it works.
 
 
   ##########
