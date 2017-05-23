@@ -16,13 +16,13 @@ chapters:
       subtitle: Chapter Two
       title: Modifying Elements
       
-    - name: modifying-element-groups
-      subtitle: Chapter Three
-      title: Modifying Element Groups
-
     - name: mouse-events
-      subtitle: Chapter Four
+      subtitle: Chapter Three
       title: Mouse Events
+
+    - name: grouped-mouse-events
+      subtitle: Chapter Four
+      title: Grouped Mouse Events
 
     - name: timer-events
       subtitle: Chapter Five
