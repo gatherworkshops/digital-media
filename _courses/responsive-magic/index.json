@@ -4,37 +4,42 @@ title: Responsive Magic
 course: responsive-magic
 
 heading: Responsive Magic
-tagline: Make a mobile-first site using HTML, CSS and JavaScript
+tagline: Make a mobile-ready site using HTML, CSS and JavaScript
 
 chapters:
 
-    - name: using-javascript
+    - name: responsive-design
       subtitle: Chapter One
+      title: Responsive Design
+
+    - name: media-queries
+      subtitle: Chapter Two
+      title: Media Queries
+
+    - name: image-optimisation
+      subtitle: Chapter Three
+      title: Image Optimisation
+
+    - name: using-javascript
+      subtitle: Chapter Four
       title: Using JavaScript
 
     - name: modifying-elements
-      subtitle: Chapter Two
+      subtitle: Chapter Five
       title: Modifying Elements
       
     - name: mouse-events
-      subtitle: Chapter Three
+      subtitle: Chapter Six
       title: Mouse Events
 
     - name: grouped-mouse-events
-      subtitle: Chapter Four
+      subtitle: Chapter Seven
       title: Grouped Mouse Events
 
     - name: timer-events
-      subtitle: Chapter Five
+      subtitle: Chapter Eight
       title: Timer Events
 
-    - name: image-optimisation
-      subtitle: Chapter Six
-      title: Image Optimisation
-
-    - name: media-queries
-      subtitle: Chapter Seven
-      title: Media Queries
 
 ---
 

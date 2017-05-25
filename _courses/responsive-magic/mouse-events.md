@@ -104,7 +104,7 @@ slides:
 
       In your code, add another function and another event listener:
 
-      ```
+      ```javascript
       function makeLionMeow() {
         lionBox.innerHTML = 'Meow!';
       }

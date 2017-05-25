@@ -75,7 +75,29 @@ slides:
       function crossOffItem( event ){
         console.log('cross the item off the list');
         console.log( event.target );
-        event.target.css.textDecoration = 'line-through';
+      }
+
+      var listItems = document.getElementsByClass('item');
+
+      for( var counter=0; counter<listItems.length; counter++){
+        listItems[i].addEventListener('click', crossOffItem);
+      }
+      ```
+
+      {:.checkpoint}
+      When I click an item, it shows in te console.
+
+
+
+  - content: |
+
+      ## Step Five: <br> Add the **completed** class when clicked
+
+      ```javascript
+      function crossOffItem( event ){
+        console.log('cross the item off the list');
+        console.log( event.target );
+        event.target.classList.add('complete');
       }
 
       var listItems = document.getElementsByClass('item');
@@ -99,7 +121,7 @@ slides:
       function crossOffItem( event ){
         console.log('cross the item off the list');
         console.log( event.target );
-        event.target.css.textDecoration = 'line-through';
+        event.target.classList.add('complete');
         debugger;
       }
 
@@ -122,6 +144,25 @@ slides:
       - `counter` starts at 0
       - the **limit** is the length of `listItems`
       - the **stepper** goes up by 1 each time
+  
+
+  - content: |
+
+      ## Clean up your debuggers and logs
+
+      Let's use our `debugger` to step through this line by line.
+
+      ```javascript
+      function crossOffItem( event ){
+        event.target.classList.add('complete');
+      }
+
+      var listItems = document.getElementsByClass('item');
+
+      for( var counter=0; counter<listItems.length; counter++){
+        listItems[i].addEventListener('click', crossOffItem);
+      }
+      ```
 
 
   - content: |

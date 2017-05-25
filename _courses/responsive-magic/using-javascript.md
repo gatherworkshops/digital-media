@@ -21,12 +21,17 @@ slides:
 
   - content: |
 
-      ## Create a file called `site-script.js`
+      ## Create a JavaScript file
 
-      This file needs to be in the same folder
-      as your `index.html` and `style.css` files.
+      In the **root** of your project,
+      create a new file called `site-script.js`.
+
+      {:.checkpoint}
+      You should have a new file called `site-script.js`.
 
     notes: |
+
+      The **root** is the top level folder where `index.html` and `style.css` are kept.
 
       You can actually name this file whatever you like, and you can also put it in a subfolder if you choose.
 
@@ -38,10 +43,7 @@ slides:
 
   - content: |
 
-      ## Include the script into your `index.html`
-
-      You need to include JavaScript files at the end of your 
-      HTML `body` so that the scripts load after the HTML and CSS.
+      ## Include the script into your HTML
 
       ```html
         ...
@@ -50,6 +52,12 @@ slides:
 
       </body>
       ```
+
+      JavaScript includes go at the end of the `body`.
+      This is so they load after the HTML and CSS.
+
+      {:.checkpoint}
+      Nothing will change yet! The JavaScript file is empty.
 
 
     notes: |
@@ -66,8 +74,11 @@ slides:
 
       ## Use Chrome Developer Tools to check <br>that the file was included correctly
 
-      In Chrome, press `Command + Option + I` to open the developer tools.
-      Click the *Network* tab, refresh, and make sure `site-script.js` is listed.
+      Open the developer tools using `Ctrl + Option + I`.
+      Change to the **Network** tab, then refresh the page.
+
+      {:.checkpoint}
+      The file `site-script.js` should be listed.
 
 
   ##########
@@ -75,14 +86,18 @@ slides:
 
   - content: |
 
-      ## Add a `console.log()` to check your script runs
-
-      In `site-script.js`, add a message to yourself using `console.log()`.
-      This function can display code values in the Developer Tools window.
+      ## Write some code to check your script runs
 
       ```javascript
-      console.log('Testing, testing, 123...');
+      console.log('Hello!');
       ```
+
+      In `site-script.js`, use the `console.log()` function
+      to log a message to yourself in the developer console.
+
+      {:.checkpoint}
+      Make sure your file is saved!
+      
 
 
   ##########
@@ -90,12 +105,13 @@ slides:
 
   - content: |
 
-      ## Check your console output in the Developer Tools
+      ## Check your output in the developer console
 
-      Open developer tools, refresh your page, and look in the **Console** tab.
-      Your message should be displayed.
+      Open the dev tools and switch to the **Console** tab.
+      Refresh the page, and your message should be displayed.
 
-      If you have an error, try to understand the error and correct your code.
+      **If you have an error, try to understand** 
+      **the error and correct your code.**
 
       {:.checkpoint}
       Hooray, I got a message with no errors!

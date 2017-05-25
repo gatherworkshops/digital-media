@@ -9,9 +9,9 @@ slides:
 
       # Responsive Design
 
-      _Mobile-first design and responsive layouts_
+      _Mobile-ready design and responsive layouts_
 
-
+  
   - content: |
 
       ## Responsive Design View
@@ -19,11 +19,32 @@ slides:
       Use the developer tools to test how your
       site looks on different device sizes.
 
+
+  - content: |
+
+      ## Tell the browser you got dis
+
+      ```html
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      ```
+
+      This prevents the browser from just using
+      the desktop version and zooming it out.
+
+      {:.checkpoint}
+      Your site should now be zoomed in on mobile.
+
+    notes: |
+
+      Open the site in a new window.
+
+      Use dev tools to load it up on a mobile layout.
+
+      Observe how the text is itty bitty. This is because the browser is using the desktop version and just zooming it out to fit.
+
   - content: |
 
       ## Use percentages for widths
-
-      This lets you maximise screen use on mobile.
 
       ```css
       .container {
@@ -31,12 +52,14 @@ slides:
       }
       ```
 
+      This lets you maximise screen use on mobile.
+
+      {:.checkpoint}
+      Your main content box should resize with the browser.
+
   - content: |
 
       ## Use a max width to limit size
-
-      Combining a pixel `max-width` and a percentage `width`
-      gives you full-width on mobile and limited width on desktop.
 
       ```css
       .container {
@@ -45,12 +68,16 @@ slides:
       }
       ```
 
+      Combining a pixel `max-width` and a percentage `width`
+      gives you full-width on mobile and limited width on desktop.
+
+      {:.checkpoint}
+      Your main content size should be limited on large screens.
+
+
   - content: |
 
       ## Use view-relative sizing for heights
-
-      This helps you size things so that they fit
-      vertically on a small screen.
 
       ```css
       .header {
@@ -58,15 +85,15 @@ slides:
       }
       ```
 
+      The `vh` measurement is like `%`, but it's a percentage 
+      of the **view** height not the **container** height.
+
       {:.checkpoint}
-      Resize your browser height to see the header change.
+      Your header box should resize as the browser height changes.
 
   - content: |
 
-      ## Responsive text sizing
-
-      To go along with responsive layouts, you may also
-      find a need for responsive font size.
+      ## Use view-relative sizing for text
 
       ```css
       .title {
@@ -74,96 +101,67 @@ slides:
       }
       ```
 
+      The `vh` and `vw` units can also be used
+      for font sizes, instead of using pixels.
+
+      {:.checkpoint}
+      Your page title should resize as the browser height changes.
+
+
 
   - content: |
 
       ## Use FlexBox for any kind of column layout
 
+      A container with its `display` set to `flex` 
+      automatically sizes elements inside it to fit.
+
+    notes: |
+
       If you know what a `float` is, then FlexBox is
       kind of like that, but better.
-
-      If you don't know what a float is, don't panic!
 
 
   - content: |
 
-      ## FlexBox for sidebars
-
-      ```html
-      <div class="container">
-
-        <div class="sidebar"></div>
-
-        <div class="content"></div>
-
-      </div>
-      ```
+      ## FlexBox navigation bar
 
       ```css
-      .container {
+      .main-nav {
         display: flex;
       }
 
-      .sidebar {
+      .main-nav a {
         width: 200px;
-        flex: 0;
       }
 
-      .content {
+      .main-nav .title {
         flex: 1;
       }
       ```
 
-
-  - content: |
-
-      ## FlexBox for navigation bars
-
-      ```html
-      <nav class="main-menu">
-        <a href="#">Home</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
-      </nav>
-      ```
-
-      ```css
-      .main-menu {
-        display: flex;
-      }
-
-      .main-menu a {
-        width: 200px;
-      }
-      ```
+      {:.checkpoint}
+      Your title should be on the left, and links on the right.
 
 
   - content: |
 
-      ## FlexBox for content panels
-
-      ```html
-      <div class="panels">
-        <div class="panel">
-          <img src="#">
-          <span>Title One</span>
-        </div>
-        <div class="panel">
-          <img src="#">
-          <span>Title Two</span>
-        </div>
-        <div class="panel">
-          <img src="#">
-          <span>Title Three</span>
-        </div>
-      </div>
-      ```
+      ## FlexBox content panels
 
       ```css
-      .panels {
+      .panels-container {
         display: flex;
       }
+
+      .panel {
+        flex: 1;
+      }
       ```
+
+      {:.checkpoint}
+      Your panels should now be horizontal and equally sized.
+
+
 
   - content: |
 

@@ -17,26 +17,27 @@ slides:
 
   - content: |
 
-      ## Getting an element by its `id`
+      ## Referring to elements from JavaScript
 
       Before we can use JavaScript to modify an element,
       we need a way to identify it and target it.
 
-      One way to do this is using its HTML `id`,
-      because an `id` should be used only once on a page.
-
 
   - content: |
 
-      ## Using the `getElementById` function
+      ## Using the **get element by id** function
 
-      Open up your Developer Tools, open the **Console** tab, and type
+      In the dev tools **Console** tab, type this and press enter:
 
       ```javascript
       document.getElementById('first-box')
       ```
 
-      When you press enter, what do you see?
+      One way to target an element is using its HTML `id`,
+      because an `id` should be used only once on a page.
+
+      {:.checkpoint}
+      You should see the HTML of `first-box`.
 
 
   - content: |
