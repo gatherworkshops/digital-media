@@ -16,6 +16,13 @@ MAIN NAVIGATION ON EVERY PAGE
 
 .main-nav {
     background-color: #222;
+    display: flex;
+}
+
+@media (max-width: 800px) {
+  .main-nav {
+    flex-direction: column;
+  }
 }
 
 .main-nav a {
@@ -28,6 +35,12 @@ MAIN NAVIGATION ON EVERY PAGE
     background: #446;
 }
 
+.main-nav .nav-title {
+    flex: 1;
+    color: white;
+    padding: 10px;
+}
+
 /* 
 =======================
 MAIN HEADER ON EVERY PAGE
@@ -35,8 +48,14 @@ MAIN HEADER ON EVERY PAGE
 
 .main-header {
     background-color: green;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     height: 300px;
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-title {
@@ -45,15 +64,27 @@ MAIN HEADER ON EVERY PAGE
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 800px) {
+    .main-title {
+        font-size: 10vw;
+    }
+}
+
 /* 
 =======================
 IMAGE PANELS ON HOME PAGE
 */
 
 .panels-container {
-    width: 800px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 800px) {
+    .panels-container {
+        flex-direction: column;
+    }
 }
 
 .panel {
@@ -84,7 +115,7 @@ MAIN CONTENT AREA ON ALL PAGES
 */
 
 .main-content {
-    width: 800px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
