@@ -6,8 +6,8 @@ slides:
   - class: title-slide
     content: |
 
-      # Building Layouts
-      _Design a theme for your site_ 
+      # Site Setup
+      _Time to build your own website!_ 
 
 
   - content: |
