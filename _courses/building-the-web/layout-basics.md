@@ -30,29 +30,40 @@ slides:
   - content: |
       ## Header HTML
 
-      Our header block will contain the profile pic, "Grumpy Cat" heading and the first paragraph of text.
+      Our header block will contain the profile pic, 
+      "Grumpy Cat" heading and the first paragraph of text.
 
       **In your HTML, on the line *before* the profile pic:**
 
       ```html
       <header class="page-header">
       ```
+      {:.big-code style="max-width:600px; margin:0 auto;"}
 
       **In your HTML, *after* the first paragraph:**
 
       ```html
       </header>
       ```
+      {:.big-code style="max-width:600px; margin:0 auto;"}
 
-      There should now be a dark blue box at the top of your page.
+      {:.checkpoint}
+      Nothing should happen yet!
+
+    notes: |
+
+      Notice that this time we have added the class in the HTML *before* creating a matching rule in the CSS.
+
+      That's okay - nothing will happen until both parts have been done.
+
+      The html simply ignores any class rules that don't exist.
 
   
   - content: |
       ## Header Styles
 
-      Let's design a header to contain Grumpy Cat's profile pic, page title, and first paragraph.
-
-      **In your CSS, on a new line:**
+      In your CSS, on a new line,
+      design a class rule for the header.
 
       ```css
       .page-header {
@@ -64,27 +75,38 @@ slides:
       }
       ```
 
-      Our header block will have large, centered, bold text.
+      {:.checkpoint}
+      The header should have large, centered, bold text.
+
+    notes: |
+
+      Web designers often use really obvious background colour or borders on their elements while they are designing, so that it is easy to see where the edges of the element are.
+
+      Once you are happy with your header, you can remove the line `background-color: darkblue;` so that your header becomes see-through.
 
 
   - content: |
       ## Info Section HTML
 
-      This content block is a section not a header, so we use the `section` tag.
+      This content block is a **section** not a **header**, 
+      so we use the `section` tag to create this block.
 
       **In your HTML, *before* the second paragraph:**
 
       ```html
       <section class="info-section">
       ```
+      {:.big-code style="max-width:600px; margin:0 auto;"}
 
       **And *after* the third paragraph:**
 
       ```html
       </section>
       ```
+      {:.big-code style="max-width:600px; margin:0 auto;"}
 
-      There should now be a yellow block around two paragraphs.
+      {:.checkpoint}
+      Nothing will happen yet, we need a CSS rule!
 
 
   - content: |
@@ -102,6 +124,16 @@ slides:
         margin-bottom: 30px;
       }
       ```
+      {:.big-code}
+
+      {:.checkpoint}
+      There should now be a yellow block around two paragraphs.
+    
+    notes: |
+
+      Just like before, once you are happy with the layout you can change the background colour to whatever you like.
+
+      In this case we recommend a `white` background.
 
 
   - content: |
@@ -114,14 +146,17 @@ slides:
       ```html   
       <section class="gallery-section">
       ```
+      {:.big-code style="max-width:600px; margin:0 auto;"}
 
       **And *after* the last gallery image:**
 
       ```html
       </section>
       ```
+      {:.big-code style="max-width:600px; margin:0 auto;"}
 
-      You should now have a dark green section around your gallery images.
+      {:.checkpoint}
+      Nothing happens, create a CSS rule!
     
 
   - content: |
@@ -137,16 +172,20 @@ slides:
         text-align: center;
       }
       ```
+      {:.big-code}
 
-      Then in your HTML code, add `section` tags around your gallery images. Remember to add the class!
+      {:.checkpoint}
+      You should now have a dark green section around your gallery images.
 
-      If you can't remember how, there is code on the next page...
+    notes: |
 
+      Once you are done, you can remove the background colour on the gallery too.
 
   - content: |
       ## Gallery Image Styles
 
-      We can also use a trick to style the images *inside* the gallery section, without adding a class to every single one.
+      We can also use a trick to style the images *inside* the 
+      gallery section, without adding a class to every single one.
 
       **In your CSS, on a new line:**
 
@@ -156,18 +195,25 @@ slides:
         height: 150px;
       }
       ```
+      {:.big-code}
 
-      Your gallery images should now have white borders and all be the same height.
+      {:.checkpoint}
+      Your images should be small with white borders.
 
     notes: |
+      
+      This CSS rule has two parts to its name. When a rule has more than one part to it, we can read it backwards to see what it's doing.
 
-      This style says "find a block with the class `gallery`, then find every `img` element inside it and apply these styles"
+      A space means "look inside".
+
+      So this rule says "Apply to all `img` elements **inside** `.gallery-section`."
 
 
   - content: |
       ## Element Selectors
 
-      Rather than always using classes, we can also choose to style all HTML elements of the same type.
+      Rather than always using classes, we can also choose 
+      to style all HTML elements of the same type.
 
       **At the top of your CSS, on a new line:**
 
@@ -181,31 +227,24 @@ slides:
       }
       ```
 
-      All your sections (and your header) should now be centered on the page.
+      {:.checkpoint}
+      All your block should be centered on the page.
 
+    notes: |
 
-  - content: |
-      ## Whole Page Styles
+      This is an **element rule** just like we did for the `body` element earlier.
 
-      When we have styles we want to apply to the whole page, we can target the `body`, because all other tags are between the `body` tags.
+      In this rule, the `,` comma means "and".
 
-      **At the top of your CSS, on a new line:**
+      So this rule says "Apply to all `header`s **and** all `section`s"
 
-      ```css
-      body {
-        background-color: gold;
-        background-image: url(http://subtlepatterns.com/patterns/food.png);
-        font-family: sans-serif;
-      }
-      ```
-
-      Your background should now be yellow with a pattern.
 
 
   - content: |
-      ## Element Selectors
+      ## Tidy Up
 
-      Now all that we have to do is tidy up our colours. We need to remove the backgrounds we used for planning our layout.
+      If you haven't already done it, remove the 
+      background colours we used for planning our layout.
 
       **In your CSS:**
 
@@ -213,6 +252,12 @@ slides:
       - Find `.info-section` and change background to white
       - Find `.gallery-section` and remove the background
 
+      {:.checkpoint}
+      My page looks awesome now!
+
+    notes: |
+
+      You may have done this as we went along, but if not you should tidy it up now!
 
   - content: |
       ## Grumpy Cat Output
@@ -223,7 +268,10 @@ slides:
       <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
       If it doesn't, check that all your styles are correct! 
+    
+    notes: |
 
+      Your site should look a bit like this, but may include a few tweaks of your own!
 
   - content: |
 
@@ -231,13 +279,13 @@ slides:
 
       ## Stacked Layouts: Complete!
 
-      Great, now let's explore where we'll build our own site...
+      Woohoo! HTML and CSS masters!
 
       [Take me to the next chapter!](infrastructure.html)
 
 
     notes: |
 
-      Great! Now that we know the basics, let's get started on our own projects.
+      Woohoo! HTML and CSS masters!
 
 ---

@@ -55,6 +55,8 @@ slides:
 
         When you first open CodePen, the view will be split top-and-bottom. Switch to left-and-right view by clicking "Change View" and then at the bottom under "Editor Layout" click the first icon.
 
+        Also, drag the divider so half your screen is code, and half is the preview.
+
         **Which side is your code, and which side is the preview?**
 
         The white text is your code. As you make changes, they become visible in the preview area.

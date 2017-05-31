@@ -161,8 +161,28 @@ slides:
 
       The Internet is the same. It is _decentralised_ which means that it has no central control room and it can still function as a whole if some parts stop working.
 
+  - content: |
 
+      ## Challenge
 
+      **Design your own "Breaking News" item:**
+
+      - Go to the [New Zealand Herald](http://nzherald.co.nz){: target="_blank"} site
+      - Click through to today's top story
+      - Right click on the story's title and "Inspect Element"
+      - Edit the headline to make your own news!
+
+      <br>
+      
+      **Try these too:**
+
+      - Modify the paragraph text to match your headline
+      - Change the image source to link to a different image
+      - Take a screenshot!
+
+    notes: |
+
+      Now that you understand HTML and CSS, have a go at modify a live web page.
 
   - content: |
 
