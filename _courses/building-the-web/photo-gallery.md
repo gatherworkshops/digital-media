@@ -69,7 +69,7 @@ slides:
 
       In your `page-content` section, add the images:
 
-        ```css
+        ```html
         <img src="images/first-pic.jpg">
         <img src="images/another-pic.jpg">
         <img src="images/cool-photo.jpg">
