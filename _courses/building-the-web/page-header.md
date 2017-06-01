@@ -172,7 +172,7 @@ slides:
 
       For a simple logo design, we can start by choosing a nice font from <a href="http://google.com/fonts" target="_blank">Google Fonts</a> then clicking the "Quick Use" button.
 
-      ![Selecting a Google Font](/Building-the-Web/slides/workshop/images/google-font-selection.png)
+      ![Selecting a Google Font](assets/images/google-font-selection.png)
 
 
     notes: |
@@ -194,7 +194,7 @@ slides:
 
       On the "Quick Use" page, look for step 3.
 
-      ![Finding the Google Font embed code](/Building-the-Web/slides/workshop/images/google-font-include.png)
+      ![Finding the Google Font embed code](assets/images/google-font-include.png)
 
       Copy that piece of HTML code<br> 
       and put it between your site's `<head>` tags.
@@ -217,7 +217,7 @@ slides:
 
       Further down the "Quick Use" page you'll find step 4.
 
-      ![Finding the Google Font embed code](/Building-the-Web/slides/workshop/images/google-font-css.png)
+      ![Finding the Google Font embed code](assets/images/google-font-css.png)
 
       This is an example of the CSS you can now use to apply the font to elements on your page.
 
