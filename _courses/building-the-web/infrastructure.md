@@ -121,7 +121,7 @@ slides:
 
       ## Loading a Webpage
 
-      ![Diagram of how a web page is served](assets/images/diagram-http.png)
+      ![Diagram of how a web page is served](assets/images/diagram_http.png)
 
 
     notes: |
