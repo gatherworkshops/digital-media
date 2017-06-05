@@ -103,6 +103,8 @@ slides:
 
       ## HTML + CSS + JS = Website!
 
+      You already know two of these, woohoo!
+
 
     notes: |
 
@@ -112,6 +114,37 @@ slides:
 
       Other programming languages are used for making more complex websites, with user accounts you can log in to, or shopping sites where you can buy things.
 
+  
+  - content: |
+
+      ## Challenge
+
+      **Design your own "Breaking News" item:**
+
+      - Go to the [New Zealand Herald](http://nzherald.co.nz){: target="_blank"} site
+      - Click on today's top story
+      - Right click on the story's title and "Inspect Element"
+      - Edit the headline to make your own news!
+
+    notes: |
+
+      No notes
+
+
+  - content: |
+
+      ## Extra Super Challenge
+      
+      **On your news page, try these too:**
+
+      - Modify the paragraph text to match your headline
+      - Change the image source to link to a different image
+      - Change the background colour by editing the CSS
+
+    notes: |
+
+      No notes
+
 
 
   - content: |
@@ -120,12 +153,12 @@ slides:
 
       ## Web Languages: Complete!
 
-      Now we know how the languages fit together, let's try them out...
+      Next we'll take a quick look at how the Internet itself works...
 
-      [Take me to the next chapter!](html-basics.html)
+      [Take me to the next chapter!](infrastructure.html)
 
     notes: |
 
-      Now we know how the languages fit together, let's try them out...
+      Next we'll take a quick look at how the Internet itself works...
 
 ---
